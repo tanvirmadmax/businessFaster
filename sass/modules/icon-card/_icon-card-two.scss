@@ -1,0 +1,43 @@
+.icon-card {
+    &.style-2 {
+        margin-top: 40px;
+        margin-right: 25px;
+
+        .inner-wrapper {
+            padding: 0;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+
+            .icon {
+                width: 71px;
+                height: 71px;
+                flex-shrink: 0;
+                background-color: $primary-color;
+                @include transition;
+            }
+            .title{
+                text-transform: capitalize;
+            }
+            .content {
+                text-align: start;
+
+                .desc {
+                    height: auto;
+                }
+            }
+        }
+
+        &:hover {
+            .icon {
+                background-color: $black;
+            }
+
+            .content {
+                .title {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

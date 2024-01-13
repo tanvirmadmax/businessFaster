@@ -1,0 +1,58 @@
+.testimonial-card {
+    &.style-three {
+        flex-direction: row;
+        padding: 0;
+
+        .icon {
+            align-self: flex-start;
+            flex-shrink: 0;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            .content {
+                margin-top: 18px;
+
+                .text {
+                    font-size: 26px;
+                    font-style: italic;
+                    line-height: 40px;
+                }
+            }
+            .meta-user {
+                .icon {
+                    display: none;
+                }
+            }
+        }
+        @include sm {
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            .content-wrapper {
+                gap: 20px;
+                .content {
+                    margin-top: 0;
+                    .text {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+                .meta-user {
+                    .user-info {
+                        .info {
+                            h2 {
+                                font-size: 16px;
+                                line-height: 28px;
+                            }
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.agency-benefits-content-wrapper {
+    .content {
+        margin-bottom: 50px;
+        margin-right: 100px;
+
+        h5 {
+            font-family: $heading-font;
+            color: $black;
+            font-size: 30px;
+            line-height: 35px;
+            // 
+            //styleName: H2;
+
+        }
+
+        p {
+            font-family: $body-font;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 29px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-img-two {
+    &.style-2 {
+        background-color: $white;
+        box-shadow: 0px 20px 60px 0px #0000001A;
+        padding: 40px 50px;
+        display: inline-table;
+
+        .title {
+            h3 {
+                font-family: $heading-font;
+                font-size: 30px;
+                font-weight: 500;
+                // line-height: 40px;
+                color: $black;
+                padding-bottom: 18px;
+            }
+
+            border-bottom: 1px solid $gray-200;
+            margin-bottom: 30px;
+        }
+
+        .counter-item {
+            .icon {
+                margin-right: 20px;
+
+                span {
+                    background-image: linear-gradient(to top, #ffffff, #ffffff);
+                    color: $primary-color;
+                    height: 60px;
+                    width: auto;
+                }
+            }
+
+            .content {
+                h2 {
+                    color: #222222;
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 4px;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: #666666;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+}

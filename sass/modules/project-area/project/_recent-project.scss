@@ -1,0 +1,70 @@
+.project{
+    .project-card-wrapper{
+        
+        .card-box {
+            opacity: 0;
+            transition: 0.3s;
+            padding-top:25px;
+            padding-bottom:25px;
+            padding-left:30px;
+            padding-right:60px;
+            background:#151515;
+            top:47%;
+            left:5%;
+            .card-contents{
+                .card-text{
+                    h6{
+                        font-family: 'Teko';
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 17px;
+                        letter-spacing: 0.1em;
+                        text-align: left;
+                        color: #ED3B3B;
+                        
+                    }
+                    h3{
+                        font-family: 'Teko';
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        letter-spacing: 0em;
+                        color: #fff;
+                    }
+                }
+
+                .card-icon {
+                    right: -50%;
+                    top:8%;
+                    
+                i{
+                    padding: 10px;
+                    font-size: 30px;
+                    border-radius: 50%;
+                    color: #151515;
+                    background:#ED3B3B;
+                    transition: 0.4s;
+
+                    &:hover{
+                        color: #ED3B3B ;
+                        background:#fff ;
+                        
+                    }
+                }
+                }
+            }
+
+            
+        }
+        
+        &:hover {
+        
+            .card-box {
+                opacity: 1;
+            }
+         }
+
+    }
+
+    
+}

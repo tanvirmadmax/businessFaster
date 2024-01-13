@@ -1,0 +1,138 @@
+.page-breadcrumb-area {
+  padding-top: 401px;
+  padding-bottom: 124px;
+  position: relative;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: $primary-color;
+
+  @include rmaxwd(991) {
+    padding: 100px 0;
+  }
+
+  @include rmaxwd(767) {
+    padding: 80px 0;
+  }
+}
+
+.page-overlay {
+  // background: linear-gradient(0deg, rgba(21, 21, 25, 0.70) 0%, rgba(21, 21, 25, 0.70) 100%), url(<path-to-image>), lightgray -13.604px 0px / 101.417% 202.969% no-repeat;
+  // position: relative;
+
+  &:before {
+    content: "";
+    background-color: #151519B2;
+    opacity: 0.7;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 400px;
+    background-image: url("../../images/breadcrumb/bg-shape.png");
+  }
+}
+
+.page-heading {
+
+  h3,
+  .page-title {
+    font-family: $heading-font;
+    font-size: 50px;
+    color: $white;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    line-height: normal;
+    font-weight: 600;
+
+    @include rmaxwd(375) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    @include sm {
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    @include md {
+      font-size: 60px;
+      line-height: 72px;
+    }
+  }
+}
+
+.breadcrumb-list {
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    display: inline-flex;
+    gap: 0 12px;
+
+    @include rmaxwd(375) {
+      flex-direction: column;
+    }
+
+    li {
+      list-style: none;
+      display: inline-flex;
+      gap: 0 12px;
+      align-items: center;
+      color: $white;
+
+      // &.active {
+      //   color: $orange-color;
+
+      //   a {
+      //     color: $orange-color;
+      //   }
+      // }
+
+      a {
+        font-family: $body-font;
+        font-size: 16px;
+        text-align: center;
+        color: $white;
+        text-transform: capitalize;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 0;
+        @include transition;
+
+
+        &:hover {
+          @include transition;
+          color: $orange-color;
+        }
+      }
+
+      &:before {
+        content: "\f054";
+        font-size: 12px;
+        color: #fff;
+        font-family: $font-awesome;
+        display: inline-flex;
+      }
+
+      &:first-child {
+        &:before {
+          display: none;
+
+          @include rmaxwd(375) {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+}

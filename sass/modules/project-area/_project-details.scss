@@ -1,0 +1,136 @@
+.project-details-area{
+    .project-details-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        h3{
+            font-family: $heading-font;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 60px;
+            color: $black;
+        }
+    }
+   
+    .project-details-information{
+        .image{
+            img{
+                width: 100%;
+                height: 690px;
+                object-fit: cover;
+            }
+            margin-bottom: 60px;
+        }
+        .content-wrapper{
+            .content{
+                p{
+                    font-family:$body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+                }
+                h3{
+                font-family: $heading-font;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 43px;
+                margin: 20px 0px;
+                }
+                .project-challenges{
+                    margin-top: 32px;
+                    h3{
+                        font-family: $heading-font;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        color: $black;
+                        margin-bottom: 10px;
+                    }
+                    ul{
+                        margin-bottom: 40px;
+                        li{
+                            font-family: $body-font;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 29px;
+                            list-style: none;
+                            position: relative;
+                            margin-bottom: 16px;
+                            &::before{
+                                position: absolute;
+                                content: "\f00c";
+                                font-family: $font-awesome;
+                                color: $primary-color;
+                                left: -20px;
+                            }
+                        }
+                    }
+                    p{
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    }
+                }
+            }
+            .information-content{
+                padding: 50px;
+               border-top: 5px solid $primary-color;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                box-shadow: 0px 4px 60px 0px #B2B2B21A;
+                .info{
+                    margin-bottom: 25px;
+                    h6{
+                        font-family: $heading-font;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        color: $black;
+    
+                    }
+                    p{
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 29px;
+                    }
+                }
+                .social-icon{
+                    ul{
+                        padding-left: 0;
+                        li{
+                            list-style: none;
+                            display: inline-block;
+                            a{
+                                align-items: center;
+                                justify-content: center;
+                                display: inline-flex;
+                                width: 35px;
+                                height: 35px;
+                                border: 1px solid #E4E4E4;
+                                border-radius: 100%;
+                                -webkit-border-radius: 100%;
+                                -moz-border-radius: 100%;
+                                -ms-border-radius: 100%;
+                                -o-border-radius: 100%;
+                                background-color: transparent;
+                                color: $border;
+                                @include transition;
+                                &:hover{
+                                    background-color: $primary-color;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+              
+            }
+        }
+    }
+}

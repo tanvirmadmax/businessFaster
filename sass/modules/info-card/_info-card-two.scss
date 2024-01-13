@@ -1,0 +1,186 @@
+.info-card {
+    &.style-two {
+        padding: 46px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 12px;
+        top: 0;
+        z-index: 2;
+        @include transition;
+        overflow: hidden;
+        margin-bottom: 24px;
+        border: 1px solid rgb(223, 226, 233);
+
+        @media only screen and (min-width: 1200px) and (max-width: 1280px) {
+            padding: 30px;
+        }
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            background-color: $white;
+            z-index: -1;
+            content: "";
+            transform: translate(-50%, -50%) rotate(0deg);
+            transition: 0.8s;
+        }
+        &:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $white;
+            z-index: -2;
+            content: "";
+            @include transition;
+            border: 0;
+        }
+        &:hover {
+            @include transition;
+            top: -10px;
+            &:before {
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.8s;
+            }
+            &:after {
+                @include gradient-color-skye;
+                @include transition;
+            }
+            .title-wrapper {
+                border-bottom: 3px solid $white;
+                .title {
+                    color: $white;
+                }
+                .icon {
+                    background: linear-gradient(65deg, rgb(227, 0, 8) 0%, rgb(250, 174, 0) 100%);
+                }
+            }
+            .content {
+                .desc {
+                    color: $white;
+                }
+            }
+            .read-more {
+                a {
+                    color: $white;
+                }
+            }
+        }
+        .title-wrapper {
+            flex-direction: row;
+            border-bottom: 3px solid #1eae98;
+            align-items: center;
+
+            @media only screen and (min-width: 1200px) and (max-width: 1280px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon {
+                width: 97px;
+                height: 97px;
+                background: $primary-color;
+            }
+            .title {
+                line-height: 36px;
+            }
+        }
+        .content {
+            margin-top: 38px;
+            gap: 37px;
+
+
+            .desc {
+                line-height: 26px;
+            }
+            .read-more {
+                a {
+                    .icon {
+                        &:before {
+                            display: none;
+                        }
+                        i {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        @include rmaxwd(370) {
+            .title-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        @include sm {
+            padding: 35px;
+            .title-wrapper {
+                gap: 24px;
+                padding-bottom: 30px;
+                .icon {
+                    width: 62px;
+                    height: 62px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .title {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+            .content {
+                margin-top: 30px;
+                gap: 30px;
+            }
+        }
+        @include md {
+            padding: 35px;
+            .title-wrapper {
+                gap: 24px;
+                .icon {
+                    width: 62px;
+                    height: 62px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .title {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+        }
+        @include lg {
+            padding: 30px;
+            .title-wrapper {
+                gap: 18px;
+                .icon {
+                    width: 58px;
+                    height: 58px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .title {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+            .content {
+                margin-top: 30px;
+                gap: 30px;
+            }
+        }
+    }
+}
+// Code For swiftbiz
+// ================================

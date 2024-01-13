@@ -1,0 +1,57 @@
+.contact-info-area {
+    padding-top: 108px;
+    padding-bottom: 133px;
+
+    @include rmaxwd(991) {
+        padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
+
+}
+.contact-form-area {
+    .comment-respond {
+        margin-top: 45px;
+    }
+}
+.contact-map-area {
+    padding-top: 144px;
+    padding-bottom: 134px;
+
+    @include rmaxwd(991) {
+        padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+        padding: 70px 0;
+    }
+    .map-wodget {
+        iframe {
+            height: 380px;
+        }
+    }
+}
+// contact-page
+.contact-title {
+    text-align: center;
+    h2 {
+        font-size: 48px;
+        color: $secondary-color;
+        margin-bottom: 0;
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            font-size: 48px;
+        }
+        @include md {
+            font-size: 38px;
+            line-height: 44px;
+        }
+        @include sm {
+            font-size: 32px;
+            line-height: 30px;
+        }
+    }
+}
+
+

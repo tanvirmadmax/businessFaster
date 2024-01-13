@@ -1,0 +1,146 @@
+.brand-logo-slider-area {
+    .brand-log-slider-wrapper {
+        position: relative;
+        overflow: hidden;
+        .brand-logo-slider-one {
+            padding: 15px 0px;
+            animation: 20s slide infinite linear;
+            white-space: nowrap;
+            -webkit-animation: 20s slide infinite linear;
+            width: 100%;
+            @include transition;
+
+            @include md {
+                padding: 30px 0px;
+                margin-bottom: 0px;
+            }
+
+            cursor: pointer;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            .logo-slide {
+                display: inline-block;
+                @include transition;
+
+                h3 {
+                    font-size: 100px;
+                    line-height: normal;
+                    color: $black;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    margin-left: 80px;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    // letter-spacing: 10px;
+
+                    &:nth-child(even) {
+                        color: $primary-color;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    @include md {
+                        font-size: 50px;
+                        margin-left: 40px;
+                    }
+                }
+
+            }
+            &.style-two{
+                .logo-slide{
+                    h3{
+                        font-weight: 400;
+                    }
+                }
+            }
+
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            top: 0;
+            content: '';
+            width: 200px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+
+        }
+
+        .brand-logo-slider-one.style-two {
+            animation: 20s slidetwo infinite linear;
+            -webkit-animation: 20s slidetwo infinite linear;
+            cursor: pointer;
+
+            .logo-slide {
+                h3 {
+                    color: transparent;
+                    -webkit-text-stroke: 1px $black;
+                    font-family: fantasy;
+
+                    &:nth-child(odd) {
+                        -webkit-text-stroke-color: $primary-color;
+                    }
+                }
+            }
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        @include transition;
+    }
+
+    to {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        @include transition;
+    }
+}
+
+@keyframes slidetwo {
+    from {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}

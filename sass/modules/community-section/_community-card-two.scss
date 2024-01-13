@@ -1,0 +1,46 @@
+.community-item{
+    &.style-two{
+        display: flex;
+        .icon{
+            margin-right: 20px;
+            span{
+                font-size: 40px;
+                color: $white;
+                background-color: $black;
+                width: 71px;
+                height: 71px;
+                text-align: center;
+                line-height: 71px;
+                display: inline-block;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+               @include transition;
+                &:hover{
+                    background-color: $primary-color;
+                }
+                &:hover{
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                }
+            }
+        
+        }
+        .content{
+            h5{
+                color: $black;
+                font-size: 30px;
+                line-height: 35px;
+                font-family: $heading-font;
+                font-weight: normal;
+                margin-bottom: 19px;
+            }
+           
+        }
+    }
+}

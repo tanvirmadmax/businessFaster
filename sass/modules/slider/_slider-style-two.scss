@@ -1,0 +1,18 @@
+.slider-area {
+  &.style-2 {
+    position: relative;
+
+    .single-slider {
+      background-size: unset;
+      background-position: bottom right;
+    }
+
+    .slider-bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+
+  }
+}

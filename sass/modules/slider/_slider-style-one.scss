@@ -1,0 +1,376 @@
+.slider-area {
+  overflow: hidden;
+  position: relative;
+
+
+  .social-share-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    z-index: 99;
+
+    @include sm {
+      display: none;
+    }
+    @media only screen and (min-width: 1300px) and (max-width: 1499px){
+      left: 10px;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1299px){
+      top: unset;
+      left: 0;
+      transform: unset;
+      flex-direction: row;
+      position: relative;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+      top: unset;
+      left: 0;
+      transform: unset;
+      flex-direction: row;
+      position: relative;
+    }
+    @media only screen and (max-width: 991px){
+      top: unset;
+      left: 0;
+      transform: unset;
+      flex-direction: row;
+      position: relative;
+    }
+
+    @include rmaxwd(1299) {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 100px;
+    }
+  }
+  .social-share {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+
+    @include rmaxwd(1299) {
+      flex-direction: row;
+      justify-content: flex-start;
+      position: unset;
+    }
+    a {
+      font-size: 24px;
+      color: $white;
+      transform: scale(1) rotate(-90deg);
+      @include transition;
+      @include rmaxwd(1299) {
+        transform: unset;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        @include transition;
+        color: $orange-color;
+      }
+    }
+  }
+
+  .slider-wrapper {
+
+    // Active Slider Animate
+    .slick-active .slider-short-title,
+    .slick-active .slider-title,
+    .slick-active .slider-short-desc,
+    .slick-active .slider-btn-wrapper {
+      -webkit-animation-name: MovefadeUp;
+      animation-name: MovefadeUp;
+      -webkit-animation-fill-mode: both;
+    }
+
+
+    .slick-active .slider-short-title {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+    }
+    .slick-active .slider-title {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+    }
+
+    .slick-active .slider-short-desc {
+      -webkit-animation-delay: 0.7s;
+      animation-delay: 0.7s;
+      -webkit-animation-duration: 0.7s;
+      animation-duration: 0.7s;
+    }
+
+    .slick-active .slider-btn-wrapper {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      -webkit-animation-duration: 0.9s;
+      animation-duration: 0.9s;
+    }
+
+    // Slick Dots
+    .slick-dots {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      right: 46px;
+      transform: translateY(-50%);
+      z-index: 2;
+      flex-direction: column;
+
+      @include sm {
+        display: none !important;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 30px;
+        bottom: 70px;
+        top: unset;
+        left: unset;
+        right: unset;
+        transform: none;
+      }
+
+      li {
+        display: inline-block;
+        line-height: 0;
+        outline: 1px solid transparent;
+        border: 4px solid transparent;
+        border-radius: 50px;
+        @include transition;
+
+        button {
+          font-size: 0;
+          padding: 0;
+          width: 11px;
+          height: 11px;
+          background-color: #c3e4de;
+          border-radius: 50px;
+          position: relative;
+          @include transition;
+
+          &:hover {
+            background-color: $orange-color;
+            @include transition;
+          }
+        }
+        &.slick-active {
+          @include transition;
+          outline: 1px solid $orange-color;
+
+          button {
+            @include transition;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Slick Nav Arrow Button
+  button.slider-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 99;
+    background-color: transparent;
+    border: 1px solid $gray-300;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: none !important;
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(-45deg, rgb(227,0,8) 0%, rgb(250,174,0) 100%);
+      content: "";
+      @include transition;
+      z-index: -1;
+    }
+    @include rmaxwd(767) {
+      width: 40px;
+      height: 40px;
+    }
+    &.prev-btn {
+      left: 30px;
+    }
+    &.next-btn {
+      right: 30px;
+    }
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $orange-color;
+      font-size: 21px;
+      @include transition;
+    }
+    &:hover{
+      @include transition;
+      border-color: $orange-color;
+
+      &:before {
+        width: 100%;
+        @include transition;
+      }
+
+      i{
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+  .single-slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding-top: 387px;
+    padding-bottom: 231px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 620px;
+      padding-bottom: 80px;
+    }
+    @include sm {
+      height: 800px;
+    }
+    .bg-shape{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    .bg-image{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -3;
+    }
+    .shape{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .slider-content {
+      position: relative;
+      @include sm {
+        text-align: center;
+      }
+      .shape-1{
+        position: absolute;
+        right: 234px;
+        top: -64px;
+        @include xl{
+          right: 108px;
+
+        }
+      }
+
+      .slider-short-title {
+        font-family: $heading-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 21px;
+        text-transform: uppercase;
+        color: $white;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+
+        @include lg {
+          font-size: 18px;
+        }
+        @include sm {
+          font-size: 16px;
+        }
+      }
+      .slider-title {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 100px;
+        color: $white;
+        line-height: 110px;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px){
+          font-size: 60px;
+          line-height: 64px;
+        }
+        @include xl{
+          font-size: 80px;
+          line-height: normal;
+        }
+
+        @include lg {
+          font-size: 48px;
+          line-height: 56px;
+        }
+        @include md {
+          font-size: 42px;
+          line-height: 52px;
+        }
+        @include sm {
+          font-size: 38px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+        span{
+          display: inline-block;
+          color: $primary-color;
+          text-decoration: none;
+          // line-height: 30px;
+          border-bottom: 5px dashed $orange-color;
+        }
+      }
+      .slider-short-desc {
+        font-size: 24px;
+        color: $white;
+        line-height: 36px;
+
+        @include lg {
+          font-size: 18px;
+          line-height: 32px;
+        }
+        @include md {
+          font-size: 18px;
+          line-height: 32px;
+        }
+        @include sm {
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      .slider-btn-wrapper {
+        margin-top: 50px;
+
+        @include sm {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

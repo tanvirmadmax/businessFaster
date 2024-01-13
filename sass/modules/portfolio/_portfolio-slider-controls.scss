@@ -1,0 +1,78 @@
+.portfolio-slider-wrapper {
+  position: relative;
+
+  .slick-list {
+    margin: 0 -12px;
+
+    .slick-slide {
+      margin: 0 12px;
+      @include transition;
+
+      &.slick-active {
+        @include transition;
+      }
+    }
+  }
+  // Slick Nav Arrow Button
+  button.portfolio-arrow-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 99;
+    background-color: #ffffff;
+    border: 1px solid $orange-color;
+    cursor: pointer;
+    top: -90px;
+    overflow: hidden;
+    @include transition;
+
+    @include rmaxwd(991) {
+      top: unset;
+      bottom: -50px;
+    }
+
+    &.prev-btn {
+      right: 40px;
+
+      @include rmaxwd(991) {
+        right: unset;
+      }
+      @include rmaxwd(767) {
+        right: unset;
+        left: 10px;
+      }
+    }
+    &.next-btn {
+      right: 0;
+
+      @include rmaxwd(991) {
+        right: unset;
+        left: 50px;
+      }
+      @include rmaxwd(767) {
+        right: 30px;
+        left: 50px;
+      }
+    }
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $secondary-color;
+      font-size: 16px;
+      @include transition;
+    }
+    &:hover{
+      @include transition;
+      @include gradient-color-red;
+      border-color: $orange-color;
+
+      i{
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+}

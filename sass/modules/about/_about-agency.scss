@@ -1,0 +1,85 @@
+.about-agency-area {
+    .about-agency-image {
+        margin-right: 120px;
+        position: relative;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            @include transition();
+
+            &:hover {
+                transform: scale(1.03);
+                -webkit-transform: scale(1.03);
+                -moz-transform: scale(1.03);
+                -ms-transform: scale(1.03);
+                -o-transform: scale(1.03);
+            }
+        }
+
+        .about-img-two {
+            position: absolute;
+            right: -120px;
+            bottom: -60px;
+            width: 306px;
+            height: 304px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                @include transition();
+
+                &:hover {
+                    transform: scale(1.03);
+                    -webkit-transform: scale(1.03);
+                    -moz-transform: scale(1.03);
+                    -ms-transform: scale(1.03);
+                    -o-transform: scale(1.03);
+                }
+            }
+
+        }
+    }
+
+    .about-agency-info {
+        .agency-work-wrapper {
+            padding-top: 44px;
+            margin-bottom: 40px;
+        }
+
+        .agency-progress-wrapper {
+            margin-bottom: 60px;
+
+            .skill-progressbar {
+                .progress-inner {
+                    .progress-inner-item {
+                        .skill-title {
+                            font-family: $heading-font;
+                            font-size: 20px;
+                            font-weight: lighter;
+                            line-height: 35px;
+                            color: $black;
+                        }
+
+                        .progressbar-number {
+                            .progress-number-count {
+                                .progress-percent {
+                                    font-weight: 600;
+                                    font-family: $heading-font;
+                                    font-size: 20px;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+
+                    .progress-content-outter {
+                        .progress-content {
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

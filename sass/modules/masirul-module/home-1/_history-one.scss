@@ -1,0 +1,310 @@
+
+/*--------------------------------------------------------------
+# History area
+--------------------------------------------------------------*/
+.history-upper{
+    background:  url('../../../../images/home-1/history/Rectangle\ 12.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px; /* Set the height or adjust as needed */
+    width: 100%; /* Set the width or adjust as needed */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: inherit;
+
+    @include sm{
+    height: 900px; /* Set the height or adjust as needed */
+    }
+
+    
+
+      .content-and-icon{
+        padding: 2rem;
+        margin-top: 100px;
+        text-align:start;
+        @include sm{
+            margin-top: 0px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            @include sm{
+              justify-content: start;
+            }
+            .icn{
+                i{
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    padding: 40px 50px;
+                    font-size: 30px;
+                    border-radius:50%;
+                    color: $white;
+                    background: linear-gradient(to right, #632A2C, $primary-color);
+
+                    @include sm{
+                        font-size: 30px;
+                        color: $white;
+                        
+                    }
+                  }     
+
+                .border-animation{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    color: $black;
+                    border: 0.55rem solid $primary-color;
+                    border-radius: 50%;
+                    animation: pulseBorder 2s linear infinite;
+
+
+                    &--border-1{
+                        animation-delay: 1.5s;
+                    }
+
+                    &--border-2{
+                        animation-delay: 2s;
+                    }
+                }
+                
+            }
+        }
+
+        .content{
+            p{
+                font-family: 'Manrope';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align:right;
+                color: #FFFFFF;
+
+                @include sm{
+                    font-size: 13px;
+                    text-align: center;
+
+                }
+              }
+        }
+      }
+
+  }
+
+  .main-card{
+    /* position: absolute; */
+    display:  inline-block;
+    margin-top: 200px;
+    z-index: 3;
+
+    @include sm{
+     margin-top: 75px!important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+    .history-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: #FFFFFF;
+        z-index: 1;
+
+        .history-pattern{
+            background-image: url('../../../../images/home-1/history/pattern.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 60%;
+            z-index: 1;
+          }
+
+    .card-contents{
+            padding: 2rem;
+
+            @include sm{ 
+            padding: .5rem;
+            }
+
+            .key-feature{
+                margin-top: 10px;
+
+                .feature{
+                    padding: 10px 30px;
+                    background: linear-gradient(to right, #F2EEEC, #fff);
+                    @include sm{
+                        padding: 5px 15px!important;
+
+                    }
+
+                    .icon{
+                        font-size: 25px;
+                        color: $primary-color;
+
+                        @include sm{
+                            font-size: 15px;
+                            color: $primary-color;
+                        }
+                       }
+
+                       .key{
+                        font-family: 'Teko',sans-serif;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 35px;
+                        letter-spacing: 0.1em;
+                        text-align: center;
+                        margin-left: 15px;
+                        color:#151515;
+
+                        @include sm{
+                            font-size: 14px;
+
+                        }
+                        }
+                  }
+
+                  &:hover{
+                    .key{
+                        color: $primary-color;
+                      }
+                  }
+              }
+        }
+}
+
+
+
+  }
+// PULSE BORDER
+@keyframes pulseBorder{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+.history-counter{
+    background: linear-gradient(to bottom, rgba(237,59, 59, 1), rgba(237,59, 59, 0.4)), url('../../../../images/home-1/history/counter-one-bg\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px; /* Set the height or adjust as needed */
+    width: 100%; /* Set the width or adjust as needed */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: inherit;
+    padding-top: 150px ;
+    padding-bottom: 80px ;
+
+    @include mintomax(576,767.97){
+        height: 555px;
+        padding-top: 20px ;
+        padding-bottom: 20px ;
+      }
+
+    @include rmaxwd(575.99){
+      height: 1090px;
+      padding-top: 20px ;
+      padding-bottom: 10px ;
+    }
+
+    .h-counter{
+
+        @include sm{
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+    .icon{
+    img {
+        padding:30px 30px;
+        margin-right: 2rem;
+        font-size: 30px;
+        border-radius:50%;
+        color: $white;
+        background: linear-gradient(to bottom, #632A2C, $primary-color);
+
+        @include sm{ 
+            margin-right: 0rem;
+            padding-right: 35px;
+            color: #fff;
+            font-size: 20px;
+        }
+     }
+    }
+    .content{
+
+        @include sm{
+            margin-top: 15px;
+        }
+        .bold{
+            font-family: 'Teko';
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #fff;
+            @include sm{
+                text-align: center;
+                font-size: 40px;
+                line-height: 50px;
+            }
+          }
+          .s-bold{
+            font-family: 'Teko';
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: #fff;
+            @include sm{
+                text-align: center;
+                font-size: 14px;
+                line-height: 25px;
+            }
+          }
+    }
+
+    }
+  }  
+
+  .c-left-image{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+//   .c-left-image{
+
+//     @include sm{
+//         right: 0;
+//         bottom: 0;
+//         width: 100%;
+//         height: 100%;
+//         text-align: center;
+//     }
+//     }

@@ -1,0 +1,216 @@
+.testimonial-slider-wrapper {
+  position: relative;
+
+  .slick-list {
+    padding: 40px 30px;
+    padding-bottom: 60px;
+    margin: 0 -12px;
+
+    @include md {
+      padding: 40px 10px;
+    }
+    @include sm {
+      padding: 30px 10px;
+    }
+    .slick-slide {
+      margin: 0 12px;
+      border-radius: 20px;
+      @include transition;
+
+      &.slick-active {
+        @include transition;
+        box-shadow: 0px 10px 44px 0px rgba(4, 43, 77, 0.08);
+        background-color: $white;
+
+        @include rmaxwd(991) {
+          box-shadow: 1px 8px 44px rgba(20, 20, 43, 0.03);
+        }
+      }
+    }
+  }
+
+  // Slick Dots
+  .slick-dots {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: -65px;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    @media only screen and (min-width: 991px) and (max-width: 1280px) {
+      right: -15px;
+    }
+    @include rmaxwd(991) {
+      position: unset;
+      right: unset;
+      top: unset;
+      transform: inherit;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      display: inline-block;
+      line-height: 0;
+      outline: 2px solid transparent;
+      border: 5px solid transparent;
+      border-radius: 50px;
+      @include transition;
+
+      button {
+        font-size: 0;
+        padding: 0;
+        width: 12px;
+        height: 12px;
+        background-color: rgb(94, 111, 146);
+        opacity: 0.478;
+        border-radius: 50px;
+        position: relative;
+        @include transition;
+      }
+      &.slick-active {
+        @include transition;
+        outline: 2px solid rgb(252, 133, 91);
+
+        button {
+          @include transition;
+        }
+      }
+    }
+  }
+  // Slick Nav Arrow Button
+  button.testimonial-arrow-btn {
+    //position: absolute;
+    display: none !important;
+
+    &.prev-btn {
+      left: 30px;
+    }
+    &.next-btn {
+      right: 30px;
+    }
+  }
+  &:before,
+  &:after {
+    background: #f3f7fc;
+  }
+}
+
+// Slick Nav Arrow Button
+button.testimonial-arrow-btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: transparent;
+  border: 1px solid $gray-300;
+  cursor: pointer;
+  bottom: 0;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(-45deg, rgb(227,0,8) 0%, rgb(250,174,0) 100%);
+    content: "";
+    @include transition;
+    z-index: -1;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $orange-color;
+    font-size: 21px;
+    @include transition;
+  }
+  &:hover {
+    @include transition;
+    border-color: $orange-color;
+
+    &:before {
+      width: 100%;
+      @include transition;
+    }
+    i {
+      color: $white;
+      @include transition;
+    }
+  }
+}
+
+.testimonial-slider-arrow {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include rmaxwd(991) {
+    display: none;
+  }
+}
+
+// Testimonial Slider Control Three
+.testimonial-slider-wrapper {
+  &.style-three {
+    .slick-list {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 50px;
+
+      @include rmaxwd(767) {
+        padding-bottom: 30px;
+      }
+      .slick-slide {
+        border-radius: 0;
+        @include transition;
+
+        &.slick-active {
+          box-shadow: none;
+
+          @include rmaxwd(767) {
+            box-shadow: 1px 8px 44px rgba(20, 20, 43, 0.03);
+            border-radius: 12px;
+            @include transition;
+          }
+        }
+      }
+    }
+
+    // Slick Dots
+    .slick-dots {
+      margin-top: 20px;
+      position: unset;
+      padding-left: 0;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+  }
+}
+
+// Testimonial Slider Control Three
+
+.testimonial-slider-wrapper {
+  &.has-backgorund-slider {
+    .slick-dots {
+      margin-bottom: 0;
+      position: unset;
+      padding-left: 0;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

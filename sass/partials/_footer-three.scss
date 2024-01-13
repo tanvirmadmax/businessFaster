@@ -1,0 +1,31 @@
+.footer {
+  &.style-three {
+    .footer-sec {
+      padding-top: 130px;
+
+      @include sm {
+        padding-top: 70px;
+      }
+
+      .footer-widget {
+        &.widget_nav_menu {
+          ul {
+            columns: 2;
+            column-gap: 26px;
+          }
+        }
+        .footer-widget-info {
+          @media only screen and (min-width: 992px) and (max-width: 1024px) {
+            padding-right: 305px !important;
+            margin-bottom: 50px;
+          }
+          @media only screen and (min-width: 1025px) and (max-width: 1399px) {
+            padding-right: 500px !important;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+

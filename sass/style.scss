@@ -1,0 +1,228 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       SwiftBiz - 
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+1.Preloader
+2.Scrollup
+4.Nav Menu CSS
+3.Slider Section
+5.Info Card
+6.Icon Card
+7. About Image Card
+8. About Info Card
+9. Promotional Card
+10. Video Popup Card
+11. Counter Card
+12. Process Step Card
+13. Testimonial Card
+14. Accordion Card
+15. Client Logo Card
+16. Post Card
+17. Skill Progress Card
+18. Price Card
+19. Call To Action Card
+20. Title Card
+21. Breadcrumb
+22. Paginations
+23. Timeline Card
+24. Project Details Page
+25. Sidebar
+26. Comment List
+27. Comment Form
+28. Team member
+29. Portfolio
+30. About Page
+31. Contact Page
+32. Pricing Page
+33. Service Page
+34. Team Page
+35. Blog Page
+36. Footer
+
+
+===========================*/
+/* Theme Default CSS */
+@import "variables";
+@import "mixin";
+@import "partials/theme-default";
+@import "partials/default-spacing";
+@import "unittest";
+@import "keyframes";
+
+// 1.Preloader
+@import "modules/preeloader";
+
+// 2.Scrollup
+@import "partials/scrollup";
+
+// 3.Nav Menu
+@import "partials/header";
+@import "partials/header-two";
+@import "partials/header-three";
+@import "modules/meanmenu";
+@import "partials/menu-sidebar";
+
+// 4.Slider Section
+@import "modules/slider/slider-style-one";
+@import "modules/slider/slider-style-two";
+@import "modules/slider/slider-style-three";
+
+
+// 5.Info Card
+@import "modules/info-card/info-card";
+// @import "modules/info-card/info-card-two";
+@import "modules/info-card/info-card-three";
+@import "modules/info-card/info-card-four";
+@import "modules/info-card/info-card-slider-controls";
+
+// 6.Icon Card
+@import "modules/icon-card/icon-card";
+@import "modules/icon-card/icon-card-two";
+@import "modules/icon-card/icon-card-three";
+@import "modules/icon-card/icon-card-four";
+
+// 7. About Image Card
+@import "modules/about-image-card/about-image-card";
+@import "modules/about-image-card/about-image-card-two";
+@import "modules/about-image-card/about-image-card-three";
+
+// 8. About Info Card
+@import "modules/about-info-card/about-info-card";
+@import "modules/about-info-card/about-info-card-two";
+@import "modules/about-info-card/about-info-card-three";
+
+// 9. Promotional Card
+@import "modules/promotional/promotional-banner";
+@import "modules/promotional/promotional-banner-style-two";
+
+// 10. Video Popup Card
+@import "modules/video-popup-card";
+
+// 11. Counter Card
+@import "modules/counter/counter-card";
+@import "modules/counter/counter-card-two";
+@import "modules/counter/counter-card-three";
+
+// 12. Process Step Card
+@import "modules/process-step/process-step";
+@import "modules/process-step/process-step-two";
+@import "modules/testimonial/testimonial-card";
+
+// 13. Testimonial Card
+@import "modules/testimonial/testimonial-card-two";
+@import "modules/testimonial/testimonial-card-three";
+@import "modules/testimonial/testimonial-slider-controls";
+
+// 14. Accordion Card
+@import "modules/accordion/accordion";
+@import "modules/accordion/accordion-style-two";
+@import "modules/accordion/accordion-style-three";
+@import "modules/accordion/accordion-style-four";
+
+// 15. Client Logo Card
+@import "modules/client-logo/client-logo";
+@import "modules/client-logo/client-logo-two";
+
+// 16. Post Card
+@import "modules/post-card/post-card";
+@import "modules/post-card/post-card-one";
+@import "modules/post-card/post-card-two";
+@import "modules/post-card/post-card-three";
+@import "modules/post-card/post-card-four";
+
+// 17. Skill Progress Card
+@import "modules/skill-progress";
+
+// 18. Price Card
+@import "modules/price-card";
+
+// 19. Call To Action Card
+@import "modules/call-to-action-card";
+@import "modules/triangle-shape-card";
+
+
+// 20. Title Card
+@import "modules/title-section";
+
+// 21. Breadcrumb
+@import "modules/breadcrumb/breadcrumb";
+
+// 22. Paginations
+@import "modules/paginations";
+@import "modules/nav-tabs";
+
+// 23. Timeline Card
+@import "modules/time-card";
+
+// 24. Project Details Page
+@import "pages/project-details";
+@import "modules/list-item";
+
+// 25. Sidebar
+@import "partials/sidebar";
+@import "partials/sidebar-two";
+
+// 26. Comment List
+@import "modules/comment-list";
+
+// 27. Comment Form
+@import "modules/comment-form";
+
+// 28. Team member
+@import "modules/team/team-member";
+@import "modules/team/team-slider-controls";
+
+// 29. Portfolio
+@import "modules/portfolio/portfolio-two";
+@import "modules/portfolio/portfolio-slider-controls";
+
+// Pages
+@import "pages/pages";
+
+// 30. About Page
+@import "pages/about-page";
+
+// 31. Contact Page
+@import "pages/contact-page";
+
+// 32. Pricing Page
+@import "pages/pricing-page";
+
+// 33. Service Page
+@import "pages/service-page";
+
+// 34. Team Page
+@import "pages/team-member";
+
+// 35. Blog Page
+@import "pages/blog-page";
+// 36. Footer
+@import "partials/footer";
+@import "partials/footer-two";
+@import "partials/footer-three";
+@import "masirul";
+
+
+// Service-area
+@import "modules/service-area/service-area-one";
+
+// Analysis-area
+@import "modules/analysis-area/analysis-area";
+
+// Counter-area
+@import "modules/counter/counter-area";
+
+// Growth-area
+@import "modules/business-growth/business-growth";
+
+// Project-area
+@import "modules/project-area/project-area.scss";
+
+// Image-card
+@import "modules/image-card/image-card";
+@import "solayman";

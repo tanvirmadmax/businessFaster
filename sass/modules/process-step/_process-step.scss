@@ -1,0 +1,100 @@
+.process-steps-wrapper {
+    padding: 70px 0px 10px 50px;
+    background: #31373f;
+}
+.process-step {
+    position: relative;
+    padding: 41px 56px;
+    border-radius: 10px;
+    background: $white;
+    margin-bottom: 79px;
+    @media only screen and (min-width: 1199px) and (max-width: 1399px){
+        padding: 30px;
+    }
+    @include rmaxwd(991) {
+        margin-bottom: 28px;
+    }
+    &:hover {
+        .count {
+            &:before {
+                transform: scale(1) rotateY(360deg);
+                @include transition;
+            }
+        }
+    }
+    .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        background: $sky-color;
+        width: 72px;
+        height: 72px;
+        border-radius: 50px;
+        color: $white;
+
+        span {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 700;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .title {
+            margin: 0;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 700;
+            color: $secondary-color;
+        }
+        .desc {
+            margin: 0;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            color: $text-color;
+        }
+    }
+    @include sm {
+        padding: 25px 30px;
+        .icon {
+            margin-bottom: 20px;
+        }
+        .count {
+            left: 0;
+            top: 6px;
+            position: relative;
+            transform: inherit;
+        }
+    }
+    @include md {
+        padding: 25px 30px;
+        .icon {
+            margin-bottom: 20px;
+        }
+        .count {
+            left: 0;
+            top: 6px;
+            position: relative;
+            transform: inherit;
+        }
+    }
+    @include lg {
+        padding: 25px 30px;
+        .icon {
+            margin-bottom: 20px;
+        }
+        .count {
+            left: 0;
+            top: 6px;
+            position: relative;
+            transform: inherit;
+        }
+    }
+}

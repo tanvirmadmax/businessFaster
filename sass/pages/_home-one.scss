@@ -1,0 +1,126 @@
+// Service-area style-1
+.service-area{
+    &.style-1{
+        .section-title{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// Agency-area
+.agency-area {
+    position: relative;
+
+    .bg-shape {
+        position: absolute;
+        top: 18px;
+        right: 0;
+
+    }
+
+    .image-wrapper {
+        margin-right: 42px;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+        &:before{
+            content: "";
+            width: 150px;
+            height: 100%;
+            background: linear-gradient(180deg, #ED3B3B 0%, rgba(254, 104, 9, 0.00) 100%);
+            position: absolute;
+            left: 24%;
+            top: 0;
+            transform: skewX(45deg);
+        }
+        &:after{
+            content: "";
+            width: 150px;
+            height: 100%;
+            background: linear-gradient(180deg, #ED3B3B 0%, rgba(254, 104, 9, 0.00) 100%);
+            position: absolute;
+            left: -2%;
+            top: 0;
+            transform: skewX(45deg);
+        }
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 3;
+    }
+
+}
+
+// Contact-area
+.contact-area {
+    position: relative;
+
+    .statue {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .meta-user {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+
+        .meta-img {
+            position: relative;
+            flex-shrink: 0;
+
+            img {
+                border-radius: 50%;
+                position: relative;
+                z-index: 1;
+                border: 5px solid $white;
+            }
+
+            &:after {
+                content: "";
+                background-color: $primary-color;
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                bottom: -5px;
+                right: -5px;
+                border-radius: 50%;
+            }
+        }
+
+        .signature {
+            .name {
+                display: flex;
+
+                span {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+
+                    &:first-child {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .icon-card-wrapper {
+        display: flex;
+        margin-top: 40px;
+        gap: 92px;
+
+    }
+
+    .comment-respond {
+        margin-bottom: -211px;
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+    }
+}

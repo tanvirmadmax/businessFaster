@@ -1,0 +1,152 @@
+.about-image-card {
+  .main-img-wrapper {
+    text-align: right;
+
+    @include lg {
+      text-align: center;
+    }
+    @include md {
+      text-align: center;
+    }
+
+    .main-img-inner {
+      position: relative;
+      display: inline-block;
+      @media only screen  and (max-width: 650px){
+        padding: 50px;
+        padding-top: 0;
+        width: 100%;
+      }
+      > img {
+        border-radius: 12px;
+        margin-left: 7px;
+        margin-top: 4px;
+        @include rmaxwd(650) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .img-card-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    flex-direction: column;
+    img {
+      border-radius: 12px;
+    }
+    .year,
+    .title {
+      font-size: 18px;
+      color: $white;
+      font-weight: 700;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .year {
+      font-size: 72px;
+      line-height: 80px;
+
+      @include rmaxwd(650) {
+        font-size: 48px;
+        line-height: 52px;
+      }
+    }
+    .title {
+      font-size: 18px;
+      line-height: 26px;
+      @include rmaxwd(650) {
+        font-size: 16px;
+      }
+    }
+
+    &.image-one {
+      top: 55px;
+      right: -40px;
+      border-radius: 6px;
+      width: 96px;
+      height: 96px;
+      background-color: $primary-color;
+      animation: MoveUpDown 2s linear infinite alternate;
+
+      @include rmaxwd(650) {
+        right: 0
+      }
+    }
+    &.image-two {
+      bottom: -60px;
+      right: 50px;
+      border-radius: 6px;
+      width: 120px;
+      height: 120px;
+      background-color: $orange-color;
+      animation: MoveLeftRight 2s linear infinite alternate;
+
+      @include rmaxwd(650) {
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &.image-three {
+      top: 50%;
+      transform: translateY(-50%);
+      left: -140px;
+      border-radius: 10px;
+      width: 180px;
+      height: 180px;
+      z-index: 2;
+      background: rgb(0, 91, 172);
+      background: linear-gradient(135deg, rgba(0, 91, 172, 1) 0%, rgba(30, 174, 152, 1) 100%);
+      animation: MoveUpDown 2s linear infinite alternate;
+
+      @include nesthubmax {
+        left: -50px;
+      }
+      @include rmaxwd(991) {
+        left: -85px;
+      }
+      @include rmaxwd(650) {
+        left: 0;
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &.image-four {
+      bottom: -100px;
+      left: -220px;
+      border-radius: 10px;
+      width: 335px;
+      height: 330px;
+      overflow: hidden;
+
+      @include nesthub {
+        left: -250px;
+      }
+      @include nesthubmax {
+        bottom: -130px;
+        left: -80px;
+        border-radius: 10px;
+        width: 230px;
+      }
+      @media only screen  and (max-width: 650px){
+        width: 150px;
+        height: 150px;
+        left: 0;
+        bottom: -50px;
+      }
+      @media only screen and (min-width: 651px) and (max-width: 767px){
+        width: 270px;
+        height: 260px;
+        left: -100px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px){
+        left: -120px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.team-page-area {
+    padding-top: 59px;
+    padding-bottom: 181px;
+
+    @include rmaxwd(991) {
+        padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+}
+.team-space {
+    padding: 0 37px;
+    margin-top: 30px;
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        padding: 0 10px;
+        margin-top: 85px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 85px;
+    }
+}

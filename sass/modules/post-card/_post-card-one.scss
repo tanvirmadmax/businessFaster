@@ -1,0 +1,205 @@
+.post-card {
+  &.style-one {
+    min-height: 218px;
+
+    @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+      gap: 10px;
+      padding: 30px;
+    }
+    &:hover {
+      .image {
+        img {
+          @include transition;
+          transform: scale(1.1);
+          visibility: visible;
+        }
+        &:before {
+          visibility: hidden;
+          opacity: 0;
+          @include transition;
+        }
+      }
+      .date-bottom {
+        color: $white;
+        @include transition;
+      }
+      .content {
+        .title {
+          color: $white;
+          @include transition;
+
+        }
+        .post-meta {
+          span {
+            &:first-child {
+              color: $white;
+              @include transition;
+
+              a {
+                color: $white;
+                @include transition;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      .title {
+        height: 56px;
+        overflow: hidden;
+
+        @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+          height: 84px;
+        }
+      }
+    }
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        visibility: hidden;
+      }
+      &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $white;
+        content: "";
+        @include transition;
+        z-index: 2;
+        visibility: visible;
+        opacity: 1;
+      }
+      &:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        content: "";
+        @include transition;
+        z-index: 1;
+      }
+    }
+  }
+}
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 37px;
+  border: 1px solid rgb(223, 226, 233);
+  border-radius: 13px;
+  gap: 40px;
+  margin-bottom: 34px;
+  position: relative;
+  overflow: hidden;
+
+  .image {
+    overflow: hidden;
+    border-radius: 6px;
+
+    img {
+      @include transition;
+      transform: scale(1);
+    }
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: $secondary-color;
+    opacity: 24%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+
+    .post-meta {
+      display: inline-flex;
+      gap: 17px;
+      align-items: center;
+
+      span {
+        color: $text-color;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 700;
+        margin: 0;
+
+        &:before {
+          background-color: #b8bfcc;
+          width: 1px;
+          display: inline-flex;
+          height: 12px;
+          content: "";
+          margin-right: 17px;
+        }
+
+        &:first-child {
+          color: $orange-color;
+          a {
+            color: $orange-color;
+            &:hover {
+              color: $orange-color !important;
+            }
+          }
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+    .title {
+      font-size: 21px;
+      line-height: 28px;
+      font-weight: 700;
+      font-family: $heading-font;
+      margin: 0;
+      color: $secondary-color;
+      @include transition;
+    }
+  }
+  .date {
+    margin-bottom: 0;
+  }
+  .date-bottom {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #778196;
+    position: relative;
+    z-index: 3;
+  }
+  @include lg {
+    padding: 20px 25px;
+    gap: 55px;
+    .content {
+      .post-meta {
+        font-size: 14px;
+      }
+      .title {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}

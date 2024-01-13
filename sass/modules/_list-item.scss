@@ -1,0 +1,87 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 45px;
+
+    @include rmaxwd(991) {
+        margin-bottom: 20px;
+    }
+    .icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        background: $orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        @include rmaxwd(991) {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+        @include rmaxwd(767) {
+            width: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+        i {
+            color: $white;
+        }
+    }
+    .text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $text-color;
+        margin: 0;
+    }
+    @include sm {
+        margin-bottom: 20px;
+    }
+    &.style-two {
+        gap: 18px;
+        align-items: start;
+        margin-bottom: 20px;
+
+        .icon {
+            background: transparent;
+            align-items: start;
+            width: auto;
+            height: auto;
+            i {
+                color: $orange-color;
+                line-height: 30px;
+            }
+        }
+        .text {
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+
+    // UL List
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+            display: flex;
+            gap: 0 18px;
+            padding-top: 10px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+            i {
+                color: $sky-color;
+                font-size: 20px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+}

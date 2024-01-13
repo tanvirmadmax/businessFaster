@@ -1,0 +1,104 @@
+.about-image-card {
+  &.style-two {
+    .main-img-wrapper {
+      text-align: left;
+
+      @include lg {
+        text-align: center;
+      }
+      @include md {
+        text-align: center;
+      }
+    }
+    .img-card-wrapper {
+
+
+      &.image-three {
+        width: 168px;
+        height: 170px;
+        border-radius: 12px;
+        background-image: linear-gradient( 135deg, rgb(227,0,8) 0%, rgb(250,174,0) 100%);
+        top: unset;
+        bottom: -84px;
+        left: -59px;
+        transform: translateY(50%);
+
+        .year {
+          @include sm {
+            font-size: 48px;
+            line-height: 52px;
+          }
+        }
+        .title {
+          @include sm {
+            font-size: 16px;
+          }
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+          left: 50px;
+        }
+        @include sm {
+          width: 145px;
+          height: 140px;
+          left: -30px;
+        }
+        @media only screen and (max-width: 650px){
+          left: 0;
+          bottom: -45px;
+        }
+      }
+      &.image-four {
+        width: 459px;
+        height: 343px;
+        border-radius: 0;
+        z-index: -1;
+        left: -160px;
+        bottom: -170px;
+
+        @media only screen and (max-width: 650px){
+          left: -15px;
+          bottom: -100px;
+          width: 260px;
+        }
+        @include sm {
+          left: -50px;
+          bottom: -50px;
+        }
+        @include md {
+          left: -130px;
+        }
+      }
+      &.image-five {
+        top: 150px;
+        right: -224px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @include nesthubmax{
+          right: -44px !important;
+          width: 300px;
+          bottom: -360px;
+        }
+        @media only screen and (max-width: 650px){
+          right: 0;
+          width: 220px;
+          bottom: -60px;
+          top: unset;
+        }
+        @media only screen and (min-width: 651px) and (max-width: 767px){
+          right: -70px;
+          width: 305px;
+          bottom: -100px;
+          top: unset;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+          right: -130px;
+        }
+        @include md {
+          right: -130px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+
+// contact-page
+.contact-map-area {
+    padding-top: 0px;
+    padding-bottom: 50px;
+
+    @include rmaxwd(991) {
+        padding: 10px 0;
+    }
+    @include rmaxwd(767) {
+        padding: 5px 0;
+    }
+    .map-widget {
+        iframe {
+            height: 380px;
+        }
+    }
+}
+
+
+.contact-form-area{
+    &.style-one {
+        margin-top: 90px;
+        margin-bottom: 140px;
+        .comment-respond-contact {
+            background-color: $white;
+            position: relative;
+          
+            .shape {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          
+            @include sm {
+              padding: 30px;
+            }
+          
+            p {
+              margin: 0;
+            }
+          
+            .contacts-email,
+            .contacts-name,
+            .single-input-field {
+              margin-bottom: 12px;
+            }
+          
+            label {
+              display: block;
+              font-size: 16px;
+              font-weight: 600;
+              color: $black-300;
+              margin-bottom: 12px;
+            }
+          
+            .checkbox-field-wrapper {
+              display: flex;
+              justify-content: space-between;
+              gap: 10px;
+              flex-wrap: wrap;
+              margin-bottom: 12px;
+              padding: 15px 0;
+          
+              p {
+                margin: 0;
+              }
+          
+              .single-checkbox-field {
+                margin-bottom: 0;
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $body-font;
+          
+              }
+            }
+          
+            .comment-form-cookies-consent {
+              display: none;
+            }
+          
+            input[type="number"] {
+              -webkit-appearance: textfield;
+              -moz-appearance: textfield;
+              appearance: textfield;
+            }
+          
+            input,
+            select {
+              padding-bottom: 30px;
+              height: 60px;
+              width: 100%;
+              color: $black;
+              opacity: 1;
+              border-bottom: 1px solid #BBBBBB !important;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 29px;
+              letter-spacing: 3.2px;
+              background-color: $white;
+              font-family: $body-font !important;
+            }
+          
+            *::-webkit-input-placeholder {
+              color: $black;
+            }
+          
+            *:-moz-placeholder {
+              color: $black;
+              opacity: 1;
+            }
+          
+            *::-moz-placeholder {
+              color: $black;
+              opacity: 1;
+            }
+          
+            *:-ms-input-placeholder {
+              color: $black;
+            }
+          
+            *::-ms-input-placeholder {
+              color: $black;
+            }
+          
+            *::placeholder {
+              color: $black;
+            }
+          
+          
+            textarea {
+              resize: vertical;
+              width: 100%;
+              color: $black;
+              border-bottom: 1px solid #bbb !important;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 29px;
+              letter-spacing: 3.2px;
+              background-color: $white;
+              font-family: $body-font !important;
+              height: 110px;
+              margin-bottom: 12px;
+            }
+          
+            input:focus,
+            textarea:focus,
+            .form-select:focus {
+              outline: none !important;
+              box-shadow: none;
+              border-color: $primary-color !important;
+              transition: all 0.4s ease 0s;
+            }
+          
+            .theme-btn {
+              margin-top: 60px;
+            }
+          }
+          
+    
+    /* Widget */
+        .widget {
+            background-color: $white;
+            padding: 50px 30px 50px 40px;
+            border-radius: 20px;
+            margin-top: 25px;
+            margin-bottom: 60px;
+            border-top: 5px solid $text-color;
+            box-shadow: 0px 4px 60px 0px rgba(178, 178, 178, 0.15);
+        
+            &:last-child {
+            margin-bottom: 40px;
+            }
+        
+            @include sm {
+            padding: 30px;
+            }
+        
+            ol,
+            ul {
+            margin-bottom: 0;
+            }
+        }
+    
+        .form-title{
+            text-align: left;
+            h6{
+            font-family: 'Teko';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: $primary-color;
+            
+        
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                font-size: 18px;
+            }
+            @include md {
+                font-size: 15px;
+                line-height: 44px;
+            }
+            @include sm {
+                font-size: 12px;
+                line-height: 30px;
+            }
+        
+            }
+        }
+        
+        .form-sub-title {
+            text-align: left;
+            h2 {
+                font-size: 48px;
+                color: $secondary-color;
+                margin-bottom: 0;
+        
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 48px;
+                }
+                @include md {
+                    font-size: 38px;
+                    line-height: 44px;
+                }
+                @include sm {
+                    font-size: 32px;
+                    line-height: 30px;
+                }
+            }
+        }
+        
+        .contact_social_profile{
+          display: flex;
+          align-items: center;
+          justify-content: start;
+        
+          a{
+            display: block;
+          i{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50px;
+            margin-right: 20px;
+            text-align: center;
+            color: $white;
+            background-color: $secondary-color;
+            @include transition;
+            
+            &:hover{
+              background-color: $primary-color;
+            }
+          }
+          }
+        }
+        
+    }
+    
+}

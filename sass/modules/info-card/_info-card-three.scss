@@ -1,0 +1,221 @@
+.info-card {
+    &.style-three {
+        position: relative;
+        padding: 0;
+        margin-bottom: 100px;
+
+        &:hover {
+            .image-wrapper {
+                img {
+                    transform: scale(1.1);
+                }
+                &:before {
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    visibility: visible;
+                    transition: all 800ms linear;
+                }
+                &:after {
+                    top: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    visibility: visible;
+                    transition: all 800ms linear
+                }
+            }
+            .content-wrapper {
+                .content-area {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.6s;
+
+                    .content {
+                        margin-top: 20px;
+
+                        @include rmaxwd(375) {
+                            margin-top: 10px;
+                            gap: 10px;
+                        }
+                        @include md {
+                            margin-top: 10px;
+                            gap: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .image-wrapper {
+            position: relative;
+            opacity: 1;
+            border-radius: 12px;
+            overflow: hidden;
+
+            img {
+                @include transition;
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                opacity: 1;
+                z-index: 3;
+                top: -5%;
+                right: 50%;
+                bottom: -5%;
+                left: 50%;
+                visibility: hidden;
+                background-color: rgba(255,255,255,.3);
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                opacity: 1;
+                z-index: 3;
+                top: 50%;
+                right: -5%;
+                bottom: 50%;
+                left: -5%;
+                visibility: hidden;
+                background: rgba(255,255,255,.6);
+            }
+        }
+        .content-wrapper {
+            margin-bottom: -48px;
+            padding: 0 60px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            .content-inner {
+                padding: 20px 30px 20px 35px;
+                background: $white;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+            }
+            .title-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                padding-bottom: 0;
+                .icon {
+                    display: flex;
+                    flex-shrink: 0;
+                    width: 60px;
+                    height: 60px;
+
+                    @include rmaxwd(991) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @include rmaxwd(767) {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                }
+                .title {
+                    font-size: 30px;
+                    line-height: 42px;
+                    font-weight: 700;
+                    margin: 0;
+                    @include rwd(1280) {
+                        font-size: 24px;
+                    }
+                    @include rmaxwd(991) {
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+                    @include rmaxwd(767) {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            }
+            .content-area {
+                overflow: hidden;
+                visibility: hidden;
+                opacity: 0;
+                @include transition;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: -200px;
+                @include transition;
+
+                .desc {
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    margin: 0;
+
+                    @include rmaxwd(375) {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                    @include md {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                .read-more {
+                    a {
+                        .icon {
+                            &:before {
+                                display: none;
+                            }
+                            i {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            @include sm {
+                padding: 0 10px;
+                .content-inner {
+                    padding: 20px;
+                }
+            }
+            @include md {
+                padding: 0 10px;
+                .content-inner {
+                    padding: 20px;
+                }
+                .title-wrapper {
+                    gap: 20px;
+                    .title {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                    .icon {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            @include lg {
+                padding: 0 20px;
+                .content-inner {
+                    padding: 20px;
+                }
+                .title-wrapper {
+                    gap: 20px;
+                    .title {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                    .icon {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

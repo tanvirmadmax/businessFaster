@@ -1,0 +1,231 @@
+
+/*--------------------------------------------------------------
+# Growth section start
+--------------------------------------------------------------*/
+
+/* Genaral */
+
+.title-center {
+
+    p{
+        font-family: 'Teko',sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #ED3B3B;
+
+    }
+  }
+
+  .sub-title-center {
+    h2{
+        font-family: 'Teko',sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 60px;
+        color: #151515;
+    }
+  }
+
+  .title {
+
+    p{
+        font-family: 'Teko',sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        left: 0;
+        color: #ED3B3B;
+    }
+
+    .heading-line-left{
+        text-align: left;
+    }
+  }
+
+  .sub-title {
+
+    h2{
+        font-family: 'Teko',sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 60px;
+        color: #151515;
+    }
+  }
+
+  /* Styles for screens with a maximum width of 600 pixels */
+    .title-center {
+        p{
+
+        @include sm{
+            font-size: 15px;
+            line-height: 25px;
+
+        }
+    }
+}
+
+    .sub-title-center {
+        h2{
+            @include sm{
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 50px;
+
+            }
+        }
+    }
+    .title{
+        p{
+            @include sm{
+
+                font-size: 15px;
+                line-height: 25px;
+
+            }
+        }
+    }
+
+    .sub-title{
+     h2{
+        @include sm{
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 50px;
+
+        }
+        }
+    }
+
+// HEADLINE
+.heading-line-left::before{
+    content: '';
+    display:block;
+    width: 4rem;
+    height:0.1rem;
+    background-color: $primary-color;
+}
+
+
+.heading-line-left::after{
+    content: '';
+    display:block;
+    width: 0.5rem;
+    height:0.5rem;
+    top: 0.3rem;
+    transform: translateY(-0.3rem);
+    background-color: $primary-color;
+    border-radius: 50%;
+    margin-left: 1.8rem;
+}
+
+.growth{
+  margin-top:100px;
+  margin-bottom: 60px;
+    @include md {
+        min-height: 1650px;
+    }
+    
+    @include rmaxwd(575.97) {
+        min-height: 1500px;
+    }
+
+    
+  .growth-content-header{
+    padding:2rem;
+    @include sm{
+      padding: .5rem;
+    }
+
+    .red-bold{
+        font-family: 'Teko';
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ED3B3B;
+      }
+      .growth-description{
+        font-family: 'Manrope';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #666666;
+      }
+
+      .growth-icon-area{
+        .growth-icon {
+            .icon{
+                background: $primary-color;
+                padding: 25px;
+              }
+              .text {
+                h5{
+                    font-family: 'Teko';
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #151515;
+                  }
+                  p{
+                    font-family: 'Manrope';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #666666;
+                  }
+              }
+        }
+      }
+  }
+
+  .main-container{
+    position: relative;
+    .circle{
+        left: 0;
+        text-align: left;
+        margin-top:100px;
+        @include sm{
+         margin-top:50px;
+         text-align: center;
+        }
+    
+        .bg{
+            background: $primary-color;
+            border-radius: 50%;
+        }
+      }
+      .inner-div {
+        position: absolute;
+        right: 0px;
+        left: auto;
+        top: 50px;
+        z-index: 1; 
+        @include sm{
+        .img-none{
+          display: none;
+        }
+        }
+      }
+  }
+
+
+}
+  

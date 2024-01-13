@@ -1,0 +1,158 @@
+// Service Area
+.service-page-service-area {
+    padding-top: 144px;
+    padding-bottom: 120px;
+
+    @include rmaxwd(991) {
+        padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+        padding-top: 70px;
+        padding-bottom: 46px;
+    }
+}
+// Process Area
+.process-step-area {
+     &.style-3 {
+         padding-top: 138px;
+         padding-bottom: 59px;
+
+         @include rmaxwd(991) {
+             padding-top: 100px;
+             padding-bottom: 50px;
+         }
+         @include rmaxwd(767) {
+             padding-top: 70px;
+             padding-bottom: 10px;
+         }
+         .section-title {
+             margin-bottom: 0;
+         }
+     }
+}
+// Service List Areag
+.why-choose-us-area {
+    &.style-3 {
+        padding-top: 144px;
+        padding-bottom: 124px;
+
+        @include nesthubmax {
+            padding-bottom: 98px;
+        }
+        @include lg {
+            padding-top: 144px;
+            padding-bottom: 94px;
+        }
+        @include md {
+            padding: 100px 0;
+        }
+        @include sm {
+            padding: 70px 0;
+        }
+        .service-list-wrapper {
+            padding-right: 100px;
+            padding-top: 65px;
+            @media only screen and (min-width: 1199px) and (max-width: 1399px) {
+                padding-right: 30px;
+                padding-top: 0;
+            }
+            @include rmaxwd(1199) {
+                padding-top: 0;
+                padding-right: 20px;
+            }
+            @include rmaxwd(767) {
+                padding-right: 0;
+                padding-top: 0;
+            }
+        }
+        @include sm {
+            padding: 65px 0;
+        }
+        .section-title {
+            .title {
+                br {
+                    @media only screen and (min-width: 992px) and (max-width: 1499px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .service-image {
+            position: relative;
+            @include rmaxwd(430) {
+                height: 350px !important;
+            }
+            @include rmaxwd(1199) {
+                height: 500px;
+                overflow: hidden;
+                border-radius: 12px;
+            }
+
+            img {
+                @include rmaxwd(1199) {
+                    width: 100%;
+                    position: absolute;
+                    height: 100%;
+                    object-fit: cover;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+// Service Details Page
+.service-details-wrapper {
+    padding-top: 144px;
+    padding-bottom: 130px;
+
+    @include rmaxwd(991) {
+        padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+        padding: 70px 0;
+    }
+
+    .details-main {
+        padding-left: 25px;
+
+        @include rmaxwd(1199) {
+            padding-left: 0;
+        }
+        img {
+            border-radius: 12px;
+        }
+        .accordion-list-item {
+            margin-bottom: 0;
+        }
+        .list-item {
+            margin-bottom: 0;
+        }
+        .row.mt-55 {
+            @include rmaxwd(767) {
+                margin-top: 10px;
+            }
+        }
+        .service-feature-img {
+            margin-bottom: 44px;
+
+            @include rmaxwd(767) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .faq-title {
+        font-size: 30px;
+    }
+    .benefits-image {
+        margin-bottom: 30px;
+
+        img {
+            @include rmaxwd(991) {
+                width: 100%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,179 @@
+.time-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f7fc;
+
+    .time-card-item {
+        width: 100%;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+        &::after {
+            content: "";
+            width: 3px;
+            height: 100%;
+            right: 0;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            position: absolute;
+            background: #dde4f6;
+
+            @media only screen and (min-width: 992px) and (max-width: 1399px) {
+                display: none;
+            }
+        }
+        .time-card-desc {
+            width: 424px;
+            background: $white;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+
+            @include rmaxwd(450) {
+                width: 100%;
+            }
+            .title {
+                padding: 6px 0;
+                background: $orange-color;
+                display: flex;
+                justify-content: center;
+                h2 {
+                    margin: 0;
+                    font-family: $heading-font;
+                    font-size: 21px;
+                    line-height: 60px;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+            .desc {
+                padding: 40px;
+                p {
+                    margin: 0;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: $text-color;
+                }
+                @include sm {
+                    padding: 20px;
+                }
+            }
+        }
+        .circle-wrapper {
+            position: relative;
+            width: 248px;
+            padding-top: 35px;
+
+            @include rmaxwd(991) {
+                padding: 0;
+            }
+            .time-card-circle {
+                position: relative;
+                @include rmaxwd(991) {
+                    height: 85px;
+                }
+                &:before {
+                    content: "";
+                    min-width: 18px;
+                    min-height: 18px;
+                    border-radius: 50px;
+                    background: $orange-color;
+                    flex-shrink: 0;
+                    position: absolute;
+                    z-index: 3;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                }
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    right: 0;
+                    left: 0;
+                    top: 50%;
+                    position: absolute;
+                    background: #dde4f6;
+                    transform: translateY(-50%);
+                    @include rmaxwd(991) {
+                        left: 50%;
+                        top: 50%;
+                       transform: translate(-50%, -50%);
+                        width: 3px;
+                        height: 100%;
+                    }
+                }
+            }
+
+        }
+        .time-card-time {
+            margin-top: 10px;
+            .time-card-date {
+                color: #f3f8fc;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 700;
+                background-color: #1eae98;
+                display: inline-block;
+                border-radius: 50px;
+                padding: 9px 35px;
+                margin-bottom: 0;
+            }
+        }
+
+        @include sm {
+            flex-direction: column-reverse;
+            padding: 0;
+            align-items: center;
+            padding-bottom: 30px;
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        @include md {
+            flex-direction: column-reverse;
+            padding: 30px 0;
+            align-items: center;
+            padding-bottom: 30px;
+            &:nth-of-type(even) {
+                flex-direction: column-reverse;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        @include lg {
+            padding: 30px 0;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+            padding: 30px 8px;
+        }
+    }
+    .time-card-arrow {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        border-radius: 50px;
+        background: $orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}

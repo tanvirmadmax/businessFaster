@@ -1,0 +1,48 @@
+.error{
+    margin-bottom: 80px;
+h1{
+    font-family: 'Teko';
+    font-size: 400px;
+    font-weight: 600;
+    margin-top: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1C263A;
+    @include sm{
+    font-size: 180px;
+    }
+
+    img{
+    @include sm{
+        width: 20%;
+        height: 20%;
+    }
+    }
+}
+
+h2{ 
+    font-family: 'Teko';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #151515;
+}
+h6{ 
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #5D666F;
+}
+
+.search{
+    .form-control{
+        padding: 30px;
+        background: #F3F3F3;
+    }
+}
+}

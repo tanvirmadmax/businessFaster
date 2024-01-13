@@ -1,0 +1,77 @@
+// Shape Card One
+.triangle-shape-card-one {
+    width: 200px;
+    height: 375px;
+    background-color: $orange-color;
+    -webkit-clip-path: polygon(68% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    z-index: 2;
+    animation: MoveUpDown 2s linear infinite alternate;
+
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        height: 260px;
+        bottom: -80px;
+    }
+    @include rmaxwd(991) {
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+}
+// Two
+.triangle-shape-card-two {
+    width: 310px;
+    height: 290px;
+    background-color: $primary-color;
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: -210px;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        height: 240px;
+        bottom: -100px;
+    }
+    @include rmaxwd(991) {
+        width: 150px;
+        height: 150px;
+        bottom: -70px;
+        display: none;
+    }
+}
+
+// Three
+.triangle-shape-card-three {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(50%);
+    z-index: 99;
+    border-top: 550px solid $secondary-color;
+    border-right: 220px solid transparent;
+
+    @include rmaxwd(630) {
+        display: none;
+    }
+}
+// Four
+.triangle-shape-card-four {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-bottom: 330px solid $orange-color;
+    border-left: 130px solid transparent;
+
+    @include rmaxwd(650) {
+        border-bottom: 190px solid #ff6731;
+        border-left: 80px solid transparent;
+    }
+}

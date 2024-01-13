@@ -1,0 +1,33 @@
+.header-area {
+  &.style-three {
+
+    // Header Top Area
+    .header-top {
+      .header-top-btn {
+        a {
+          margin-bottom: inherit;
+          padding: 6px 30px;
+
+          &:before {
+            border-radius: 8px;
+          }
+        }
+      }
+      .header-top-btn {
+        @include lg {
+          display: none;
+        }
+      }
+    }
+
+    // Header Menu Area
+    .header-menu-area {
+      .logo {
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

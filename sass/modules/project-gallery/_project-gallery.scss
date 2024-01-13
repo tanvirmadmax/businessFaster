@@ -1,0 +1,98 @@
+.project-gallery-area {
+    padding: 140px 0px;
+
+    .project-gallery-controls {
+        margin-bottom: 60px;
+        text-align: center;
+
+        button {
+            background-color: transparent;
+            color: #5D666F;
+            font-family: $heading-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin: 0;
+            padding: 0px 40px;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    .project-gallery-wrapper {}
+}
+
+.mix {
+    position: relative;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .project-link {
+        position: absolute;
+        background-color: $black;
+        padding: 35px 50px 30px 35px;
+        z-index: 1;
+        left: 20px;
+        bottom: 20px;
+        font-family: $heading-font;
+        transform: scale(0);
+        @include transition;
+        transform-origin: bottom;
+
+        h6 {
+            color: $primary-color;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 17px;
+            margin-bottom: 0;
+        }
+
+        h5 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 32px;
+            color: $white;
+            margin-bottom: 0;
+        }
+
+        a {
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            background-color: $primary-color;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 37px;
+            height: 37px;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+
+    }
+
+    &:hover {
+        .project-link {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+        }
+    }
+}

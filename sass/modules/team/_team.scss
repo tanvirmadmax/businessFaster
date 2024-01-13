@@ -1,0 +1,64 @@
+.team{
+
+.image-box{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+.image-content{
+    position: absolute;
+    width: 100%;
+    padding: 8px;
+    text-align: center; 
+    bottom: 0;
+    transform: translateY(150px);
+    transition: transform 0.5s ease;
+    background: #15151540; 
+    backdrop-filter: blur(10px);
+
+    h3{ 
+    font-family: 'Teko';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    }
+
+    h6{
+    font-family: 'Teko';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+    }
+
+    .team-social-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     a{
+        display: block;
+        text-decoration: none;
+      i{
+        padding: 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+        color: $white;
+        @include transition;
+
+        &:hover{
+            background: $primary-color;
+        }
+      }
+      }
+    }
+}
+
+&:hover .image-content{
+  transform: translateY(0px);
+}
+}
+}

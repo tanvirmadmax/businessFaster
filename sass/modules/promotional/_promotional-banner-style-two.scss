@@ -1,0 +1,30 @@
+.promotional-banner-widget {
+    &.style-two {
+
+      .promotional-bananer-content {
+        justify-content: flex-start;
+        gap: 20px;
+
+        .icon {
+          @include gradient-color-red
+        }
+        .content {
+          span {
+            display: inline-block;
+            width: 100%;
+            color: $sky-color;
+            font-weight: 700;
+            font-family: $heading-font;
+          }
+          .text {
+            font-size: 24px;
+            color: $white;
+
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+}

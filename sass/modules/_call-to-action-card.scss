@@ -1,0 +1,66 @@
+.cta-area {
+  position: relative;
+  margin-bottom: -110px;
+  z-index: 99;
+}
+.call-to-action-card {
+  display: flex;
+  background-color: $sky-color;
+  padding: 68px 50px;
+  border-radius: 12px;
+  align-items: center;
+  gap: 60px;
+  @include rmaxwd(375) {
+    padding: 40px 25px !important;
+  }
+
+  @include rmaxwd(991) {
+    flex-direction: column;
+    gap: 30px;
+  }
+  @include rmaxwd(767) {
+    align-items: flex-start;
+  }
+  .image {
+    flex-shrink: 0;
+
+    @include rmaxwd(1399) {
+      width: 200px;
+    }
+  }
+  .content {
+    position: relative;
+    padding-left: 60px;
+
+    @include rmaxwd(991) {
+      padding-left: 0;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: $white;
+      margin-bottom: 0;
+
+
+      @include rmaxwd(1399) {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 1px;
+      background-color: #6fcbbd;
+      @include rmaxwd(991) {
+        display: none;
+      }
+    }
+  }
+  .btn-wrapper {
+    flex-shrink: 0;
+  }
+}

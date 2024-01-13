@@ -1,0 +1,43 @@
+.image-card {
+    position: relative;
+    overflow: hidden;
+
+
+    .image-wrapper {
+        position: relative;
+
+        .info-card {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            margin: 50px;
+            bottom: -78%;
+            text-align: center;
+            border-radius: 289px;
+            background-color: $primary-color;
+            @include transition;
+
+            .title,
+            .desc {
+                @include transition;
+            }
+        }
+    }
+
+    &:hover {
+        .image-wrapper {
+            .info-card {
+                bottom: 0;
+                margin: 0;
+                text-align: start;
+                border-radius: 0;
+                background-color: transparent;
+
+                .title,
+                .desc {
+                    @include transition;
+                }
+            }
+        }
+    }
+}

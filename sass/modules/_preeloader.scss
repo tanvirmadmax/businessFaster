@@ -1,0 +1,64 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  z-index: 9999999;
+  right: 0;
+  bottom: 0;
+}
+#preloader-status {
+  width: 110px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@-moz-keyframes grow {
+  0% {-moz-transform: scale(0);}
+  25% {-moz-transform: scale(1);}
+  50% {-moz-transform: scale(0);}
+  75% {-moz-transform: scale(1);background:#ffffff;}
+  100% {-moz-transform: scale(0);background:#ffffff;}
+}
+@-webkit-keyframes grow {
+  0% {display: none;}
+  25% {display: none;}
+  50% {-webkit-transform: scale(0);}
+  75% {-webkit-transform: scale(1);background:#ffffff;}
+  100% {-webkit-transform: scale(0);background:#ffffff;}
+}
+
+.loading-container div {
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  float:left;
+  margin:0 3px;
+  background-color: $primary-color;
+  transform:scale(0);
+}
+.loading-container .ball1 {
+  z-index:1;
+  -moz-animation: grow 0.4s infinite ease-in-out;
+  -webkit-animation: grow 0.4s infinite ease-in-out;
+}
+.loading-container .ball2 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.loading-container .ball3 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.loading-container .ball4 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+

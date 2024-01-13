@@ -1,0 +1,66 @@
+.counter-card {
+  z-index: 1;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+
+  .counter-item {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+
+    .counter-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 12px;
+      flex-direction: column;
+    }
+
+
+    .number {
+      font-family: $heading-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      text-align: center;
+      color: $orange-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+      @include sm {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+    .title {
+      margin: 0;
+      font-family: $heading-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: $white;
+    }
+    .text {
+      margin: 0;
+      color: $white-100;
+    }
+  }
+}

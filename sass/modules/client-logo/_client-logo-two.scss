@@ -1,0 +1,37 @@
+.client-logo-wrapper {
+    &.style-two {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 60px 30px;
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px 30px;
+        }
+
+        .client-logo {
+            cursor: pointer;
+            overflow: hidden;
+            @include transition;
+            img {
+                filter: grayscale(100%);
+                opacity: 0.65;
+                @include transition;
+
+                @include rmaxwd(767) {
+                    width: 65%;
+                }
+                @include rmaxwd(575) {
+                    width: 60%;
+                }
+            }
+            &:hover {
+                transform: scale(1.1);
+                img {
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

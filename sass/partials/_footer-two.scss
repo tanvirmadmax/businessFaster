@@ -1,0 +1,85 @@
+.footer {
+  &.style-2 {
+    .footer-sec {
+      padding-bottom: 85px;
+    }
+
+    .footer-logo {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+    .footer-widget-title {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+
+    .footer-widget {
+      &.contact-area {
+        .contact-info {
+          margin-bottom: 20px;
+
+          .sub-title {
+            margin-bottom: 0;
+            color: $primary-color;
+          }
+
+          h3 {
+            color: $white;
+            margin-bottom: 0;
+            font-weight: 600;
+            line-height: 40px;
+          }
+
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .address,
+        a {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 33px;
+          margin-bottom: 0;
+          color: $white;
+        }
+      }
+    }
+
+    // Subscribe Form
+    .subscribe-form-wrapper {
+      h3 {
+        color: $white;
+        margin-bottom: 25px;
+      }
+
+      .subscribe-form-widget {
+        .mc4wp-form-fields {
+          background-color: transparent;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+          border-radius: 0;
+        }
+
+        .single-field {
+          input {
+            height: 60px;
+            background-color: transparent;
+            padding: 0;
+          }
+        }
+
+        .submit-btn {
+          color: $white;
+
+          i {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

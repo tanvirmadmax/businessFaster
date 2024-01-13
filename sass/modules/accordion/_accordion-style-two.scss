@@ -1,0 +1,51 @@
+.accordion-wrapper {
+  &.style-two {
+    .accordion-list-item {
+      .accordion-head {
+        border-top: 1px solid #395670;
+        padding: 26px 0;
+
+        .accordion-title {
+          font-size: 24px;
+
+          @include sm {
+            font-size: 20px;
+          }
+        }
+        &:before {
+          background-color: $orange-color;
+          color: $white;
+          font-size: 12px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+        }
+        &.collapsed {
+          &:before {
+            background-color: $white;
+            border-radius: 50px;
+            color: $orange-color;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 1px solid #395670;
+      }
+      .show.accordion-item-body {
+        padding-bottom: 20px;
+        @include transition;
+      }
+    }
+  }
+}

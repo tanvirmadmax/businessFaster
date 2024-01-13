@@ -1,0 +1,556 @@
+// Service-area
+.our-services-area {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Counter Area Two
+.counter-up-area {
+  &.style-2 {
+    position: relative;
+    padding-top: 142px;
+    padding-bottom: 138px;
+    overflow: hidden;
+
+    @include md {
+      background-color: $primary-color;
+      margin: 100px 0;
+      padding: 100px 0;
+    }
+
+    @include sm {
+      padding: 70px 0;
+    }
+
+    @include rmaxwd(550) {
+      padding-bottom: 0 !important;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $orange-color;
+      top: 0;
+      right: -75%;
+      transform: skewX(-22deg);
+
+      @include rmaxwd(550) {
+        display: none;
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .counter-area-two-inner {
+      padding-top: 144px;
+      padding-bottom: 140px;
+      position: relative;
+      background-color: $primary-color;
+      border-radius: 0 18px 18px 0;
+
+      @include rmaxwd(550) {
+        border-radius: 0;
+      }
+
+      @include md {
+        background-color: transparent;
+        padding: 100px 0;
+      }
+
+      @include sm {
+        padding: 70px 0;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $primary-color;
+        top: 0;
+        left: -100%;
+      }
+    }
+  }
+}
+
+// Process Step Two Area
+.process-step-area {
+  &.style-2 {
+    padding-top: 363px;
+    padding-bottom: 60px;
+
+    @include sm {
+      padding-top: 340px;
+      padding-bottom: 10px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 40px;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    .section-content {
+      @include rmaxwd(991) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+}
+
+.triangle-shape-top {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  border-top: 350px solid $sky-color;
+  border-right: 140px solid transparent;
+  z-index: 1;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.triangle-shape-bottom {
+  position: absolute;
+  //right: -580px;
+  right: 0;
+  bottom: -115px;
+  border-bottom: 240px solid $orange-color;
+  border-left: 100px solid transparent;
+  border-right: 0 solid transparent;
+  width: 170px;
+  animation: MoveUpDown 2s linear infinite alternate;
+
+  @include rmaxwd(550) {
+    display: none;
+  }
+
+  @include md {
+    bottom: -100px;
+    border-bottom: 135px solid #ff6731;
+    width: 170px;
+  }
+
+  @include sm {
+    bottom: -100px;
+    border-bottom: 135px solid #ff6731;
+    width: 170px;
+  }
+}
+
+.triangle-border-shape {
+  position: absolute;
+  width: 230px;
+  height: 400px;
+  top: 85px;
+  left: -150px;
+  border-top: 1px solid $orange-color;
+  border-right: 1px solid $orange-color;
+  transform: skewX(-22deg);
+
+  @include sm {
+    display: none;
+  }
+}
+
+// Appointment Booking Area
+.appointment-area {
+  &.style-2 {
+    margin-bottom: -261px;
+    position: relative;
+    z-index: 2;
+
+    @include md() {
+      margin-top: 80px;
+    }
+
+    @include sm() {
+      margin-top: 70px;
+    }
+
+    .form-image-mr {
+      padding-right: 56px !important;
+    }
+
+    .form-image-wrapper {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .appointment-area-two-inner {
+      margin: 0;
+    }
+  }
+}
+
+// FAQ Area
+.faq-area {
+  &.style-1 {
+    padding-top: 138px;
+    padding-bottom: 144px;
+    z-index: 2;
+
+    @include md() {
+      padding: 100px 0;
+    }
+
+    @include sm {
+      padding: 70px 0;
+
+      .promotional-banner-widget {
+        margin-top: 0;
+      }
+    }
+
+    .accordion-wrapper {
+      padding-left: 120px;
+
+      @include rmaxwd(991) {
+        padding-left: 0;
+        padding-bottom: 80px;
+      }
+    }
+
+    .section-title {
+      .title {
+        br {
+          @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .promotional-banner-widget {
+      @media only screen and (min-width: 991px) and (max-width: 1024px) {
+        margin-top: -400px;
+      }
+
+      @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+        margin-top: -320px;
+      }
+    }
+  }
+}
+
+.triangle-image-shape-wrapper {
+  position: absolute;
+  width: 830px;
+  top: -155px;
+  left: 0;
+  z-index: -1;
+
+  @media only screen and (min-width: 991px) and (max-width: 1024px) {
+    left: -340px;
+  }
+
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    left: -240px;
+  }
+
+  @include rmaxwd(991) {
+    display: none;
+  }
+}
+
+.triangle-image-shape {
+  -webkit-clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 64% 0, 100% 100%, 0% 100%);
+}
+
+.triangle-image-shape-border {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  animation: MoveUpDown 2s linear infinite alternate;
+}
+
+// Client Logo Area
+.brand-slider-area {
+  &.style-2 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    @include sm {
+      padding: 70px 0;
+    }
+  }
+}
+
+// Testimonial Area
+.testimonial-slider-area {
+  &.style-2 {
+    padding-top: 138px;
+
+    @include md {
+      padding: 0;
+    }
+
+    @include sm {
+      padding: 0;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      padding-top: 0;
+    }
+
+    .section-title {
+      margin-bottom: 10px;
+
+      @include sm {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Testimonial Triangle Image
+.testimonial-triangle-image-wrapper {
+  width: 916px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    width: 620px;
+  }
+
+  @include sm {
+    margin-bottom: 70px !important;
+  }
+
+  @include rmaxwd(1199) {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+  }
+}
+
+.testimonial-triangle-image {
+  -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  position: relative;
+
+  @include md {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  @include sm {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.testimonial-triangle-shape {
+  position: absolute;
+  right: 154px;
+  bottom: 70px;
+  width: 190px;
+  height: 190px;
+  background-color: $sky-color;
+  transform: skewX(-22deg);
+
+  @include md {
+    display: none;
+  }
+
+  @include sm {
+    display: none;
+  }
+}
+
+// About Us Area
+.about-us-area {
+  &.style-2 {
+    padding-top: 140px;
+    padding-bottom: 144px;
+
+    @include md() {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include sm() {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .about-info-card {
+      .about-info-content {
+        padding-left: 120px;
+
+        .text {
+          @media only screen and (min-width: 992px) and (max-width: 1024px) {
+            padding-right: 120px;
+          }
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+          padding-left: 50px;
+        }
+
+        @include rmaxwd(1199) {
+          padding-left: 0;
+          padding-top: 300px;
+        }
+
+        @media only screen and (min-width: 651px) and (max-width: 767px) {
+          padding-top: 150px;
+        }
+
+        @include rmaxwd(651) {
+          padding-top: 100px;
+        }
+
+      }
+    }
+  }
+}
+
+// Form Image Wrapper
+.form-image-wrapper {
+
+  @include rmaxwd(991) {
+    height: 350px;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// News Area
+.latest-posts-area {
+  &.style-2 {
+    padding-top: 104px;
+    padding-bottom: 108px;
+
+    @include md() {
+      padding: 100px 0;
+    }
+
+    @include sm() {
+      padding-top: 70px;
+      padding-bottom: 50px;
+    }
+
+
+    .section-title {
+      margin-bottom: 70px;
+
+      @include rmaxwd(991) {
+        margin-bottom: 50px;
+      }
+    }
+
+    .home-two-post-card-padding {
+      padding-left: 68px;
+
+      @include rmaxwd(1199) {
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+// Team Member Area
+.team-slider-area {
+  &.style-1 {
+    padding-top: 138px;
+    padding-bottom: 144px;
+
+    @include md() {
+      padding: 100px 0;
+    }
+
+    @include sm() {
+      padding: 70px 0;
+    }
+  }
+}
+
+// Project Area
+.service-slider-area {
+  padding-bottom: 144px;
+  overflow: hidden;
+
+  @include rmaxwd(767) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .section-title {
+    .desc {
+      br {
+        @include rmaxwd(767) {
+          display: none;
+        }
+
+        @include lg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Why Choose Us Area
+.why-choose-us-area {
+  &.style-1 {
+    padding-top: 138px;
+    padding-bottom: 103px;
+
+    @include md() {
+      padding-top: 100px;
+    }
+
+    @include sm() {
+      padding-top: 70px;
+      padding-bottom: 34px;
+    }
+
+
+    .section-title {
+      padding-right: 100px;
+
+      @include rmaxwd(1399) {
+        padding-right: 12px;
+      }
+
+      @include rmaxwd(991) {
+        margin-bottom: 70px;
+      }
+
+      .title {
+        br {
+          @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .icon-card-left-padding {
+      padding-left: 134px;
+
+      @include rmaxwd(1399) {
+        padding-left: 12px;
+      }
+    }
+  }
+}
