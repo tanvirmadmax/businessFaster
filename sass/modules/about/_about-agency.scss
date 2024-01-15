@@ -1,6 +1,6 @@
 .about-agency-area {
     .about-agency-image {
-        margin-right: 120px;
+        margin-right: 108px;
         position: relative;
 
         img {
@@ -19,8 +19,8 @@
 
         .about-img-two {
             position: absolute;
-            right: -120px;
-            bottom: -60px;
+            right: -108px;
+            bottom: -50px;
             width: 306px;
             height: 304px;
 
@@ -31,10 +31,6 @@
 
                 &:hover {
                     transform: scale(1.03);
-                    -webkit-transform: scale(1.03);
-                    -moz-transform: scale(1.03);
-                    -ms-transform: scale(1.03);
-                    -o-transform: scale(1.03);
                 }
             }
 
@@ -43,13 +39,12 @@
 
     .about-agency-info {
         .agency-work-wrapper {
-            padding-top: 44px;
+            margin-top: 60px;
             margin-bottom: 40px;
         }
 
         .agency-progress-wrapper {
             margin-bottom: 60px;
-
             .skill-progressbar {
                 .progress-inner {
                     .progress-inner-item {

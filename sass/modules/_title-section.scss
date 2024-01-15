@@ -74,12 +74,12 @@
     }
   }
   .desc {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: $body-font;
     color: $text-color;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .text {
     margin-bottom: 0;
@@ -94,5 +94,105 @@
     justify-content: start;
     align-items: start;
     text-align: start;
+  }
+}
+
+// primary title
+
+.primary-title {
+  text-align: center;
+  margin-bottom: 60px;
+
+  p {
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 15px;
+  }
+
+  h5 {
+    color: $primary-color;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: $heading-font;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      background-image: url("../images/home/heding-style-img.png");
+      height: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      content: " ";
+      left: 50%;
+      bottom: -5px;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  h3 {
+    color: $black;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+
+    @include sm {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.primary-title {
+  &.style-2 {
+    text-align: left;
+    margin-bottom: 17px;
+
+    h5 {
+      text-align: left;
+
+      &::after {
+        background-position: left;
+      }
+    }
+  }
+
+  h3 {
+    color: $black;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+
+    @include sm {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.primary-button {
+  button {
+    text-transform: uppercase;
+    padding: 15px 25px;
+    background-color: $primary-color;
+    color: $white;
+    font-size: 18px;
+    font-family: $heading-font;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    span {
+      display: inline-block;
+      margin-left: 10px;
+      transform: rotate(40deg);
+      position: relative;
+      top: 2px;
+    }
   }
 }

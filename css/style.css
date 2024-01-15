@@ -2844,102 +2844,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: 20px;
 }
 
-.primary-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.primary-title p {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  line-height: 29px;
-  margin-top: 15px;
-}
-.primary-title h5 {
-  color: #ED3B3B;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  font-weight: normal;
-  font-family: "Teko", sans-serif;
-  position: relative;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.primary-title h5::after {
-  position: absolute;
-  background-image: url("../images/home/heding-style-img.png");
-  height: 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  content: " ";
-  left: 50%;
-  bottom: -5px;
-  width: 100%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-}
-.primary-title h3 {
-  color: #151515;
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 600;
-}
-@media (max-width: 767.98px) {
-  .primary-title h3 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-.primary-title.style-2 {
-  text-align: left;
-  margin-bottom: 17px;
-}
-.primary-title.style-2 h5 {
-  text-align: left;
-}
-.primary-title.style-2 h5::after {
-  background-position: left;
-}
-.primary-title h3 {
-  color: #151515;
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 600;
-}
-@media (max-width: 767.98px) {
-  .primary-title h3 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-.primary-button button {
-  text-transform: uppercase;
-  padding: 15px 25px;
-  background-color: #ED3B3B;
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Teko", sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-.primary-button button span {
-  display: inline-block;
-  margin-left: 10px;
-  transform: rotate(40deg);
-  -webkit-transform: rotate(40deg);
-  -moz-transform: rotate(40deg);
-  -ms-transform: rotate(40deg);
-  -o-transform: rotate(40deg);
-  position: relative;
-  top: 2px;
-}
-
 @keyframes MovefadeUp {
   0% {
     opacity: 0;
@@ -8925,12 +8829,12 @@ button.testimonial-arrow-btn:hover i {
   color: #1eae98;
 }
 .section-title .desc {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Manrope", sans-serif;
   color: #666666;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .section-title .text {
   margin-bottom: 0;
@@ -8945,6 +8849,94 @@ button.testimonial-arrow-btn:hover i {
   justify-content: start;
   align-items: start;
   text-align: start;
+}
+
+.primary-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.primary-title p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: 15px;
+}
+.primary-title h5 {
+  color: #ED3B3B;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: "Teko", sans-serif;
+  position: relative;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.primary-title h5::after {
+  position: absolute;
+  background-image: url("../images/home/heding-style-img.png");
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: " ";
+  left: 50%;
+  bottom: -5px;
+  width: 100%;
+  transform: translateX(-50%);
+}
+.primary-title h3 {
+  color: #151515;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .primary-title h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.primary-title.style-2 {
+  text-align: left;
+  margin-bottom: 17px;
+}
+.primary-title.style-2 h5 {
+  text-align: left;
+}
+.primary-title.style-2 h5::after {
+  background-position: left;
+}
+.primary-title h3 {
+  color: #151515;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+@media (max-width: 767.98px) {
+  .primary-title h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.primary-button button {
+  text-transform: uppercase;
+  padding: 15px 25px;
+  background-color: #ED3B3B;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.primary-button button span {
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(40deg);
+  position: relative;
+  top: 2px;
 }
 
 .page-breadcrumb-area {
@@ -16294,7 +16286,7 @@ ul.children {
 }
 
 .about-agency-area .about-agency-image {
-  margin-right: 120px;
+  margin-right: 108px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16315,8 +16307,8 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -120px;
-  bottom: -60px;
+  right: -108px;
+  bottom: -50px;
   width: 306px;
   height: 304px;
 }
@@ -16331,13 +16323,9 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
 }
 .about-agency-area .about-agency-info .agency-work-wrapper {
-  padding-top: 44px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper {
@@ -16363,6 +16351,12 @@ ul.children {
 .community-item.style-two {
   display: flex;
 }
+.community-item.style-two:hover .icon span {
+  background-color: #ED3B3B;
+}
+.community-item.style-two:hover .icon span i {
+  transform: rotateY(360deg);
+}
 .community-item.style-two .icon {
   margin-right: 20px;
 }
@@ -16376,33 +16370,21 @@ ul.children {
   line-height: 71px;
   display: inline-block;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+}
+.community-item.style-two .icon span i {
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.community-item.style-two .icon span:hover {
-  background-color: #ED3B3B;
-}
-.community-item.style-two .icon span:hover {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-}
 .community-item.style-two .content h5 {
   color: #151515;
   font-size: 30px;
   line-height: 35px;
   font-family: "Teko", sans-serif;
-  font-weight: normal;
-  margin-bottom: 19px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .hero-area {
@@ -16502,7 +16484,7 @@ ul.children {
 }
 
 .about-agency-area .about-agency-image {
-  margin-right: 120px;
+  margin-right: 108px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16523,8 +16505,8 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -120px;
-  bottom: -60px;
+  right: -108px;
+  bottom: -50px;
   width: 306px;
   height: 304px;
 }
@@ -16539,13 +16521,9 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
 }
 .about-agency-area .about-agency-info .agency-work-wrapper {
-  padding-top: 44px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper {
