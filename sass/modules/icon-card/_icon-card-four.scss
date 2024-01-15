@@ -1,32 +1,61 @@
 .icon-card {
-    &.style-four {
-        padding: 0;
-        flex-direction: column;
-        gap: 0;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
+    &.style-4 {
+        .inner-wrapper {
+            padding: 0;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
 
-        .icon {
-            width: 72px;
-            height: 72px;
-            background: $sky-color;
-            border-radius: 50px;
-            justify-content: center;
-            align-items: center;
-            transform: translate(0, 50%);
-            i {
-                color: $white;
+            .icon {
+                width: 70px;
+                height: 70px;
+                flex-shrink: 0;
+                background-color: #EAEAEA;
+                @include transition;
+                i{
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: $primary-color;
+
+                }
+            }
+            .title{
+                text-transform: capitalize;
+            }
+            .content {
+                text-align: start;
+                gap: 6px;
+                .title{
+                    font-family: $heading-font;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 36px;
+                    color: $black;
+                }
+                .sub-title {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    color: $primary-color;
+                    margin-bottom: 0;
+                }
             }
         }
-        .content {
-            width: 100%;
-            padding: 55px 30px 30px 30px;
-            background: $gray-50;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 8px;
+
+        &:hover {
+            .icon {
+                background-color: $black;
+                i{
+                    color: $white;
+                }
+            }
+
+            .content {
+                .title {
+                    color: $black;
+                }
+            }
         }
     }
 }
