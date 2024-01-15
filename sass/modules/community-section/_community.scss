@@ -9,10 +9,18 @@
     .community-title{
         h3{
             color: $white;
+            margin-bottom: 0;
         }
         padding-bottom: 70px;
         margin-bottom: 80px;
         border-bottom: 1px solid $white;
+        .community-section-btn{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            height: 100%;
+            margin-bottom: 0px;
+        }
     }
     .community-overlay{
         position: absolute;

@@ -354,13 +354,31 @@ input.theme-btn i {
   justify-content: center;
   color: #fff;
   font-size: 16px;
+  margin-right: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .theme-btn:hover,
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
   color: #fff;
-  background-color: transparent;
+  background-color: #151515;
   border: 1px solid #ED3B3B;
+}
+.theme-btn:hover i,
+.wp-block-loginout a:hover i,
+input.theme-btn:hover i {
+  transform: rotate(-35deg);
+  margin-left: 10px;
+  margin-right: -10px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .theme-btn:focus,
 .wp-block-loginout a:focus,
@@ -4368,9 +4386,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-size: unset;
   background-position: bottom right;
 }
+.slider-area.style-2 .single-slider .slider-content .slider-title span {
+  border-bottom: none;
+}
 .slider-area.style-2 .slider-bg {
   position: absolute;
-  bottom: 0;
+  top: 132px;
   left: 0;
 }
 
@@ -16179,6 +16200,14 @@ ul.children {
 }
 .community-section-area .community-title h3 {
   color: #ffffff;
+  margin-bottom: 0;
+}
+.community-section-area .community-title .community-section-btn {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 100%;
+  margin-bottom: 0px;
 }
 .community-section-area .community-overlay {
   position: absolute;

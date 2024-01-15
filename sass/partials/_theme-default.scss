@@ -271,12 +271,20 @@ input.theme-btn {
     justify-content: center;
     color: #fff;
     font-size: 16px;
+    margin-right: 0;
+    @include transition;
   }
 
   &:hover {
     color: #fff;
-    background-color: transparent;
+    background-color: $black;
     border: 1px solid $primary-color;
+    i{
+      transform: rotate(-35deg);
+      margin-left: 10px;
+      margin-right: -10px;
+      @include transition;
+    }
   }
 
   &:focus {

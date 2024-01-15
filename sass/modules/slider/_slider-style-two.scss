@@ -5,11 +5,18 @@
     .single-slider {
       background-size: unset;
       background-position: bottom right;
+      .slider-content{
+        .slider-title{
+          span{
+            border-bottom: none;
+          }
+        }
+      }
     }
 
     .slider-bg {
       position: absolute;
-      bottom: 0;
+      top: 132px;
       left: 0;
     }
 
