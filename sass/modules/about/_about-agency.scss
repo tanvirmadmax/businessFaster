@@ -1,6 +1,6 @@
 .about-agency-area {
     .about-agency-image {
-        margin-right: 108px;
+        margin-left: -292px;
         position: relative;
 
         img {
@@ -19,10 +19,11 @@
 
         .about-img-two {
             position: absolute;
-            right: -108px;
+            right: -62px;
             bottom: -50px;
             width: 306px;
             height: 304px;
+            border-radius: 15px;
 
             img {
                 width: 100%;
@@ -38,6 +39,11 @@
     }
 
     .about-agency-info {
+        .primary-title{
+            &.style-2{
+                margin-bottom: 40px;
+            }
+        }
         .agency-work-wrapper {
             margin-top: 60px;
             margin-bottom: 40px;

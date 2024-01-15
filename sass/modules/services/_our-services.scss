@@ -1,13 +1,14 @@
 .our-services-item {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 40px 30px 40px 40px;
+    padding: 0 30px 20px 40px;
     background-color: $white;
     @include transition;
 
     .stack-text {
         h2 {
-            font-size: 100px;
             font-family: $heading-font;
+            font-size: 100px;
+            line-height: normal;
             text-align: right;
             font-weight: 400;
             -webkit-text-stroke: 1px #CCCCCC;
@@ -16,7 +17,8 @@
     }
 
     .icon {
-        padding: 47px 0px;
+        padding-top: 12px;
+        padding-bottom: 47px;
 
         span {
             font-size: 50px;
@@ -57,7 +59,7 @@
             font-family: $heading-font;
             color: $black;
             font-weight: 400;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         a {

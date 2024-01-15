@@ -118,9 +118,30 @@
     }
 
     .comment-respond {
-        margin-bottom: -211px;
+        margin-bottom: -96px;
         position: relative;
         z-index: 1;
         margin-top: 0;
+        padding-bottom: 60px;
+        .title{
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 40px;  
+            color: $black;
+            margin-bottom: 32px;
+        }
+        input{
+            height: 58px;
+        }
+        .contacts-email,
+        .contacts-name{
+            margin-bottom: 15px;
+        }
+        textarea{
+            height: 142px;
+        }
+        .theme-btn{
+            margin-top: 10px;
+        }
     }
 }

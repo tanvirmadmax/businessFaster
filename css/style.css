@@ -8872,6 +8872,8 @@ button.testimonial-arrow-btn:hover i {
   padding-bottom: 0px;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .primary-title h5::after {
   position: absolute;
@@ -8890,6 +8892,7 @@ button.testimonial-arrow-btn:hover i {
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 @media (max-width: 767.98px) {
   .primary-title h3 {
@@ -11928,10 +11931,31 @@ ul.children {
   gap: 92px;
 }
 .contact-area .comment-respond {
-  margin-bottom: -211px;
+  margin-bottom: -96px;
   position: relative;
   z-index: 1;
   margin-top: 0;
+  padding-bottom: 60px;
+}
+.contact-area .comment-respond .title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #151515;
+  margin-bottom: 32px;
+}
+.contact-area .comment-respond input {
+  height: 58px;
+}
+.contact-area .comment-respond .contacts-email,
+.contact-area .comment-respond .contacts-name {
+  margin-bottom: 15px;
+}
+.contact-area .comment-respond textarea {
+  height: 142px;
+}
+.contact-area .comment-respond .theme-btn {
+  margin-top: 10px;
 }
 
 .our-services-area {
@@ -16230,6 +16254,7 @@ ul.children {
   font-family: "Teko", sans-serif;
   font-weight: normal;
   margin-bottom: 19px;
+  letter-spacing: 3px;
 }
 .community-item .content p {
   font-size: 16px;
@@ -16283,10 +16308,11 @@ ul.children {
   color: #ffffff;
   font-size: 24px;
   line-height: 35px;
+  margin-bottom: 0;
 }
 
 .about-agency-area .about-agency-image {
-  margin-right: 108px;
+  margin-left: -292px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16307,10 +16333,11 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -108px;
+  right: -62px;
   bottom: -50px;
   width: 306px;
   height: 304px;
+  border-radius: 15px;
 }
 .about-agency-area .about-agency-image .about-img-two img {
   width: 100%;
@@ -16323,6 +16350,9 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
+}
+.about-agency-area .about-agency-info .primary-title.style-2 {
+  margin-bottom: 40px;
 }
 .about-agency-area .about-agency-info .agency-work-wrapper {
   margin-top: 60px;
@@ -16403,7 +16433,7 @@ ul.children {
 
 .our-services-item {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 40px 30px 40px 40px;
+  padding: 0 30px 20px 40px;
   background-color: #ffffff;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -16412,15 +16442,17 @@ ul.children {
   -o-transition: all 0.5s ease-out;
 }
 .our-services-item .stack-text h2 {
-  font-size: 100px;
   font-family: "Teko", sans-serif;
+  font-size: 100px;
+  line-height: normal;
   text-align: right;
   font-weight: 400;
   -webkit-text-stroke: 1px #CCCCCC;
   color: transparent;
 }
 .our-services-item .icon {
-  padding: 47px 0px;
+  padding-top: 12px;
+  padding-bottom: 47px;
 }
 .our-services-item .icon span {
   font-size: 50px;
@@ -16460,7 +16492,7 @@ ul.children {
   font-family: "Teko", sans-serif;
   color: #151515;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .our-services-item .title a {
   font-size: 34px;
@@ -16484,7 +16516,7 @@ ul.children {
 }
 
 .about-agency-area .about-agency-image {
-  margin-right: 108px;
+  margin-left: -292px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16505,10 +16537,11 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -108px;
+  right: -62px;
   bottom: -50px;
   width: 306px;
   height: 304px;
+  border-radius: 15px;
 }
 .about-agency-area .about-agency-image .about-img-two img {
   width: 100%;
@@ -16521,6 +16554,9 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
+}
+.about-agency-area .about-agency-info .primary-title.style-2 {
+  margin-bottom: 40px;
 }
 .about-agency-area .about-agency-info .agency-work-wrapper {
   margin-top: 60px;
@@ -16554,7 +16590,9 @@ ul.children {
   font-family: "Teko", sans-serif;
   color: #151515;
   font-size: 30px;
+  font-weight: 400;
   line-height: 35px;
+  text-transform: capitalize;
 }
 .agency-benefits-content-wrapper .content p {
   font-family: "Manrope", sans-serif;
