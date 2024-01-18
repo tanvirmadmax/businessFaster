@@ -3184,6 +3184,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 120px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 @media (max-width: 991.98px) {
   .logo {
@@ -3342,6 +3347,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   z-index: 9999;
   box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.05);
   background: #fff;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .header-menu-area.sticky_menu .logo {
   height: 84px;
@@ -3362,9 +3372,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
-}
-.header-menu-area.sticky_menu .main-menu ul li.active > a:after {
-  bottom: 20px;
 }
 .header-menu-area.sticky_menu .main-menu ul li ul li a {
   padding: 10px 20px;
@@ -4160,6 +4167,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   left: 0;
   top: 0;
   z-index: -3;
+}
+.slider-area .single-slider .angle-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
 .slider-area .single-slider .shape {
   position: absolute;
@@ -8773,7 +8786,7 @@ button.testimonial-arrow-btn:hover i {
 
 .section-title {
   display: flex;
-  gap: 10px;
+  gap: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -8858,7 +8871,7 @@ button.testimonial-arrow-btn:hover i {
   font-family: "Manrope", sans-serif;
   color: #666666;
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .section-title .text {
   margin-bottom: 0;
@@ -8940,6 +8953,7 @@ button.testimonial-arrow-btn:hover i {
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 @media (max-width: 767.98px) {
   .primary-title h3 {
@@ -11574,6 +11588,11 @@ ul.children {
 .team-member .member-information ul {
   margin: 0px;
   margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0;
 }
 .team-member .member-information ul li {
   display: inline-block;
@@ -11587,14 +11606,9 @@ ul.children {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 5px;
   background-color: transparent;
   font-size: 15px;
   border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -12062,6 +12076,10 @@ ul.children {
   background-color: #ED3B3B;
   top: 0;
   left: -100%;
+}
+
+.recent-project-area .recent-project-area-gallery {
+  margin: 0 30px;
 }
 
 .process-step-area.style-2 {
@@ -15867,14 +15885,15 @@ ul.children {
   line-height: 40px;
   font-family: "Teko", sans-serif;
   font-weight: 500;
+  margin-bottom: 0;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .description p {
   font-size: 24px;
   line-height: 40px;
   font-family: "Teko", sans-serif;
-  padding-right: 50px;
   margin-bottom: 17px;
   color: #151515;
+  letter-spacing: 1.2px;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .description p span {
   color: #ED3B3B;
@@ -15932,6 +15951,7 @@ ul.children {
   color: #ED3B3B;
   font-family: "Manrope", sans-serif;
   line-height: 24px;
+  margin-bottom: 0;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .right-quote span {
   font-size: 65px;
@@ -16170,6 +16190,7 @@ ul.children {
   padding: 2px;
   color: #ffffff;
   background-color: #151515;
+  margin-bottom: 0;
 }
 .latest-blog-area .blog-inner-wrapper .single-post .post-info .author-wrapper .right {
   width: 70%;
@@ -16180,6 +16201,7 @@ ul.children {
   margin-left: 16px;
   margin-top: 10px;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .latest-blog-area .blog-inner-wrapper .single-post .post-info .author-wrapper .right ul li {
   display: flex;
@@ -16283,6 +16305,7 @@ ul.children {
 .community-item .content p {
   font-size: 16px;
   line-height: 29px;
+  margin-bottom: 0;
 }
 
 .counter-section-area {
@@ -16336,7 +16359,6 @@ ul.children {
 }
 
 .about-agency-area .about-agency-image {
-  margin-left: -292px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16357,7 +16379,7 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -62px;
+  right: -110px;
   bottom: -50px;
   width: 306px;
   height: 304px;
@@ -16400,6 +16422,12 @@ ul.children {
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-content-outter .progress-content {
   background-color: #ED3B3B;
+}
+.about-agency-area.style-2 .about-agency-image {
+  margin-left: -292px;
+}
+.about-agency-area.style-2 .about-img-two.style-2 {
+  right: -62px;
 }
 
 .community-item.style-two {
@@ -16540,7 +16568,6 @@ ul.children {
 }
 
 .about-agency-area .about-agency-image {
-  margin-left: -292px;
   position: relative;
 }
 .about-agency-area .about-agency-image img {
@@ -16561,7 +16588,7 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
-  right: -62px;
+  right: -110px;
   bottom: -50px;
   width: 306px;
   height: 304px;
@@ -16604,6 +16631,12 @@ ul.children {
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-content-outter .progress-content {
   background-color: #ED3B3B;
+}
+.about-agency-area.style-2 .about-agency-image {
+  margin-left: -292px;
+}
+.about-agency-area.style-2 .about-img-two.style-2 {
+  right: -62px;
 }
 
 .agency-benefits-content-wrapper .content {
@@ -16697,7 +16730,7 @@ ul.children {
 .mix .project-link {
   position: absolute;
   background-color: #151515;
-  padding: 35px 50px 30px 35px;
+  padding: 35px 90px 30px 35px;
   z-index: 1;
   left: 20px;
   bottom: 20px;

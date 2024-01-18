@@ -269,6 +269,12 @@
       top: 0;
       z-index: -3;
     }
+    .angle-shape{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
     .shape{
       position: absolute;
       right: 0;

@@ -464,7 +464,7 @@
             // dots: true,
             infinite: true,
             speed: 500,
-            autoplay: true,
+            autoplay: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             prevArrow: ".prev",

@@ -157,6 +157,11 @@
     ul{
       margin: 0px;
       margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding-left: 0;
       li{
         display: inline-block;
         list-style: none;
@@ -168,14 +173,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0px 5px;
           background-color: transparent;
           font-size: 15px;
           border-radius: 100%;
-          -webkit-border-radius: 100%;
-          -moz-border-radius: 100%;
-          -ms-border-radius: 100%;
-          -o-border-radius: 100%;
           @include transition;
           &:hover{
             background-color: $primary-color;

@@ -1,6 +1,5 @@
 .about-agency-area {
     .about-agency-image {
-        margin-left: -292px;
         position: relative;
 
         img {
@@ -19,7 +18,7 @@
 
         .about-img-two {
             position: absolute;
-            right: -62px;
+            right: -110px;
             bottom: -50px;
             width: 306px;
             height: 304px;
@@ -80,6 +79,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    &.style-2{
+        .about-agency-image{
+            margin-left: -292px;
+        }
+        .about-img-two{
+            &.style-2{
+                right: -62px;
             }
         }
     }
