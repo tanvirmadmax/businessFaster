@@ -3420,6 +3420,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li.dropdown > a {
   padding-right: 43px;
 }
+@media (max-width: 1399.98px) {
+  .main-menu ul li.dropdown > a {
+    padding-right: 36px;
+  }
+}
 .main-menu ul li.dropdown > a:after {
   position: absolute;
   content: "+";
@@ -3457,6 +3462,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 800;
   line-height: 22px;
   text-transform: uppercase;
+}
+@media (max-width: 1399.98px) {
+  .main-menu ul li a {
+    padding: 28px 20px;
+  }
 }
 .main-menu ul li:hover > ul {
   visibility: visible;
@@ -4156,6 +4166,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   .slider-area .single-slider {
     padding-top: 330px;
     padding-bottom: 200px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .slider-area .single-slider {
+    padding-top: 270px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -4970,7 +4985,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   top: -24px;
   background-color: white;
   transform: skewY(-20deg);
-  z-index: 10;
+  z-index: 3;
   border-bottom: 1px solid #E3DBD8;
 }
 .icon-card.style-1 .inner-wrapper:after {
@@ -15915,13 +15930,13 @@ ul.children {
   padding-bottom: 135px;
   position: relative;
 }
-.testimonial-area .left-image figure img {
+.testimonial-area .left-image img {
   width: 100%;
   height: 488px;
   object-fit: cover;
 }
 @media (max-width: 767.98px) {
-  .testimonial-area .left-image figure img {
+  .testimonial-area .left-image img {
     height: auto;
   }
 }

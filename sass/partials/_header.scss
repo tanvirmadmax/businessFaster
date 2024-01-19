@@ -290,7 +290,9 @@
       &.dropdown {
         >a {
           padding-right: 43px;
-
+          @include xl{
+            padding-right: 36px;
+          }
           &:after {
             position: absolute;
             content: "\2b";
@@ -340,7 +342,9 @@
         font-weight: 800;
         line-height: 22px;
         text-transform: uppercase;
-
+        @include xl{
+          padding: 28px 20px;
+        }
         &:hover {
           // color: $orange-color;
         }

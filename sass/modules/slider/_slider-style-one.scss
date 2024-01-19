@@ -254,6 +254,9 @@
       padding-top: 330px;
       padding-bottom: 200px;
     }
+    @include lg{
+      padding-top: 270px;
+    }
     @media only screen and (min-width: 768px) and (max-width: 1199px) {
       height: 620px;
       padding-bottom: 80px;
