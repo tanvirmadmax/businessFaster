@@ -3388,12 +3388,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 5px;
 }
 @media (max-width: 1399.98px) {
   .menu-wrapper {
     justify-content: end;
+  }
+}
+@media (max-width: 991px) {
+  .menu-wrapper .menu {
+    display: none !important;
   }
 }
 
