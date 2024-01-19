@@ -49,6 +49,13 @@
             border-radius: 5px;
             background-color: $primary-color;
             padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: $white;
+                font-size: 50px;
+            }
         }
 
         .content {

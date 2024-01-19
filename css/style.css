@@ -4987,6 +4987,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 5px;
   background-color: #ED3B3B;
   padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-card .inner-wrapper .icon i {
+  color: #ffffff;
+  font-size: 50px;
 }
 .icon-card .inner-wrapper .content {
   display: flex;
@@ -5912,13 +5919,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .video-popup-card .video-popup-btn a i {
   color: #ffffff;
-  font-size: 24px;
-}
-.video-popup-card .video-popup-btn a:hover {
-  -webkit-animation: none;
-  -moz-animation: none;
-  -ms-animation: none;
-  animation: none;
+  font-size: 40px;
 }
 .video-popup-card .video-desc p {
   font-family: "Manrope", sans-serif;
@@ -14106,6 +14107,10 @@ ul.children {
   text-align: left;
   color: #ED3B3B;
 }
+.s-bottom-text button:hover {
+  background-color: #151515;
+  color: #ffffff;
+}
 
 .card-wrapper {
   -webkit-transition: all 500ms ease;
@@ -15570,8 +15575,8 @@ ul.children {
   }
 }
 .analysis-card .content-wrapper .list-wrapper li:before {
-  content: "\f14a";
-  font-family: "Font Awesome 6";
+  content: "\e903";
+  font-family: "icomoon" !important;
   font-size: 25px;
   color: #ED3B3B;
   margin-right: 10px;

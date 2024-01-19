@@ -172,7 +172,12 @@
     text-align: left;
     color: $primary-color;
   }
-
+  button{
+    &:hover{
+      background-color: $black;
+      color: $white;
+    }
+  }
 
 }
 
