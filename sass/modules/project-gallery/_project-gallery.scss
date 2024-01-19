@@ -74,14 +74,9 @@
             width: 37px;
             height: 37px;
             border-radius: 100%;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -ms-border-radius: 100%;
-            -o-border-radius: 100%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
+            i{
+                font-family: $body-font;
+            }
         }
 
     }
@@ -89,10 +84,6 @@
     &:hover {
         .project-link {
             transform: scale(1);
-            -webkit-transform: scale(1);
-            -moz-transform: scale(1);
-            -ms-transform: scale(1);
-            -o-transform: scale(1);
         }
     }
 }

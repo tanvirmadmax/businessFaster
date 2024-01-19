@@ -11618,6 +11618,9 @@ ul.children {
 .team-member .member-information ul li a:hover {
   background-color: #ED3B3B;
 }
+.team-member .member-information ul li a i {
+  font-family: "Manrope", sans-serif;
+}
 .team-member:hover .member-information {
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -15859,25 +15862,33 @@ ul.children {
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon {
   margin-right: 15px;
+  display: flex;
+  gap: 10px;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon span {
-  font-size: 20px;
   color: #ffffff;
-  padding: 8px;
+  width: 36px;
+  height: 36px;
   background-color: #ED3B3B;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  margin-right: 10px;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 767.98px) {
   .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon span {
-    font-size: 15px;
     padding: 5px;
     margin-right: 5px;
+  }
+}
+.testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon span i {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  line-height: 20px;
+}
+@media (max-width: 767.98px) {
+  .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon span i {
+    font-size: 15px;
   }
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-rate h4 {
@@ -15945,6 +15956,7 @@ ul.children {
   font-family: "Teko", sans-serif;
   line-height: 30px;
   color: #151515;
+  margin-bottom: 2px;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .profile-left .designation p {
   font-size: 15px;
@@ -15954,11 +15966,11 @@ ul.children {
   margin-bottom: 0;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .right-quote span {
-  font-size: 65px;
+  font-size: 118px;
 }
 @media (max-width: 767.98px) {
   .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .right-quote span {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 .testimonial-area .testimonial-btn {
@@ -16771,21 +16783,12 @@ ul.children {
   width: 37px;
   height: 37px;
   border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+}
+.mix .project-link a i {
+  font-family: "Manrope", sans-serif;
 }
 .mix:hover .project-link {
   transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
 }
 
 .project-details-area .project-details-title {

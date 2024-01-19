@@ -23,22 +23,28 @@
                    margin-bottom: 36px;
                     .rating-icon{
                         margin-right: 15px;
+                        display: flex;
+                        gap: 10px;
                         span{
-                            font-size: 20px;
                             color: $white;
-                            padding:8px;
+                            width: 36px;
+                            height: 36px;
                             background-color: $primary-color;
                             border-radius: 5px;
-                            -webkit-border-radius: 5px;
-                            -moz-border-radius: 5px;
-                            -ms-border-radius: 5px;
-                            -o-border-radius: 5px;
-                            margin-right: 10px;
-                            display: inline-flex;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             @include sm{
-                                font-size: 15px;
                                 padding: 5px;
                                 margin-right: 5px;
+                            }
+                            i{
+                                font-size: 20px;
+                                font-family: $body-font;
+                                line-height: 20px;
+                                @include sm{
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -105,6 +111,7 @@
                                 font-family: $heading-font;
                                 line-height: 30px;
                                 color: $black;
+                                margin-bottom: 2px;
                             }
                             p{
                                 font-size: 15px;
@@ -117,9 +124,9 @@
                     }
                     .right-quote{
                         span{
-                            font-size: 65px;
+                            font-size: 118px;
                             @include sm{
-                                font-size: 30px;
+                                font-size: 60px;
                             }
                         }
                        

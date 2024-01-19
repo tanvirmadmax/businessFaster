@@ -476,7 +476,7 @@
         $(".team-slider-wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
