@@ -5,7 +5,11 @@
 
     .image-wrapper {
         position: relative;
-
+        img{
+            @include xl{
+                width: 100%;
+            }
+        }
         .info-card {
             position: absolute;
             height: 100%;
@@ -16,10 +20,19 @@
             border-radius: 289px;
             background-color: $primary-color;
             @include transition;
-
+            @include xl{
+                // margin: 0;
+                // bottom: -70%;
+                // padding: 0;
+                justify-content: start;
+            }
             .title,
             .desc {
                 @include transition;
+            }
+            .desc{
+                visibility: hidden;
+                opacity: 0;
             }
         }
     }
@@ -36,6 +49,15 @@
                 .title,
                 .desc {
                     @include transition;
+                    br{
+                        @include xl{
+                            display: none;
+                        }
+                    }
+                }
+                .desc{
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }

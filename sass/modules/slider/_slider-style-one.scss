@@ -250,6 +250,10 @@
     padding-top: 387px;
     padding-bottom: 231px;
 
+    @include xl{
+      padding-top: 330px;
+      padding-bottom: 200px;
+    }
     @media only screen and (min-width: 768px) and (max-width: 1199px) {
       height: 620px;
       padding-bottom: 80px;

@@ -10,11 +10,14 @@
 // Agency-area
 .agency-area {
     position: relative;
-
+    overflow: hidden;
     .bg-shape {
         position: absolute;
-        top: 18px;
+        top: 0;
         right: 0;
+        @include xl{
+            top: 0;
+        }
 
     }
 
@@ -60,6 +63,9 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        @include xl{
+            display: none;
+        }
     }
 
     .meta-user {

@@ -23,7 +23,9 @@
     z-index: 1;
     padding: 60px;
     padding-bottom: 80px;
-
+    @include xl{
+        padding: 40px;
+    }
     @include sm{ 
         padding: 40px;
     }

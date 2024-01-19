@@ -7,8 +7,12 @@
     background-repeat: no-repeat;
     .counter-item{
         display: flex;
+        align-items: center;
+        gap: 25px;
+        @include xl{
+            gap: 12px;
+        }
         .icon{
-            margin-right: 25px;
             span{
                 font-size: 50px;
                 color: $white;
@@ -19,10 +23,6 @@
                 justify-content: center;
                 display: inline-flex;
                 border-radius:100%;
-                -webkit-border-radius:100%;
-                -moz-border-radius:100%;
-                -ms-border-radius:100%;
-                -o-border-radius:100%;
                 border-bottom: 1px solid $white;
             }
         }

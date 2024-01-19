@@ -141,12 +141,11 @@
         bottom: 20%;
         left: 43%;
         transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
         @include md{
             bottom: 4%;
+        }
+        @include xl{
+            bottom: 16%;
         }
         
         button{

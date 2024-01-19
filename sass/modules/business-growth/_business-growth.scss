@@ -44,7 +44,9 @@
       width: 150px;
       height: 150px;
       border-radius: 100px;
-
+      @include xl{
+        left: 8px;
+      }
       .rounded-text {
         width: 225px;
         height: 225px;

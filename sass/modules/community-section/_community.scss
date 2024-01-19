@@ -72,8 +72,12 @@ margin-top: -68px;
 }
 .counter-item{
     display: flex;
+    align-items: center;
+    gap: 25px;
+    @include xl{
+        gap: 12px;
+    }
     .icon{
-        margin-right: 25px;
         span{
             font-size: 50px;
             color: $white;
