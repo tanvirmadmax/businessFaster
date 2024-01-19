@@ -439,7 +439,7 @@ input.theme-btn.simple-btn {
   align-items: center;
   justify-content: center;
   content: "\f105";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   width: 44px;
   height: 44px;
   border-radius: 6px;
@@ -6778,14 +6778,14 @@ button.testimonial-arrow-btn:hover i {
 }
 .accordion-wrapper .accordion-list-item .accordion-head:before {
   content: "\f068";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   color: #ffffff;
   font-weight: 700;
 }
 .accordion-wrapper .accordion-list-item .accordion-head.collapsed:before {
   position: relative;
   content: "+";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   color: #ffffff;
   font-weight: 700;
 }
@@ -7596,7 +7596,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .content-header .info span i {
   font-size: 18px;
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   color: #31373f;
 }
 .single-post-item .content-header .post-meta-right {
@@ -9097,7 +9097,7 @@ button.testimonial-arrow-btn:hover i {
   content: "\f054";
   font-size: 12px;
   color: #fff;
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   display: inline-flex;
 }
 .breadcrumb-list ul li:first-child:before {
@@ -9940,7 +9940,7 @@ button.testimonial-arrow-btn:hover i {
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
 .widget .wp-block-latest-posts li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date:before {
   content: "\f274";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   padding-right: 8px;
 }
 .widget .wp-block-latest-comments li a,
@@ -10411,7 +10411,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_rss .wp-block-rss__item-publish-date:before,
 .widget_rss .rss-date:before {
   content: "\f274";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   padding-right: 8px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author:before,
@@ -10421,7 +10421,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_rss .wp-block-latest-posts__post-author:before,
 .widget_rss .wp-block-rss__item-author:before {
   content: "\f007";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   padding-right: 8px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
@@ -15568,7 +15568,7 @@ ul.children {
 }
 .analysis-card .content-wrapper .list-wrapper li:before {
   content: "\f14a";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   font-size: 25px;
   color: #ED3B3B;
   margin-right: 10px;
@@ -16848,7 +16848,7 @@ ul.children {
 .project-details-area .project-details-information .content-wrapper .content .project-challenges ul li::before {
   position: absolute;
   content: "\f00c";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 6";
   color: #ED3B3B;
   left: -20px;
 }
@@ -17030,4 +17030,114 @@ footer .copyfight-footer p {
 }
 footer .copyfight-footer p span {
   color: #ED3B3B;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+  content: "\e900";
+}
+
+.icon-chat:before {
+  content: "\e901";
+}
+
+.icon-chat-2:before {
+  content: "\e902";
+}
+
+.icon-check:before {
+  content: "\e903";
+}
+
+.icon-clock:before {
+  content: "\e904";
+}
+
+.icon-compas:before {
+  content: "\e905";
+}
+
+.icon-incognito:before {
+  content: "\e906";
+}
+
+.icon-mail:before {
+  content: "\e907";
+}
+
+.icon-maps:before {
+  content: "\e908";
+}
+
+.icon-monitor:before {
+  content: "\e909";
+}
+
+.icon-note:before {
+  content: "\e90a";
+}
+
+.icon-phone:before {
+  content: "\e90b";
+}
+
+.icon-play:before {
+  content: "\e90c";
+}
+
+.icon-point:before {
+  content: "\e90d";
+}
+
+.icon-quote-2:before {
+  content: "\e90e";
+}
+
+.icon-rating:before {
+  content: "\e90f";
+}
+
+.icon-social-media:before {
+  content: "\e910";
+}
+
+.icon-square:before {
+  content: "\e911";
+}
+
+.icon-star:before {
+  content: "\e912";
+}
+
+.icon-user:before {
+  content: "\e913";
+}
+
+.icon-user-2:before {
+  content: "\e914";
+}
+
+.icon-world-maps:before {
+  content: "\e915";
 }/*# sourceMappingURL=style.css.map */
