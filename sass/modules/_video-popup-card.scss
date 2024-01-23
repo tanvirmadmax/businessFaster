@@ -19,6 +19,14 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    @include md {
+      width: 120px;
+      height: 120px;
+    }
+    @include sm {
+      width: 100px;
+      height: 100px;
+    }
     a {
       width: 130px;
       height: 130px;

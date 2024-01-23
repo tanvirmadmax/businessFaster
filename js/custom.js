@@ -187,6 +187,31 @@
                 },
             ],
         });
+        $(".project-area-slider").slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: true,
+            speed: 1500,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
 
 
         /*
@@ -298,7 +323,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {

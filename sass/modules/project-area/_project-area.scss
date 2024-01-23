@@ -4,6 +4,41 @@
         // margin: 0 auto;
         padding: 0 100px;
         margin-top: 60px;
+        &.project-area-slider{
+            .slick-dots{
+                display: flex !important;
+                width: 356px;
+                height: 3px;
+                list-style: none;
+                justify-content: center;
+                background: linear-gradient(270deg, rgba(217, 217, 217, 0.00) -1.4%, #ED3B3B 100%);
+                margin: 0 auto;
+                margin-top: 65px;
+                li{
+                    font-size: 0;
+                    width: 20%;
+                    @include transition;
+                    button{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $primary-color;
+                        visibility: hidden;
+                        opacity: 0;
+                        // margin-top: -10px;
+                        @include transition;
+                        transform: translateY(-50%);
+                    }
+                    &.slick-active{
+                        button{
+                            visibility: visible;
+                            opacity: 1;
+                            @include transition;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .image-card-wrapper {

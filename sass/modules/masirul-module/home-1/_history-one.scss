@@ -216,7 +216,7 @@
     padding-top: 150px ;
     padding-bottom: 80px ;
 
-    @include mintomax(576,767.97){
+    @include sm{
         height: 555px;
         padding-top: 20px ;
         padding-bottom: 20px ;
