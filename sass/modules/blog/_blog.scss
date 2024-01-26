@@ -82,7 +82,9 @@
                 margin-top: 10px;
                 padding-left: 0;
                 margin-bottom: 0;
-                
+                @include rmaxwd(991){
+                  gap: 4px;
+                }
 
                 li {
                   display: flex;
@@ -96,6 +98,9 @@
                     font-size: 15px;
                     color: $primary-color;
                     margin-right: 10px;
+                    @include rmaxwd(991){
+                      margin-right: 4px;
+                    }
                   }
                 }
               }

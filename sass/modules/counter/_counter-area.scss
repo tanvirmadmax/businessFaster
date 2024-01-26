@@ -5,6 +5,9 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    @include sm{
+        padding-top: 80px;
+    }
     .counter-item{
         display: flex;
         align-items: center;

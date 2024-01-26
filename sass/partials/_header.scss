@@ -88,12 +88,8 @@
     display: none;
   }
 
-  @include rmaxwd(991) {
+  @include rmaxwd(1399) {
     display: none;
-  }
-  @include xl{
-    display: none;
-
   }
   // Header Logo
 
@@ -175,18 +171,28 @@
   z-index: 999;
   transition: all 0.4s ease 0s;
   background-color: transparent;
-
+  @include rmaxwd(1199){
+    background-color: $white;
+  }
+  .custom-container{
+    @include rmaxwd(1199){
+      margin: 0 24px;
+    }
+    @include sm{
+      margin: 0 12px;
+    }
+  }
   &.sticky-header {
     width: 100%;
     z-index: 999;
     transition: all 0.4s ease 0s;
     .full-width-hidden{
-      @include xl{
+      @include rmaxwd(1399){
         display: none !important;
       }
     }
     .full-width-visible{
-      @include xl{
+      @include rmaxwd(1399){
         display: block !important;
 
       }
@@ -257,9 +263,8 @@
   justify-content: space-between;
   background-color: $white;
   border-radius: 5px;
-  @include xl{
+  @include rmaxwd(1399){
     justify-content: end;
-
   }
   .menu{
     @include rmaxwd(991){
@@ -349,6 +354,9 @@
         text-transform: uppercase;
         @include xl{
           padding: 28px 20px;
+        }
+        @include lg{
+          padding: 24px 20px;
         }
         &:hover {
           // color: $orange-color;
@@ -452,9 +460,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 0 5px 5px 0;
-  @include xl{
+  @include rmaxwd(1399){
     display: none;
   }
+  
   .search-btn {
     padding: 30px;
     border-left: 1px solid #E3E3E3;

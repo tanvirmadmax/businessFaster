@@ -3,11 +3,13 @@
     &.style-1{
         .section-title{
             margin-bottom: 60px;
+            @include sm{
+                margin-bottom: 40px;
+            }
         }
     }
 }
 .testimonial-area{
-    padding-bottom: 135px;
     position: relative;
     .left-image{
         img{
@@ -142,31 +144,94 @@
         }
     }
     .testimonial-btn{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        border-radius: 100%;
+        margin-right: 14px;
         position: absolute;
-        bottom: 24%;
-        left: 44%;
+        bottom: 10%;
+        left: -16%;
         transform: translateX(-50%);
+        &.prev{
+            left: -27%;
+            background-color: $primary-color;
+            color: $white;
+            @include md{
+                left: unset;
+                right: 10%;
+            }
+        }
+        &:hover{
+            background-color: $primary-color;
+            color: $white;
+        }
         @include md{
-            bottom: 50%;
+            bottom: unset;
+            top: -40%;
             right: 0;
             left: unset;
         }
         @include xl{
-            bottom: 16%;
+            bottom: 0%;
+        }
+        @include lg{
+            bottom: 0%;
         }
         
-        button{
-            width: 45px;
-            height: 45px;
-            font-size: 20px;
-            border-radius: 100%;
-            margin-right: 14px;
-            &:hover{
-                background-color: $primary-color;
-                color: $white;
-            }
-        }
     }
+    .slick-dots {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        right: -65px;
+        transform: translateY(-50%);
+        z-index: 2;
+        margin-top: 32px;
+        @media only screen and (min-width: 991px) and (max-width: 1280px) {
+          right: -15px;
+        }
+        @include rmaxwd(991) {
+          position: unset;
+          right: unset;
+          top: unset;
+          transform: inherit;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        li {
+          display: inline-block;
+          line-height: 0;
+          outline: 2px solid transparent;
+          border: 5px solid transparent;
+          border-radius: 50px;
+          @include transition;
+    
+          button {
+            font-size: 0;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            background-color: rgb(94, 111, 146);
+            opacity: 0.478;
+            border-radius: 50px;
+            position: relative;
+            @include transition;
+          }
+          &.slick-active {
+            @include transition;
+            outline: 2px solid rgb(252, 133, 91);
+    
+            button {
+              @include transition;
+            }
+          }
+        }
+      }
 }
 
 // Agency-area
@@ -188,6 +253,9 @@
         position: relative;
         z-index: 3;
         overflow: hidden;
+        @include sm{
+            margin-right: 0;
+        }
         &:before{
             content: "";
             width: 150px;
@@ -197,6 +265,9 @@
             left: 24%;
             top: 0;
             transform: skewX(45deg);
+            @include sm{
+                left: 50%;
+            }
         }
         &:after{
             content: "";
@@ -228,13 +299,20 @@
         @include xl{
             display: none;
         }
+        @include sm{
+            display: none;
+        }
     }
 
     .meta-user {
         display: flex;
         align-items: center;
         gap: 33px;
-
+        @include sm{
+            flex-direction: column;
+            margin-top: 30px;
+            text-align: center;
+        }
         .meta-img {
             position: relative;
             flex-shrink: 0;
@@ -275,14 +353,21 @@
                 }
             }
         }
-
+        .meta-desc{
+            @include rmaxwd(991){
+                font-size: 16px;
+            }
+        }
     }
 
     .icon-card-wrapper {
         display: flex;
         margin-top: 40px;
         gap: 92px;
-
+        @include sm{
+            flex-direction: column;
+            gap: 12px;
+        }
     }
 
     .comment-respond {
@@ -291,6 +376,9 @@
         z-index: 1;
         margin-top: 0;
         padding-bottom: 60px;
+        @include sm{
+            margin-bottom: 0;
+        }
         .title{
             font-size: 30px;
             font-weight: 600;

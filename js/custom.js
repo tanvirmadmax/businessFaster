@@ -190,7 +190,7 @@
         $(".project-area-slider").slick({
             slidesToShow: 4,
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
@@ -199,13 +199,25 @@
             speed: 1500,
             responsive: [
                 {
-                    breakpoint: 992,
+                    breakpoint: 1399,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 991,
                     settings: {
                         slidesToShow: 1,
                     },
                 },
                 {
-                    breakpoint: 768,
+                    breakpoint: 576,
                     settings: {
                         slidesToShow: 1,
                     },
@@ -492,8 +504,20 @@
             autoplay: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            prevArrow: ".prev",
-            nextArrow: ".next"
+            prevArrow:
+            "<button type='button' class='testimonial-btn prev'><i class='bi bi-arrow-left'></i></button>",
+            nextArrow:
+            "<button type='button' class='testimonial-btn next'><i class='bi bi-arrow-right'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true,
+                    },
+                },
+            ],
         });
 
         /* Team member slider

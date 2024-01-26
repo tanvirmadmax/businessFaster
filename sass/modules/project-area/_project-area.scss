@@ -4,6 +4,9 @@
         // margin: 0 auto;
         padding: 0 100px;
         margin-top: 60px;
+        @include sm{
+            padding: 0 12px;
+        }
         &.project-area-slider{
             .slick-dots{
                 display: flex !important;
@@ -14,9 +17,12 @@
                 background: linear-gradient(270deg, rgba(217, 217, 217, 0.00) -1.4%, #ED3B3B 100%);
                 margin: 0 auto;
                 margin-top: 65px;
+                padding-left: 0;
                 li{
                     font-size: 0;
                     width: 20%;
+                    cursor: pointer;
+                    z-index: 3;
                     @include transition;
                     button{
                         width: 15px;
@@ -27,7 +33,7 @@
                         opacity: 0;
                         // margin-top: -10px;
                         @include transition;
-                        transform: translateY(-50%);
+                        transform: translateY(-42%);
                     }
                     &.slick-active{
                         button{

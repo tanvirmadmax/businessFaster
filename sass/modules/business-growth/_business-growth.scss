@@ -47,6 +47,10 @@
       @include xl{
         left: 8px;
       }
+      @include sm{
+        top: 140px;
+        left: 102px;
+      }
       // @include lg{
       //   width: 100px;
       //   height: 100px;

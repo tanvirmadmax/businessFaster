@@ -6,7 +6,7 @@
     .image-wrapper {
         position: relative;
         img{
-            @include xl{
+            @include rmaxwd(1399){
                 width: 100%;
             }
         }
@@ -21,19 +21,26 @@
             background-color: $primary-color;
             @include transition;
             @include xl{
-                // margin: 0;
-                // bottom: -70%;
-                // padding: 0;
+                margin: 0;
+                bottom: -58%;
+                padding: 24px;
+            }
+            @include rmaxwd(1399){
                 justify-content: start;
             }
             .title,
             .desc {
                 @include transition;
+                @include xl{
+                    // text-align: center;
+                }
             }
             .desc{
                 visibility: hidden;
                 opacity: 0;
+                
             }
+            
         }
     }
 
@@ -45,12 +52,14 @@
                 text-align: start;
                 border-radius: 0;
                 background-color: transparent;
-
+                @include sm{
+                    padding: 30px;
+                }
                 .title,
                 .desc {
                     @include transition;
                     br{
-                        @include xl{
+                        @include rmaxwd(1399){
                             display: none;
                         }
                     }
