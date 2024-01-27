@@ -3,7 +3,9 @@
     padding: 0 30px 20px 40px;
     background-color: $white;
     @include transition;
-
+    @include xl{
+        padding: 20px;
+    }
     .stack-text {
         h2 {
             font-family: $heading-font;

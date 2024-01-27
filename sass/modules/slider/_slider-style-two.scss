@@ -5,10 +5,19 @@
     .single-slider {
       background-size: unset;
       background-position: bottom right;
+      @include lg{
+        background-position: top left;
+      }
       .slider-content{
         .slider-title{
           span{
             border-bottom: none;
+          }
+        }
+        .shape-1{
+          @include lg{
+            right: 45px;
+            top: -96px;
           }
         }
       }
@@ -18,6 +27,10 @@
       position: absolute;
       top: 132px;
       left: 0;
+      @include xl{
+        top: unset;
+        bottom: 0;
+      }
     }
 
 

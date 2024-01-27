@@ -251,8 +251,8 @@
     padding-bottom: 231px;
 
     @include xl{
-      padding-top: 330px;
-      padding-bottom: 200px;
+      padding-top: 375px;
+      padding-bottom: 154px;
     }
     @include lg{
       padding-top: 270px;
@@ -285,7 +285,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      z-index: 1;
+      z-index: 0;
     }
     .shape{
       position: absolute;

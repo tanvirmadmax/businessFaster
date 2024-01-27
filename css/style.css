@@ -3480,7 +3480,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .main-menu ul li a {
-    padding: 28px 20px;
+    padding: 46px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4184,8 +4184,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .slider-area .single-slider {
-    padding-top: 330px;
-    padding-bottom: 200px;
+    padding-top: 375px;
+    padding-bottom: 154px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4227,7 +4227,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .slider-area .single-slider .shape {
   position: absolute;
@@ -4382,13 +4382,30 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-size: unset;
   background-position: bottom right;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-area.style-2 .single-slider {
+    background-position: top left;
+  }
+}
 .slider-area.style-2 .single-slider .slider-content .slider-title span {
   border-bottom: none;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-area.style-2 .single-slider .slider-content .shape-1 {
+    right: 45px;
+    top: -96px;
+  }
 }
 .slider-area.style-2 .slider-bg {
   position: absolute;
   top: 132px;
   left: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slider-area.style-2 .slider-bg {
+    top: unset;
+    bottom: 0;
+  }
 }
 
 .slider-area.style-3 {
@@ -11998,6 +12015,11 @@ ul.children {
     height: auto;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item {
+    padding: 0 8px;
+  }
+}
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box {
   display: flex;
   margin-bottom: 36px;
@@ -16647,11 +16669,17 @@ ul.children {
 
 .community-item {
   display: flex;
+  gap: 50px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .community-item {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 .community-item .icon {
   font-size: 60px;
   color: #ED3B3B;
-  margin-right: 50px;
 }
 .community-item .content {
   color: #ffffff;
@@ -16671,15 +16699,22 @@ ul.children {
   margin-bottom: 0;
 }
 
-.counter-section-area {
+.counter-area.style-2 {
   margin-top: -68px;
+  background-color: transparent;
+  padding: 0;
 }
-.counter-section-area .counter-wrapper {
+.counter-area.style-2 .counter-wrapper {
   background-color: #ED3B3B;
   padding: 64px 142px;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-area.style-2 .counter-wrapper {
+    padding: 42px;
+  }
 }
 
 .counter-item {
@@ -16690,6 +16725,11 @@ ul.children {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .counter-item {
     gap: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-item {
+    gap: 0;
   }
 }
 .counter-item .icon span {
@@ -16728,6 +16768,11 @@ ul.children {
 .about-agency-area .about-agency-image {
   position: relative;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image {
+    height: 100%;
+  }
+}
 .about-agency-area .about-agency-image img {
   width: 100%;
   object-fit: cover;
@@ -16737,12 +16782,13 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image img {
+    height: 100%;
+  }
+}
 .about-agency-area .about-agency-image img:hover {
   transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
@@ -16751,6 +16797,20 @@ ul.children {
   width: 306px;
   height: 304px;
   border-radius: 15px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    right: -42px;
+    bottom: -36px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    height: 220px;
+  }
 }
 .about-agency-area .about-agency-image .about-img-two img {
   width: 100%;
@@ -16763,6 +16823,11 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area .about-agency-info {
+    padding-left: 30px;
+  }
 }
 .about-agency-area .about-agency-info .primary-title.style-2 {
   margin-bottom: 40px;
@@ -16793,12 +16858,50 @@ ul.children {
 .about-agency-area.style-2 .about-agency-image {
   margin-left: -292px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-agency-image {
+    height: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-agency-image {
+    height: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-agency-image img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-agency-image img {
+    height: 100%;
+  }
+}
 .about-agency-area.style-2 .about-img-two.style-2 {
   right: -62px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    right: 0;
+  }
 }
 
 .community-item.style-two {
   display: flex;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .community-item.style-two {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .community-item.style-two:hover .icon span {
   background-color: #ED3B3B;
@@ -16859,6 +16962,11 @@ ul.children {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .our-services-item {
+    padding: 20px;
+  }
 }
 .our-services-item .stack-text h2 {
   font-family: "Teko", sans-serif;
@@ -16937,6 +17045,11 @@ ul.children {
 .about-agency-area .about-agency-image {
   position: relative;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image {
+    height: 100%;
+  }
+}
 .about-agency-area .about-agency-image img {
   width: 100%;
   object-fit: cover;
@@ -16946,12 +17059,13 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image img {
+    height: 100%;
+  }
+}
 .about-agency-area .about-agency-image img:hover {
   transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
 }
 .about-agency-area .about-agency-image .about-img-two {
   position: absolute;
@@ -16960,6 +17074,20 @@ ul.children {
   width: 306px;
   height: 304px;
   border-radius: 15px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    right: -42px;
+    bottom: -36px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    height: 220px;
+  }
 }
 .about-agency-area .about-agency-image .about-img-two img {
   width: 100%;
@@ -16972,6 +17100,11 @@ ul.children {
 }
 .about-agency-area .about-agency-image .about-img-two img:hover {
   transform: scale(1.03);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area .about-agency-info {
+    padding-left: 30px;
+  }
 }
 .about-agency-area .about-agency-info .primary-title.style-2 {
   margin-bottom: 40px;
@@ -17002,13 +17135,50 @@ ul.children {
 .about-agency-area.style-2 .about-agency-image {
   margin-left: -292px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-agency-image {
+    height: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-agency-image {
+    height: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-agency-image img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-agency-image img {
+    height: 100%;
+  }
+}
 .about-agency-area.style-2 .about-img-two.style-2 {
   right: -62px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    right: 0;
+  }
 }
 
 .agency-benefits-content-wrapper .content {
   margin-bottom: 50px;
   margin-right: 100px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .agency-benefits-content-wrapper .content {
+    margin-right: 0;
+  }
 }
 .agency-benefits-content-wrapper .content h5 {
   font-family: "Teko", sans-serif;

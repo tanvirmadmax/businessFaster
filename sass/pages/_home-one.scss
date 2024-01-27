@@ -25,6 +25,9 @@
     .testimonial-info{
         .testimonial-wrapper{
             .testimonial-item{
+                @include lg{
+                    padding: 0 8px;
+                }
                 .rating-box{
                     display: flex;
                    margin-bottom: 36px;

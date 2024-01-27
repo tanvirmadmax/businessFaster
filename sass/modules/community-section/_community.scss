@@ -35,10 +35,14 @@
 }
 .community-item{
     display: flex;
+    gap: 50px;
+    @include lg{
+        flex-direction: column;
+        gap: 12px;
+    }
     .icon{
         font-size: 60px;
         color: $primary-color;
-        margin-right: 50px;
     }
     .content{
         color: $white;
@@ -60,14 +64,21 @@
 }
 
 // counter section
-.counter-section-area{
-margin-top: -68px;
-    .counter-wrapper{
-        background-color: $primary-color;
-        padding: 64px 142px;
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
+.counter-area{
+    &.style-2{
+        margin-top: -68px;
+        background-color: transparent;
+        padding: 0;
+        .counter-wrapper{
+            background-color: $primary-color;
+            padding: 64px 142px;
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            @include lg{
+                padding: 42px;
+            }
+        }
     }
 }
 .counter-item{
@@ -76,6 +87,9 @@ margin-top: -68px;
     gap: 25px;
     @include xl{
         gap: 12px;
+    }
+    @include lg{
+        gap: 0;
     }
     .icon{
         span{

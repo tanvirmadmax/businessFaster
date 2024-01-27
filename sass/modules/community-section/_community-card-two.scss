@@ -1,6 +1,10 @@
 .community-item{
     &.style-two{
         display: flex;
+        @include lg{
+            flex-direction: row;
+            align-items: center;
+        }
         &:hover{
             .icon{
                 span{

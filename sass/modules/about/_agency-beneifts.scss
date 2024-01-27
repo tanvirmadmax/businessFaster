@@ -2,7 +2,9 @@
     .content {
         margin-bottom: 50px;
         margin-right: 100px;
-
+        @include lg{
+            margin-right: 0;
+        }
         h5 {
             font-family: $heading-font;
             color: $black;
