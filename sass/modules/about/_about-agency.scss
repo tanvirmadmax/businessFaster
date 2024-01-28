@@ -33,9 +33,15 @@
                 width: 220px;
                 height: 220px;
             }
-            @include md{
+            @include rmaxwd(991){
                 right: 0;
                 bottom: 0;
+                width: 220px;
+                height: 220px;
+            }
+            @include sm{
+                width: 180px;
+                height: 180px;
             }
             img {
                 width: 100%;
@@ -120,6 +126,26 @@
                 @include md{
                     right: 10px;
                     bottom: 10px;
+                }
+                @include sm{
+                    padding: 15px;
+                }
+                .title{
+                    @include sm{
+                        margin-bottom: 8px;
+                    }
+                    h3{
+                        @include sm{
+                            padding-bottom: 8px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .counter-item{
+                    @include sm{
+                        gap: 8px;
+                        // flex-direction: column; 
+                    }
                 }
             }
         }

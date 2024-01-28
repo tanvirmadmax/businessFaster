@@ -4229,6 +4229,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   bottom: 0;
   z-index: 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area .single-slider .angle-shape {
+    display: none;
+  }
+}
 .slider-area .single-slider .shape {
   position: absolute;
   right: 0;
@@ -4238,6 +4243,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   .slider-area .single-slider .shape {
     display: flex;
     justify-content: end;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .slider-area .single-slider .shape {
+    display: none;
   }
 }
 @media (max-width: 1199px) {
@@ -4251,7 +4261,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content {
-    text-align: center;
+    text-align: start;
   }
 }
 .slider-area .single-slider .slider-content .shape-1 {
@@ -4407,12 +4417,12 @@ body.admin-bar .header-menu-area.sticky_menu {
     bottom: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .slider-area.style-2 .slider-bg {
     height: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .slider-area.style-2 .slider-bg img {
     height: 100%;
   }
@@ -12435,6 +12445,10 @@ ul.children {
 .contact-area.style-2 .comment-respond {
   margin-bottom: 0;
 }
+.contact-area.style-2 .meta-user {
+  text-align: start;
+  align-items: start;
+}
 
 .our-services-area {
   background-repeat: no-repeat;
@@ -16674,6 +16688,11 @@ ul.children {
   height: 100%;
   margin-bottom: 0px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .community-section-area .community-title .community-section-btn {
+    justify-content: start;
+  }
+}
 .community-section-area .community-overlay {
   position: absolute;
   left: 0;
@@ -16692,6 +16711,11 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .community-item {
     flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .community-item {
     gap: 12px;
   }
 }
@@ -16737,6 +16761,11 @@ ul.children {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .counter-area.style-2 .counter-wrapper {
     padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .counter-area.style-2 .counter-wrapper {
+    padding: 80px 30px;
   }
 }
 
@@ -16835,10 +16864,18 @@ ul.children {
     height: 220px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .about-agency-area .about-agency-image .about-img-two {
     right: 0;
     bottom: 0;
+    width: 220px;
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    width: 180px;
+    height: 180px;
   }
 }
 .about-agency-area .about-agency-image .about-img-two img {
@@ -16912,6 +16949,27 @@ ul.children {
     bottom: 10px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title {
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title h3 {
+    padding-bottom: 8px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .counter-item {
+    gap: 8px;
+  }
+}
 
 .community-item.style-two {
   display: flex;
@@ -16922,7 +16980,7 @@ ul.children {
     align-items: center;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .community-item.style-two {
     align-items: center;
   }
@@ -16932,9 +16990,6 @@ ul.children {
 }
 .community-item.style-two:hover .icon span i {
   transform: rotateY(360deg);
-}
-.community-item.style-two .icon {
-  margin-right: 20px;
 }
 .community-item.style-two .icon span {
   font-size: 40px;
@@ -17113,10 +17168,18 @@ ul.children {
     height: 220px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .about-agency-area .about-agency-image .about-img-two {
     right: 0;
     bottom: 0;
+    width: 220px;
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area .about-agency-image .about-img-two {
+    width: 180px;
+    height: 180px;
   }
 }
 .about-agency-area .about-agency-image .about-img-two img {
@@ -17190,6 +17253,27 @@ ul.children {
     bottom: 10px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title {
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title h3 {
+    padding-bottom: 8px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .counter-item {
+    gap: 8px;
+  }
+}
 
 .agency-benefits-content-wrapper .content {
   margin-bottom: 50px;
@@ -17198,6 +17282,16 @@ ul.children {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .agency-benefits-content-wrapper .content {
     margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .agency-benefits-content-wrapper .content {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .agency-benefits-content-wrapper .content br {
+    display: none;
   }
 }
 .agency-benefits-content-wrapper .content h5 {
@@ -17234,9 +17328,6 @@ ul.children {
   font-weight: 500;
   color: #151515;
   padding-bottom: 18px;
-}
-.about-img-two.style-2 .counter-item .icon {
-  margin-right: 20px;
 }
 .about-img-two.style-2 .counter-item .icon span {
   background-image: linear-gradient(to top, #ffffff, #ffffff);

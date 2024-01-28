@@ -286,6 +286,9 @@
       left: 0;
       bottom: 0;
       z-index: 0;
+      @include sm{
+        display: none;
+      }
     }
     .shape{
       position: absolute;
@@ -294,6 +297,9 @@
       @include rmaxwd(1199){
         display: flex;
         justify-content: end;
+      }
+      @include sm{
+        display: none;
       }
       img{
         @include rmaxwd(1199){
@@ -305,7 +311,7 @@
     .slider-content {
       position: relative;
       @include sm {
-        text-align: center;
+        text-align: start;
       }
       .shape-1{
         position: absolute;

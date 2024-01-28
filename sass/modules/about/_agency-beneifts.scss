@@ -5,6 +5,14 @@
         @include lg{
             margin-right: 0;
         }
+        @include rmaxwd(991){
+            margin-right: 0;
+        }
+        br{
+            @include rmaxwd(991){
+                display: none;
+            }
+        }
         h5 {
             font-family: $heading-font;
             color: $black;
@@ -48,10 +56,8 @@
             border-bottom: 1px solid $gray-200;
             margin-bottom: 30px;
         }
-
         .counter-item {
             .icon {
-                margin-right: 20px;
 
                 span {
                     background-image: linear-gradient(to top, #ffffff, #ffffff);

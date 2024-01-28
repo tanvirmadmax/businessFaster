@@ -5,7 +5,7 @@
             flex-direction: row;
             align-items: center;
         }
-        @include md{
+        @include rmaxwd(991){
             align-items: center;
         }
         &:hover{
@@ -19,7 +19,7 @@
             }
         }
         .icon{
-            margin-right: 20px;
+            // margin-right: 20px;
             span{
                 font-size: 40px;
                 color: $white;
