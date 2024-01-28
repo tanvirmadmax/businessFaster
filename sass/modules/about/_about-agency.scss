@@ -33,6 +33,10 @@
                 width: 220px;
                 height: 220px;
             }
+            @include md{
+                right: 0;
+                bottom: 0;
+            }
             img {
                 width: 100%;
                 object-fit: cover;
@@ -97,19 +101,12 @@
     &.style-2{
         .about-agency-image{
             margin-left: -292px;
-            @include xl{
-                height: 100%;
-                margin-left: 0;
-            }
-            @include lg{
+            @include rmaxwd(1399){
                 height: 100%;
                 margin-left: 0;
             }
             img{
-                @include xl{
-                    height: 100%;
-                }
-                @include lg{
+                @include rmaxwd(1399){
                     height: 100%;
                 }
             }
@@ -117,11 +114,12 @@
         .about-img-two{
             &.style-2{
                 right: -62px;
-                @include xl{
+                @include rmaxwd(1399){
                     right: 0;
                 }
-                @include lg{
-                    right: 0;
+                @include md{
+                    right: 10px;
+                    bottom: 10px;
                 }
             }
         }

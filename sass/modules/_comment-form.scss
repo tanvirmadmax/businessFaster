@@ -46,7 +46,9 @@
   padding: 80px;
   position: relative;
   box-shadow: 0px 4px 30px 0px rgba(234, 215, 215, 0.25);
-
+  @include md{
+    padding: 40px 32px;
+  }
   .shape {
     position: absolute;
     bottom: 0;

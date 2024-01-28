@@ -31,8 +31,14 @@
         top: unset;
         bottom: 0;
       }
+      @include md{
+        height: 100%;
+      }
+      img{
+        @include md{
+          height: 100%;
+        }
+      }
     }
-
-
   }
 }

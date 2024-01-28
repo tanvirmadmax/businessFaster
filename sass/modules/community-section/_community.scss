@@ -69,6 +69,7 @@
         margin-top: -68px;
         background-color: transparent;
         padding: 0;
+        
         .counter-wrapper{
             background-color: $primary-color;
             padding: 64px 142px;
@@ -77,6 +78,9 @@
             background-repeat: no-repeat;
             @include lg{
                 padding: 42px;
+            }
+            @include md{
+                padding: 30px;
             }
         }
     }
