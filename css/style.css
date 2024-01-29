@@ -12394,6 +12394,9 @@ ul.children {
 .contact-area .meta-user .signature .name span:first-child {
   font-weight: 600;
 }
+.contact-area .meta-user .meta-desc {
+  margin-bottom: 0;
+}
 @media (max-width: 991px) {
   .contact-area .meta-user .meta-desc {
     font-size: 16px;

@@ -357,6 +357,7 @@
             }
         }
         .meta-desc{
+            margin-bottom: 0;
             @include rmaxwd(991){
                 font-size: 16px;
             }
