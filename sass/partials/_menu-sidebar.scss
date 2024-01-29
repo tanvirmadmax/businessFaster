@@ -22,8 +22,9 @@
   z-index: 9999;
 
   @include rmaxwd(560) {
-    width: 350px;
+    width: 374px;
   }
+  
   .menu-sidebar-logo {
     display: inline-block;
     width: 180px;

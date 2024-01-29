@@ -8,7 +8,7 @@
         $('#main-menu').meanmenu({
             meanMenuContainer: '.mobile-nav-menu',
             meanScreenWidth: "991",
-            meanExpand: ['<i class="fal fa-plus"></i>'],
+            meanExpand: ['<i class="bi bi-plus-lg"></i>'],
         });
 
         /*
