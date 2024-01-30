@@ -40,6 +40,9 @@
 .community-item{
     display: flex;
     gap: 50px;
+    @include xl{
+        gap: 20px;
+    }
     @include lg{
         flex-direction: column;
         gap: 12px;
@@ -83,6 +86,9 @@
             background-size: cover;
             background-position: bottom;
             background-repeat: no-repeat;
+            @include xl{
+                padding: 60px 100px;
+            }
             @include lg{
                 padding: 42px;
             }

@@ -123,6 +123,10 @@
                 @include rmaxwd(1399){
                     right: 0;
                 }
+                @include rmaxwd(1199){
+                    padding: 15px;
+
+                }
                 @include md{
                     right: 10px;
                     bottom: 10px;
@@ -131,10 +135,17 @@
                     padding: 15px;
                 }
                 .title{
+                    @include rmaxwd(1199){
+                        margin-bottom: 10px;
+                    }
                     @include sm{
                         margin-bottom: 8px;
                     }
                     h3{
+                        @include rmaxwd(1199){
+                            padding-bottom: 8px;
+                            margin-bottom: 0;
+                        }
                         @include sm{
                             padding-bottom: 8px;
                             margin-bottom: 0;

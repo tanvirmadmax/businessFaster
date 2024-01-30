@@ -117,11 +117,11 @@
       }
 
       &:before {
-        content: "\f054";
+        content: "\F285";
         font-size: 12px;
         color: #fff;
-        font-family: $font-awesome;
-        display: inline-flex;
+        font-family: bootstrap-icons;
+        display: block;
       }
 
       &:first-child {

@@ -9230,11 +9230,11 @@ button.testimonial-arrow-btn:hover i {
   color: #FE6809;
 }
 .breadcrumb-list ul li:before {
-  content: "\f054";
+  content: "\f285";
   font-size: 12px;
   color: #fff;
-  font-family: "Font Awesome 6";
-  display: inline-flex;
+  font-family: bootstrap-icons;
+  display: block;
 }
 .breadcrumb-list ul li:first-child:before {
   display: none;
@@ -16711,6 +16711,11 @@ ul.children {
   display: flex;
   gap: 50px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .community-item {
+    gap: 20px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .community-item {
     flex-direction: column;
@@ -16755,6 +16760,11 @@ ul.children {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .counter-area.style-2 .counter-wrapper {
+    padding: 60px 100px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .counter-area.style-2 .counter-wrapper {
@@ -16946,6 +16956,11 @@ ul.children {
     right: 0;
   }
 }
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    padding: 15px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-agency-area.style-2 .about-img-two.style-2 {
     right: 10px;
@@ -16957,9 +16972,20 @@ ul.children {
     padding: 15px;
   }
 }
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title {
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-agency-area.style-2 .about-img-two.style-2 .title {
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title h3 {
+    padding-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -17250,6 +17276,11 @@ ul.children {
     right: 0;
   }
 }
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 {
+    padding: 15px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-agency-area.style-2 .about-img-two.style-2 {
     right: 10px;
@@ -17261,9 +17292,20 @@ ul.children {
     padding: 15px;
   }
 }
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title {
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-agency-area.style-2 .about-img-two.style-2 .title {
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .about-agency-area.style-2 .about-img-two.style-2 .title h3 {
+    padding-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
