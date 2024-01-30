@@ -70,7 +70,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       h3 {
         font-family: 'Teko';
         font-size: 30px;
@@ -152,6 +154,7 @@
 
       @include sm {
         margin-right: 0px;
+        padding: 10px;
       }
 
       .icon {
@@ -165,7 +168,15 @@
         margin-right: 40px;
         background: #fff;
         color: #ED3B3B;
-        transition: 0.8s;
+        flex-shrink: 0;
+        @include transition;
+        @include sm{
+          margin-right: 12px;
+        }
+        i{
+          transform: rotate(0);
+          @include transition;
+        }
       }
 
       .icon-title {
@@ -180,9 +191,10 @@
 
       &:hover .icon {
         background: #ED3B3B;
-        transform: rotate(360deg);
-
+        
         i {
+          @include transition;
+          transform: rotate(360deg);
           color: #fff;
         }
       }
@@ -276,21 +288,21 @@
       padding: 20px !important;
     }
 
-    i {
-      margin-left: 10px;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      border-radius: 50%;
-      background: #fff;
-      color: #666;
-      cursor: pointer;
-      transform: rotate(370deg);
+    // i {
+    //   margin-left: 10px;
+    //   width: 25px;
+    //   height: 25px;
+    //   line-height: 25px;
+    //   border-radius: 50%;
+    //   background: #fff;
+    //   color: #666;
+    //   cursor: pointer;
+    //   transform: rotate(370deg);
 
-      &:hover {
-        background: #ED3B3B;
-      }
-    }
+    //   &:hover {
+    //     background: #ED3B3B;
+    //   }
+    // }
   }
 
 

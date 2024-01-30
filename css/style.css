@@ -3,7 +3,7 @@
  * Stylesheet:  style.css
  * Theme:       SwiftBiz - 
  * Version:     1.0
- * Author:     	BoomDevs
+ * Author:     	swiftbiz
  * 
  */
 /* Table of contents
@@ -13867,7 +13867,7 @@ ul.children {
 .footer-widget ul {
   padding-left: 0;
 }
-.footer-widget.widget_boomdevs-latest-posts-footer {
+.footer-widget.widget_swiftbiz-latest-posts-footer {
   margin-top: -5px;
 }
 @media (max-width: 767px) {
@@ -13877,7 +13877,7 @@ ul.children {
   }
 }
 @media (max-width: 767px) {
-  .footer-widget.widget_boomdevs_contact_info_widget {
+  .footer-widget.widget_swiftbiz_contact_info_widget {
     margin-bottom: 18px;
   }
 }
@@ -15397,6 +15397,9 @@ ul.children {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .service-details .image-area .image-content h3 {
   font-family: "Teko";
@@ -15468,6 +15471,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .service-details .icons .icon-box {
     margin-right: 0px;
+    padding: 10px;
   }
 }
 .service-details .icons .icon-box .icon {
@@ -15481,7 +15485,25 @@ ul.children {
   margin-right: 40px;
   background: #fff;
   color: #ED3B3B;
-  transition: 0.8s;
+  flex-shrink: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-details .icons .icon-box .icon {
+    margin-right: 12px;
+  }
+}
+.service-details .icons .icon-box .icon i {
+  transform: rotate(0);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .service-details .icons .icon-box .icon-title {
   font-family: "Teko";
@@ -15494,9 +15516,14 @@ ul.children {
 }
 .service-details .icons .icon-box:hover .icon {
   background: #ED3B3B;
-  transform: rotate(360deg);
 }
 .service-details .icons .icon-box:hover .icon i {
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transform: rotate(360deg);
   color: #fff;
 }
 .service-details .accordion {
@@ -15573,20 +15600,6 @@ ul.children {
 .service-details .get-in-touch .form-control {
   background: #F9F9F9 !important;
   padding: 20px !important;
-}
-.service-details .get-in-touch i {
-  margin-left: 10px;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  border-radius: 50%;
-  background: #fff;
-  color: #666;
-  cursor: pointer;
-  transform: rotate(370deg);
-}
-.service-details .get-in-touch i:hover {
-  background: #ED3B3B;
 }
 
 .error {
