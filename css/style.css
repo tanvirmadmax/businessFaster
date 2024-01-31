@@ -15734,67 +15734,6 @@ ul.children {
   background: #F3F3F3;
 }
 
-.team .image-box {
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.team .image-box .image-content {
-  position: absolute;
-  width: 100%;
-  padding: 8px;
-  text-align: center;
-  bottom: 0;
-  transform: translateY(150px);
-  transition: transform 0.5s ease;
-  background: rgba(21, 21, 21, 0.2509803922);
-  backdrop-filter: blur(10px);
-}
-.team .image-box .image-content h3 {
-  font-family: "Teko";
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 43px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #fff;
-}
-.team .image-box .image-content h6 {
-  font-family: "Teko";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: #fff;
-}
-.team .image-box .image-content .team-social-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.team .image-box .image-content .team-social-profile a {
-  display: block;
-  text-decoration: none;
-}
-.team .image-box .image-content .team-social-profile a i {
-  padding: 10px;
-  margin-right: 5px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-}
-.team .image-box .image-content .team-social-profile a i:hover {
-  background: #ED3B3B;
-}
-.team .image-box:hover .image-content {
-  transform: translateY(0px);
-}
-
 .icon-card {
   margin-top: 0px;
 }
@@ -17556,7 +17495,6 @@ ul.children {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  display: inline-block;
   background-color: #ED3B3B;
   color: #ffffff;
   display: flex;
@@ -17567,7 +17505,7 @@ ul.children {
   border-radius: 100%;
 }
 .mix .project-link a i {
-  font-family: "Manrope", sans-serif;
+  line-height: 14px;
 }
 .mix:hover .project-link {
   transform: scale(1);
