@@ -4,29 +4,35 @@
 
   .all-services {
     margin-bottom: 35px;
-    border: 2px solid rgba(102, 102, 102, 0.20);
 
     .service-title {
-      font-family: 'Teko';
-      font-size: 30px;
-      font-weight: 600;
-      line-height: 40px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #FFFFFF;
       background: #ED3B3B;
       padding: 20px 30px;
+      h3{
+        font-family: 'Teko';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        margin-bottom: 0;
+      }
+      
     }
 
     ul {
       padding: 30px;
       margin-bottom: 0;
+      border: 2px solid rgba(102, 102, 102, 0.20);
+      border-top: transparent;
 
       li {
         list-style: none;
         color: #1F1F1F;
         background: #F5F5F5;
         margin-bottom: 10px;
+        @include transition;
 
         a{
           padding: 20px 20px;
@@ -42,7 +48,8 @@
           line-height: 29px;
           letter-spacing: 0em;
           text-align: left;
-          padding: 0px 10px;
+          margin-bottom: 0;
+          @include transition;
         }
 
         i {
@@ -52,9 +59,11 @@
         &:hover {
           color: #fff;
           background: #1F1F1F;
+          @include transition;
 
           h6 {
             color: #fff;
+            @include transition;
           }
         }
       }
@@ -203,74 +212,74 @@
 
 
   // JQUERY ACCORDION PLUGIN 
-  .accordion {
-    margin-top: 32px;
-    margin-bottom: 100px;
+  // .accordion {
+  //   margin-top: 32px;
+  //   margin-bottom: 100px;
 
-    .accordion-item {
-      background-color: #F2F3F6;
-      margin: 16px 0;
-      border-radius: 8px;
-      border: 1px solid #E1E2E7;
-      overflow: hidden;
+  //   .accordion-item {
+  //     background-color: #F2F3F6;
+  //     margin: 16px 0;
+  //     border-radius: 8px;
+  //     border: 1px solid #E1E2E7;
+  //     overflow: hidden;
 
-      .accordion-item-header {
-        padding: 20px 40px;
-        font-family: $heading-font;
-        font-size: 20px;
-        font-weight: 600;
-        color: #1F1F1F;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        position: relative;
-        cursor: pointer;
-
-
-        &::after {
-          content: "\002B";
-          font-size: 2rem;
-          position: absolute;
-          right: 1rem;
-          color: #666666;
-        }
-
-        &.active::after {
-          content: "\2212";
-          color: #FE6809;
-        }
-
-        &.active {
-          background: #fff;
-          color: #FE6809;
-        }
-      }
+  //     .accordion-item-header {
+  //       padding: 20px 40px;
+  //       font-family: $heading-font;
+  //       font-size: 20px;
+  //       font-weight: 600;
+  //       color: #1F1F1F;
+  //       line-height: 30px;
+  //       letter-spacing: 0em;
+  //       text-align: left;
+  //       display: flex;
+  //       align-items: center;
+  //       position: relative;
+  //       cursor: pointer;
 
 
-      .accordion-item-body {
-        max-height: 0;
-        background: #fff;
-        overflow: hidden;
-        // visibility: hidden;
-        // border-radius: 8px;
-        @include transition;
+  //       &::after {
+  //         content: "\002B";
+  //         font-size: 2rem;
+  //         position: absolute;
+  //         right: 1rem;
+  //         color: #666666;
+  //       }
 
-        .accordion-item-body-content {
-          padding: 1rem;
-          font-family: 'Manrope', sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 29px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #666666;
-          padding: 0 40px 20px 40px;
-        }
-      }
-    }
-  }
+  //       &.active::after {
+  //         content: "\2212";
+  //         color: #FE6809;
+  //       }
+
+  //       &.active {
+  //         background: #fff;
+  //         color: #FE6809;
+  //       }
+  //     }
+
+
+  //     .accordion-item-body {
+  //       max-height: 0;
+  //       background: #fff;
+  //       overflow: hidden;
+  //       // visibility: hidden;
+  //       // border-radius: 8px;
+  //       @include transition;
+
+  //       .accordion-item-body-content {
+  //         padding: 1rem;
+  //         font-family: 'Manrope', sans-serif;
+  //         font-size: 16px;
+  //         font-weight: 400;
+  //         line-height: 29px;
+  //         letter-spacing: 0em;
+  //         text-align: left;
+  //         color: #666666;
+  //         padding: 0 40px 20px 40px;
+  //       }
+  //     }
+  //   }
+  // }
 
   .get-in-touch {
     position: relative;

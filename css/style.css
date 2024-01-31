@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Stylesheet:  style.css
  * Theme:       SwiftBiz - 
@@ -6904,38 +6903,45 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
 }
 
-.accordion-wrapper .accordion-list-item .accordion-head {
+.accordion .accordion-item {
+  background-color: #F2F3F6;
+  margin: 16px 0;
+  border-radius: 8px;
+  border: 1px solid #E1E2E7;
+  overflow: hidden;
+  box-shadow: none;
+}
+.accordion .accordion-item:first-child {
+  border-top: 1px solid #E1E2E7;
+}
+.accordion .accordion-item:last-child {
+  border-bottom: 1px solid #E1E2E7;
+}
+.accordion .accordion-item .accordion-button {
+  padding: 20px 40px;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1F1F1F;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
   display: flex;
   align-items: center;
-  gap: 20px;
+  position: relative;
   cursor: pointer;
-  padding: 12px 0;
-  position: relative;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none;
+  color: #ED3B3B;
 }
-.accordion-wrapper .accordion-list-item .accordion-head:before {
-  content: "\f068";
-  font-family: "Font Awesome 6";
-  color: #ffffff;
-  font-weight: 700;
+.accordion .accordion-item .accordion-button.collapsed {
+  color: #151515;
+  background-color: #F2F3F6;
 }
-.accordion-wrapper .accordion-list-item .accordion-head.collapsed:before {
-  position: relative;
-  content: "+";
-  font-family: "Font Awesome 6";
-  color: #ffffff;
-  font-weight: 700;
-}
-.accordion-wrapper .accordion-list-item .accordion-head .accordion-title {
-  font-size: 21px;
-  line-height: 32px;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.accordion-wrapper .accordion-list-item .accordion-item-body {
-  color: #c7cdda;
-  padding-left: 50px;
-  padding-bottom: 3px;
+.accordion .accordion-item .accordion-body {
+  background-color: #ffffff;
+  padding: 0 40px 20px 40px;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -15341,9 +15347,12 @@ ul.children {
 }
 .service-details .all-services {
   margin-bottom: 35px;
-  border: 2px solid rgba(102, 102, 102, 0.2);
 }
 .service-details .all-services .service-title {
+  background: #ED3B3B;
+  padding: 20px 30px;
+}
+.service-details .all-services .service-title h3 {
   font-family: "Teko";
   font-size: 30px;
   font-weight: 600;
@@ -15351,18 +15360,24 @@ ul.children {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
-  background: #ED3B3B;
-  padding: 20px 30px;
+  margin-bottom: 0;
 }
 .service-details .all-services ul {
   padding: 30px;
   margin-bottom: 0;
+  border: 2px solid rgba(102, 102, 102, 0.2);
+  border-top: transparent;
 }
 .service-details .all-services ul li {
   list-style: none;
   color: #1F1F1F;
   background: #F5F5F5;
   margin-bottom: 10px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .service-details .all-services ul li a {
   padding: 20px 20px;
@@ -15377,7 +15392,12 @@ ul.children {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 0px 10px;
+  margin-bottom: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .service-details .all-services ul li i {
   color: #ED3B3B;
@@ -15385,9 +15405,19 @@ ul.children {
 .service-details .all-services ul li:hover {
   color: #fff;
   background: #1F1F1F;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .service-details .all-services ul li:hover h6 {
   color: #fff;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .service-details .image-area {
   position: relative;
@@ -15525,67 +15555,6 @@ ul.children {
   -o-transition: all 0.5s ease-out;
   transform: rotate(360deg);
   color: #fff;
-}
-.service-details .accordion {
-  margin-top: 32px;
-  margin-bottom: 100px;
-}
-.service-details .accordion .accordion-item {
-  background-color: #F2F3F6;
-  margin: 16px 0;
-  border-radius: 8px;
-  border: 1px solid #E1E2E7;
-  overflow: hidden;
-}
-.service-details .accordion .accordion-item .accordion-item-header {
-  padding: 20px 40px;
-  font-family: "Teko", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #1F1F1F;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-.service-details .accordion .accordion-item .accordion-item-header::after {
-  content: "+";
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  color: #666666;
-}
-.service-details .accordion .accordion-item .accordion-item-header.active::after {
-  content: "−";
-  color: #FE6809;
-}
-.service-details .accordion .accordion-item .accordion-item-header.active {
-  background: #fff;
-  color: #FE6809;
-}
-.service-details .accordion .accordion-item .accordion-item-body {
-  max-height: 0;
-  background: #fff;
-  overflow: hidden;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-}
-.service-details .accordion .accordion-item .accordion-item-body .accordion-item-body-content {
-  padding: 1rem;
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #666666;
-  padding: 0 40px 20px 40px;
 }
 .service-details .get-in-touch {
   position: relative;

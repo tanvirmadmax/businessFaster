@@ -1,41 +1,58 @@
-.accordion-wrapper {
-  .accordion-list-item {
-    .accordion-head {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      cursor: pointer;
-      padding: 12px 0;
-      position: relative;
+.accordion {
+  .accordion-item {
+    background-color: #F2F3F6;
+      margin: 16px 0;
+      border-radius: 8px;
+      border: 1px solid #E1E2E7;
+      overflow: hidden;
+      box-shadow: none;
+    &:first-child{
+      border-top: 1px solid #E1E2E7;
+    }
+    &:last-child{
+      border-bottom: 1px solid #E1E2E7;
+    }
+    .accordion-button {
+      padding: 20px 40px;
+        font-family: $heading-font;
+        font-size: 20px;
+        font-weight: 600;
+        color: #1F1F1F;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        background-color: $white;
+        border: none;
+        box-shadow: none;
+        color: $primary-color;
+        &.collapsed{
+          color: $black;
+          background-color: #F2F3F6;
+        }
 
       &:before {
-        content: "\f068";
-        font-family: $font-awesome;
-        color: $white;
-        font-weight: 700;
-      }
-      &.collapsed {
-        &:before {
-          position: relative;
-          content: "\2b";
-          font-family: $font-awesome;
-          color: $white;
-          font-weight: 700;
-        }
+        // content: "\002B";
+        // font-family: $font-awesome;
+        // color: $white;
+        // font-weight: 700;
+        // color: #666666;
       }
 
       .accordion-title {
-        font-size: 21px;
-        line-height: 32px;
-        color: $white;
-        font-weight: 700;
-        margin-bottom: 0;
+        // font-size: 21px;
+        // line-height: 32px;
+        // color: $white;
+        // font-weight: 700;
+        // margin-bottom: 0;
       }
     }
-    .accordion-item-body {
-      color: $white-100;
-      padding-left: 50px;
-      padding-bottom: 3px;
+    .accordion-body {
+      background-color: $white;
+      padding: 0 40px 20px 40px; 
       @include transition;
     }
   }
