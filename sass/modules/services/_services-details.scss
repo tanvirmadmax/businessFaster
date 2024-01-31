@@ -73,12 +73,18 @@
 
   .image-area {
     position: relative;
-
-    .image-content {
+    padding: 30px 0;
+    .image{
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      z-index: -1;
+      img{
+        @include md{
+          width: 100%;
+        }
+      }
+    }
+    .image-content {
+      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -127,7 +133,6 @@
 
   // right side
   .right-content {
-
     .content-title {
       font-family: 'Teko';
       font-size: 50px;
@@ -150,7 +155,7 @@
     }
   }
 
-  .icons {
+  .list-item-wrapper {
     margin-top: 40px;
 
     .icon-box {
@@ -160,10 +165,11 @@
       margin-bottom: 30px;
       background-color: #F5F5F5;
       cursor: pointer;
-
+      gap: 18px;
       @include sm {
         margin-right: 0px;
         padding: 10px;
+        gap: 12px;
       }
 
       .icon {
@@ -174,14 +180,10 @@
         font-size: 30px;
         line-height: 70px;
         text-align: center;
-        margin-right: 40px;
         background: #fff;
         color: #ED3B3B;
         flex-shrink: 0;
         @include transition;
-        @include sm{
-          margin-right: 12px;
-        }
         i{
           transform: rotate(0);
           @include transition;
@@ -189,13 +191,14 @@
       }
 
       .icon-title {
-        font-family: 'Teko';
+        font-family: $heading-font !important;
         font-size: 20px;
         font-weight: 600;
         line-height: 30px;
         letter-spacing: 0em;
         text-align: left;
         color: #151515;
+        margin-bottom: 0;
       }
 
       &:hover .icon {
@@ -209,77 +212,6 @@
       }
     }
   }
-
-
-  // JQUERY ACCORDION PLUGIN 
-  // .accordion {
-  //   margin-top: 32px;
-  //   margin-bottom: 100px;
-
-  //   .accordion-item {
-  //     background-color: #F2F3F6;
-  //     margin: 16px 0;
-  //     border-radius: 8px;
-  //     border: 1px solid #E1E2E7;
-  //     overflow: hidden;
-
-  //     .accordion-item-header {
-  //       padding: 20px 40px;
-  //       font-family: $heading-font;
-  //       font-size: 20px;
-  //       font-weight: 600;
-  //       color: #1F1F1F;
-  //       line-height: 30px;
-  //       letter-spacing: 0em;
-  //       text-align: left;
-  //       display: flex;
-  //       align-items: center;
-  //       position: relative;
-  //       cursor: pointer;
-
-
-  //       &::after {
-  //         content: "\002B";
-  //         font-size: 2rem;
-  //         position: absolute;
-  //         right: 1rem;
-  //         color: #666666;
-  //       }
-
-  //       &.active::after {
-  //         content: "\2212";
-  //         color: #FE6809;
-  //       }
-
-  //       &.active {
-  //         background: #fff;
-  //         color: #FE6809;
-  //       }
-  //     }
-
-
-  //     .accordion-item-body {
-  //       max-height: 0;
-  //       background: #fff;
-  //       overflow: hidden;
-  //       // visibility: hidden;
-  //       // border-radius: 8px;
-  //       @include transition;
-
-  //       .accordion-item-body-content {
-  //         padding: 1rem;
-  //         font-family: 'Manrope', sans-serif;
-  //         font-size: 16px;
-  //         font-weight: 400;
-  //         line-height: 29px;
-  //         letter-spacing: 0em;
-  //         text-align: left;
-  //         color: #666666;
-  //         padding: 0 40px 20px 40px;
-  //       }
-  //     }
-  //   }
-  // }
 
   .get-in-touch {
     position: relative;
@@ -313,6 +245,9 @@
     //   }
     // }
   }
-
+  .accordion{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 
 }

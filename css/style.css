@@ -3027,6 +3027,116 @@ body.admin-bar .header-menu-area.sticky_menu {
     opacity: 1;
   }
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+  content: "\e900";
+}
+
+.icon-chat:before {
+  content: "\e901";
+}
+
+.icon-chat-2:before {
+  content: "\e902";
+}
+
+.icon-check:before {
+  content: "\e903";
+}
+
+.icon-clock:before {
+  content: "\e904";
+}
+
+.icon-compas:before {
+  content: "\e905";
+}
+
+.icon-incognito:before {
+  content: "\e906";
+}
+
+.icon-mail:before {
+  content: "\e907";
+}
+
+.icon-maps:before {
+  content: "\e908";
+}
+
+.icon-monitor:before {
+  content: "\e909";
+}
+
+.icon-note:before {
+  content: "\e90a";
+}
+
+.icon-phone:before {
+  content: "\e90b";
+}
+
+.icon-play:before {
+  content: "\e90c";
+}
+
+.icon-point:before {
+  content: "\e90d";
+}
+
+.icon-quote-2:before {
+  content: "\e90e";
+}
+
+.icon-rating:before {
+  content: "\e90f";
+}
+
+.icon-social-media:before {
+  content: "\e910";
+}
+
+.icon-square:before {
+  content: "\e911";
+}
+
+.icon-star:before {
+  content: "\e912";
+}
+
+.icon-user:before {
+  content: "\e913";
+}
+
+.icon-user-2:before {
+  content: "\e914";
+}
+
+.icon-world-maps:before {
+  content: "\e915";
+}
+
 #preloader {
   position: fixed;
   top: 0;
@@ -15421,12 +15531,18 @@ ul.children {
 }
 .service-details .image-area {
   position: relative;
+  padding: 30px 0;
+}
+.service-details .image-area .image {
+  position: absolute;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .service-details .image-area .image img {
+    width: 100%;
+  }
 }
 .service-details .image-area .image-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15487,24 +15603,26 @@ ul.children {
   text-align: left;
   color: #666666;
 }
-.service-details .icons {
+.service-details .list-item-wrapper {
   margin-top: 40px;
 }
-.service-details .icons .icon-box {
+.service-details .list-item-wrapper .icon-box {
   display: flex;
   align-items: center;
   padding: 10px 25px;
   margin-bottom: 30px;
   background-color: #F5F5F5;
   cursor: pointer;
+  gap: 18px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-details .icons .icon-box {
+  .service-details .list-item-wrapper .icon-box {
     margin-right: 0px;
     padding: 10px;
+    gap: 12px;
   }
 }
-.service-details .icons .icon-box .icon {
+.service-details .list-item-wrapper .icon-box .icon {
   width: 70px;
   height: 70px;
   display: inline-block;
@@ -15512,7 +15630,6 @@ ul.children {
   font-size: 30px;
   line-height: 70px;
   text-align: center;
-  margin-right: 40px;
   background: #fff;
   color: #ED3B3B;
   flex-shrink: 0;
@@ -15522,12 +15639,7 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .service-details .icons .icon-box .icon {
-    margin-right: 12px;
-  }
-}
-.service-details .icons .icon-box .icon i {
+.service-details .list-item-wrapper .icon-box .icon i {
   transform: rotate(0);
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -15535,19 +15647,20 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.service-details .icons .icon-box .icon-title {
-  font-family: "Teko";
+.service-details .list-item-wrapper .icon-box .icon-title {
+  font-family: "Teko", sans-serif !important;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
   color: #151515;
+  margin-bottom: 0;
 }
-.service-details .icons .icon-box:hover .icon {
+.service-details .list-item-wrapper .icon-box:hover .icon {
   background: #ED3B3B;
 }
-.service-details .icons .icon-box:hover .icon i {
+.service-details .list-item-wrapper .icon-box:hover .icon i {
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -15569,6 +15682,10 @@ ul.children {
 .service-details .get-in-touch .form-control {
   background: #F9F9F9 !important;
   padding: 20px !important;
+}
+.service-details .accordion {
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .error {
@@ -17698,114 +17815,4 @@ footer .copyfight-footer p {
 }
 footer .copyfight-footer p span {
   color: #ED3B3B;
-}
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-book:before {
-  content: "\e900";
-}
-
-.icon-chat:before {
-  content: "\e901";
-}
-
-.icon-chat-2:before {
-  content: "\e902";
-}
-
-.icon-check:before {
-  content: "\e903";
-}
-
-.icon-clock:before {
-  content: "\e904";
-}
-
-.icon-compas:before {
-  content: "\e905";
-}
-
-.icon-incognito:before {
-  content: "\e906";
-}
-
-.icon-mail:before {
-  content: "\e907";
-}
-
-.icon-maps:before {
-  content: "\e908";
-}
-
-.icon-monitor:before {
-  content: "\e909";
-}
-
-.icon-note:before {
-  content: "\e90a";
-}
-
-.icon-phone:before {
-  content: "\e90b";
-}
-
-.icon-play:before {
-  content: "\e90c";
-}
-
-.icon-point:before {
-  content: "\e90d";
-}
-
-.icon-quote-2:before {
-  content: "\e90e";
-}
-
-.icon-rating:before {
-  content: "\e90f";
-}
-
-.icon-social-media:before {
-  content: "\e910";
-}
-
-.icon-square:before {
-  content: "\e911";
-}
-
-.icon-star:before {
-  content: "\e912";
-}
-
-.icon-user:before {
-  content: "\e913";
-}
-
-.icon-user-2:before {
-  content: "\e914";
-}
-
-.icon-world-maps:before {
-  content: "\e915";
 }/*# sourceMappingURL=style.css.map */

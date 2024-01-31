@@ -54,6 +54,9 @@
 @import "unittest";
 @import "keyframes";
 
+@import "custom_font";
+
+
 // 1.Preloader
 @import "modules/preeloader";
 
@@ -226,5 +229,3 @@
 // Image-card
 @import "modules/image-card/image-card";
 @import "solayman";
-
-@import "custom_font";
