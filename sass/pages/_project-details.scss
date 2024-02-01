@@ -1,135 +1,78 @@
-.project-page-wrapper {
-    padding-top: 144px;
-    padding-bottom: 114px;
-
-    @include rmaxwd(991) {
-        padding: 100px 0;
-    }
-    @include rmaxwd(767) {
-        padding-top: 70px;
-        padding-bottom: 40px;
-    }
-
-    .basic-pagination {
+.project-sidebar{
+    padding: 50px;
+    border-top: 5px solid $primary-color;
+    border-radius: 20px;
+    box-shadow: 4px 3px 60px 0px rgba(178,178,178,0.1);
+    .list-item-wrapper{
+        padding-left: 0;
         margin-bottom: 0;
-        margin-top: 30px;
-    }
-}
-.project-detail-area {
-    padding: 144px 0;
-
-    @include rmaxwd(991) {
-        padding: 100px 0;
-    }
-    @include rmaxwd(767) {
-       padding-top: 70px;
-        padding-bottom: 120px;
-    }
-
-    .project-details-padding-left {
-        padding-left: 60px;
-
-        @include rmaxwd(1199) {
-            padding-left: 12px;
-            margin-top: 50px;
-        }
-        @include rmaxwd(767) {
-            margin-top: 20px;
-        }
-    }
-    img {
-        border-radius: 12px;
-    }
-    .mt-65 {
-        @include rmaxwd(767) {
-            margin-top: 45px;
-        }
-    }
-}
-.project-gallery-image {
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-
-    &:hover {
-        &:before {
-            height: 250%;
-            transition: all 900ms linear;
-            background-color: transparent;
-        }
-        img {
-            transform: scale(1.1);
-            @include transition;
-        }
-    }
-    &:before {
-        position: absolute;
-        width: 200%;
-        height: 0%;
-        left: 50%;
-        top: 50%;
-        background-color: rgba(255, 255, 255, 0.3);
-        transform: translate(-50%, -50%) rotate(-45deg);
-        content: "";
-        z-index: 1;
-    }
-    img {
-        width: 100%;
-        height: 100%;
-        transform: scale(1);
-        @include transition;
-    }
-}
-.project-details-title {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: $secondary-color;
-    margin: 0;
-}
-.simillar-project-title {
-    h2 {
-        font-size: 36px;
-        line-height: 50px;
-        font-weight: 700;
-        color: $secondary-color;
-        margin: 0;
-
-        @include rmaxwd(767) {
-            font-size: 28px;
-            line-height: 32px;
-        }
-    }
-
-    @include rmaxwd(991) {
-        margin-bottom: 30px;
-    }
-}
-
-.project-info-widget {
-    background: #ebf4f8;
-    padding: 55px 58px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    .info-item {
+        list-style: none;
+        gap: 25px;
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        h3 {
-            margin: 0;
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 700;
-            color: $secondary-color;
+        gap: 25px;
+        li{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .title{
+                margin-bottom: 0;
+
+            }
+            p{
+                margin-bottom: 0;
+            }
         }
-        p {
+    }
+    .social-share{
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        li{
+            a{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    background-color: $primary-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.details-content{
+    margin-top: 60px;
+    p{
+        // margin-top: 25px;
+    }
+    .list-item-wrapper{
+        ul{
+            padding-left: 0;
             margin: 0;
-            font-size: 18px;
-            line-height: 24px;
-            font-weight: 400;
-            color: $text-color;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            li{
+                display: flex;
+                align-items: start;
+                gap: 9px;
+                &:before{
+                    content: "\f272";
+                    font-size: 16px;
+                    font-family: $font-bootstrap;
+                    color: $primary-color;
+
+
+                }
+            }
         }
     }
 }
