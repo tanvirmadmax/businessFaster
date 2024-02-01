@@ -15663,19 +15663,19 @@ ul.children {
   align-items: center;
 }
 .icon-card.style-five .icon {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .icon-card.style-five .icon i {
   color: #ED3B3B;
 }
 .icon-card.style-five .content {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: center;
   color: #666666;
+  margin-bottom: 0;
 }
 
 .contact-map-area {
@@ -15896,27 +15896,30 @@ ul.children {
   display: flex;
   align-items: center;
   justify-content: start;
+  margin-top: 20px;
+  gap: 20px;
 }
 .contact-form-area.style-one .contact_social_profile a {
-  display: block;
-}
-.contact-form-area.style-one .contact_social_profile a i {
   width: 40px;
   height: 40px;
-  line-height: 40px;
-  border-radius: 50px;
-  margin-right: 20px;
-  text-align: center;
-  color: #ffffff;
   background-color: #393d48;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-.contact-form-area.style-one .contact_social_profile a i:hover {
+.contact-form-area.style-one .contact_social_profile a:hover {
   background-color: #ED3B3B;
+}
+.contact-form-area.style-one .contact_social_profile a i {
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .analysis-area {
