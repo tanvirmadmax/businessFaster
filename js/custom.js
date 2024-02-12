@@ -22,6 +22,18 @@
             $(".menu-sidebar-area").removeClass("active");
             $(".body-overlay").removeClass("active");
         });
+        $('.search-btn').on('click', function (e) {
+            e.preventDefault();
+            $('body').css('overflow', 'hidden');
+
+            $('.search-form-wrapper').addClass('active');
+        });
+
+        $('.search-close').on('click', function (e) {
+            e.preventDefault();
+            $('body').css('overflow', 'auto');
+            $('.search-form-wrapper').removeClass('active');
+        });
 
         /*
        Jquery Body Overlay

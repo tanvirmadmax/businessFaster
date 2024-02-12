@@ -146,7 +146,8 @@
                     <!-- Header Button Start !-->
                     <div class="header-btn-area">
                         <a href="#" class="search-btn">
-                            <i class="bi bi-search"></i>
+                            <i class="bi bi-search search-icon"></i>
+                            <input class="search-field" type="text" name="search" placeholder="search" />
                         </a>
                         <a href="tel:+123-456-7890" class="header-btn">
                             <span class="title">Got A Question?</span>
@@ -1217,6 +1218,25 @@
         </div>
     </div>
     <!-- Scroll Up Section End -->
+    <div class="search-form-wrapper">
+        <div class="search-form-inner">
+            <div class="search-content-filed">
+                <form role="search" method="get" class="search-form" action="#">
+                    <input type="hidden" name="post_type" value="post" />
+                    <div class="search-form-input">
+                        <div class="search-icon">
+                            <i class="fa-light fa-magnifying-glass"></i>
+                        </div>
+                        <input type="search" placeholder="Search"/>
+                        <button class="theme-btn" type="submit" title="Search" aria-label="Search">Search</button>
+                    </div>
+                </form>
+                <span class="search-close">
+                    <i class="bi bi-x-lg"></i>
+                </span>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
