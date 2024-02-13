@@ -240,7 +240,9 @@
 // Agency-area
 .agency-area {
     position: relative;
-    overflow: hidden;
+    @include rwd(1199){
+        overflow: hidden;
+    }
     .bg-shape {
         position: absolute;
         top: 0;
@@ -248,7 +250,9 @@
         @include xl{
             top: 0;
         }
-
+        @include lg{
+            height: 100%;
+        }
     }
 
     .image-wrapper {

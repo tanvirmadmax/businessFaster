@@ -320,6 +320,9 @@
         @include xl{
           right: 108px;
         }
+        @include lg{
+          right: 0;
+        }
         @include md{
           right: 120px;
           top: -92px;

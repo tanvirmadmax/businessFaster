@@ -121,7 +121,8 @@
             &.style-2{
                 right: -62px;
                 @include rmaxwd(1399){
-                    right: 0;
+                    right: 8px;
+                    bottom: 8px;
                 }
                 @include rmaxwd(1199){
                     padding: 15px;

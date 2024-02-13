@@ -4468,6 +4468,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     right: 108px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-area .single-slider .slider-content .shape-1 {
+    right: 0;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider .slider-content .shape-1 {
     right: 120px;
@@ -5312,6 +5317,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
   font-size: 50px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .icon-card .inner-wrapper .icon i {
+    font-size: 40px;
+  }
+}
 .icon-card .inner-wrapper .content {
   display: flex;
   flex-direction: column;
@@ -5334,6 +5344,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 58px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .icon-card .inner-wrapper .content .desc {
+    line-height: 24px;
+  }
 }
 .icon-card .image-wrapper {
   position: absolute;
@@ -12399,7 +12414,11 @@ ul.children {
 
 .agency-area {
   position: relative;
-  overflow: hidden;
+}
+@media (min-width: 1199px) {
+  .agency-area {
+    overflow: hidden;
+  }
 }
 .agency-area .bg-shape {
   position: absolute;
@@ -12409,6 +12428,11 @@ ul.children {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .agency-area .bg-shape {
     top: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .agency-area .bg-shape {
+    height: 100%;
   }
 }
 .agency-area .image-wrapper {
@@ -16210,6 +16234,11 @@ ul.children {
     left: 8px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .business-growth-area .image-wrapper .certified {
+    left: 10px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .business-growth-area .image-wrapper .certified {
     top: 140px;
@@ -16251,8 +16280,26 @@ ul.children {
   position: relative;
   z-index: 1;
 }
+.business-growth-area .image-wrapper .image-1 img {
+  width: 416px;
+  height: 488px;
+}
 .business-growth-area .image-wrapper .image-2 {
   margin-top: -206px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .business-growth-area .image-wrapper .image-2 {
+    margin-top: -120px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .business-growth-area .image-wrapper .image-2 {
+    margin-top: 0;
+  }
+}
+.business-growth-area .image-wrapper .image-2 img {
+  width: 526px;
+  height: 332px;
 }
 @keyframes rotating {
   from {
@@ -16441,11 +16488,9 @@ ul.children {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
-@media (max-width: 1399px) {
-  .image-card:hover .image-wrapper .info-card .title br,
-  .image-card:hover .image-wrapper .info-card .desc br {
-    display: none;
-  }
+.image-card:hover .image-wrapper .info-card .title br,
+.image-card:hover .image-wrapper .info-card .desc br {
+  display: none;
 }
 .image-card:hover .image-wrapper .info-card .desc {
   visibility: visible;
@@ -16471,7 +16516,7 @@ ul.children {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one {
-    padding: 30px 0px;
+    padding: 20px 0px;
     margin-bottom: 0px;
   }
 }
@@ -16518,6 +16563,11 @@ ul.children {
   width: 200px;
   height: 100%;
   z-index: 2;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .brand-logo-slider-area .brand-log-slider-wrapper::after, .brand-logo-slider-area .brand-log-slider-wrapper::before {
+    width: 50px;
+  }
 }
 .brand-logo-slider-area .brand-log-slider-wrapper::before {
   left: 0;
@@ -16999,7 +17049,8 @@ ul.children {
 }
 @media (max-width: 1399px) {
   .about-agency-area.style-2 .about-img-two.style-2 {
-    right: 0;
+    right: 8px;
+    bottom: 8px;
   }
 }
 @media (max-width: 1199px) {
@@ -17319,7 +17370,8 @@ ul.children {
 }
 @media (max-width: 1399px) {
   .about-agency-area.style-2 .about-img-two.style-2 {
-    right: 0;
+    right: 8px;
+    bottom: 8px;
   }
 }
 @media (max-width: 1199px) {

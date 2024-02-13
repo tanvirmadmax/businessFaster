@@ -59,9 +59,7 @@
                 .desc {
                     @include transition;
                     br{
-                        @include rmaxwd(1399){
-                            display: none;
-                        }
+                        display: none;
                     }
                 }
                 .desc{

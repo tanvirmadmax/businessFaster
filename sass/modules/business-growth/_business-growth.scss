@@ -47,6 +47,9 @@
       @include xl{
         left: 8px;
       }
+      @include lg{
+        left: 10px;
+      }
       @include sm{
         top: 140px;
         left: 102px;
@@ -101,10 +104,24 @@
       justify-content: end;
       position: relative;
       z-index: 1;
+      img{
+        width: 416px;
+        height: 488px;
+      }
     }
 
     .image-2 {
       margin-top: -206px;
+      @include lg{
+        margin-top: -120px;
+      }
+      @include sm{
+        margin-top: 0;
+      }
+      img{
+        width: 526px;
+        height: 332px;
+      }
     }
 
     @keyframes rotating {
