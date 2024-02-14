@@ -4619,6 +4619,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media (max-width: 991px) {
   .slider-area.style-2 .slider-bg {
     height: 100%;
+    width: 110%;
   }
 }
 @media (max-width: 991px) {
