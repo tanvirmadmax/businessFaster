@@ -19,6 +19,7 @@
             text-align: center;
             border-radius: 289px;
             background-color: $primary-color;
+            justify-content: start;
             @include transition;
             @include xl{
                 margin: 0;

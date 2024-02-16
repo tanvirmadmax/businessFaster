@@ -113,19 +113,19 @@ a:focus,
 }
 
 a:focus {
-  color: $primary-color;
+  color: $black;
   text-decoration: none;
   @include transition;
 }
 
 a,
 button {
-  color: $primary-color;
+  color: $black;
   outline: medium none;
   @include transition;
 
   &:hover {
-    color: #ff6731;
+    color: $black;
     @include transition;
   }
 }

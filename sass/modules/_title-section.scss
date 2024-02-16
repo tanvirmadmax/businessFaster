@@ -52,6 +52,7 @@
     font-family: $heading-font;
     color: $black;
     margin-bottom: 0;
+    text-transform: capitalize;
 
     @include nesthub {
       font-size: 47px;
@@ -94,6 +95,14 @@
     justify-content: start;
     align-items: start;
     text-align: start;
+    .short-title{
+      &:before{
+        margin: 0;
+      }
+      &:after{
+        margin-left: 28px;
+      }
+    }
   }
 }
 

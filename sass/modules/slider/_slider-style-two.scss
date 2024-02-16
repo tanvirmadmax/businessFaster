@@ -27,6 +27,7 @@
       position: absolute;
       top: 132px;
       left: 0;
+      width: 100%;
       @include xl{
         top: unset;
         bottom: 0;
@@ -36,6 +37,7 @@
         width: 110%;
       }
       img{
+        width: 100%;
         @include rmaxwd(991){
           height: 100%;
         }

@@ -202,12 +202,12 @@
         $(".project-area-slider").slick({
             slidesToShow: 4,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
             responsive: [
                 {

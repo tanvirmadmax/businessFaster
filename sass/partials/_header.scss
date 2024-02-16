@@ -18,6 +18,15 @@
     .menu-wrapper {
       background-color: transparent;
     }
+    .main-menu{
+      ul{
+        li{
+          a{
+            padding: 55px 32px;
+          }
+        }
+      }
+    }
   }
 }
 .full-width-visible{
@@ -138,7 +147,7 @@
     .contact-info-item {
       display: flex;
       align-items: center;
-      gap: 33px;
+      gap: 20px;
       position: relative;
 
       &:after {
@@ -146,7 +155,7 @@
         width: 1px;
         height: 46px;
         background-color: $white;
-        margin-left: 7px;
+        margin-left: 20px;
       }
 
       &:last-child {
@@ -508,10 +517,14 @@
   line-height: normal;
   text-transform: uppercase;
   background-color: $primary-color;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 4px 4px 0;
 
   @media only screen and (max-width: 1399px) {
     display: none;
+  }
+  &:hover{
+    background-color: $black;
+    color: $white;
   }
 
   .icon-wrapper {
