@@ -3282,7 +3282,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area.style-2 .menu-wrapper {
   background-color: transparent;
 }
-.header-area.style-2 .main-menu ul li a {
+.header-area.style-2 .main-menu > ul > li > a {
   padding: 55px 32px;
 }
 
