@@ -24,14 +24,14 @@
         });
         $('.search-btn').on('click', function (e) {
             e.preventDefault();
-            $('body').css('overflow', 'hidden');
+            // $('body').css('overflow', 'hidden');
 
             $('.search-form-wrapper').addClass('active');
         });
 
         $('.search-close').on('click', function (e) {
             e.preventDefault();
-            $('body').css('overflow', 'auto');
+            // $('body').css('overflow', 'auto');
             $('.search-form-wrapper').removeClass('active');
         });
 
