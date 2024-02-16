@@ -376,7 +376,7 @@
             prevArrow:
                 "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
             nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+                "<button type='button' class='post-gallery-btn next-btn'><i class='bi bi-arrow-right'></i></button>",
         });
         /*
        Client Logo Slider
@@ -394,7 +394,7 @@
             prevArrow:
                 "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
             nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+                "<button type='button' class='post-gallery-btn next-btn'><i class='bi bi-arrow-right'></i></button>",
             responsive: [
                 {
                     breakpoint: 1200,

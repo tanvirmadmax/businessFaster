@@ -7155,11 +7155,20 @@ button.testimonial-arrow-btn:hover i {
   background-color: #ffffff;
   border: none;
   box-shadow: none;
-  color: #ED3B3B;
+  color: #FE6809;
 }
 .accordion .accordion-item .accordion-button.collapsed {
   color: #151515;
   background-color: #F2F3F6;
+}
+.accordion .accordion-item .accordion-button.collapsed:after {
+  color: #151515;
+}
+.accordion .accordion-item .accordion-button:after {
+  content: "\f22c";
+  font-family: bootstrap-icons;
+  background-image: none;
+  color: #FE6809;
 }
 .accordion .accordion-item .accordion-body {
   background-color: #ffffff;
@@ -7681,7 +7690,7 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .post-title {
   font-size: 50px;
   font-weight: 600;
-  line-height: normal;
+  line-height: 55px;
   margin-bottom: 0;
   margin-top: 15px;
 }
@@ -7755,17 +7764,26 @@ button.testimonial-arrow-btn:hover i {
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  background-color: #666666;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.single-post-item .social-share a:hover {
-  background-color: #ED3B3B;
+.single-post-item .social-share a:hover i {
+  color: #ED3B3B;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .single-post-item .social-share a i {
-  color: #ffffff;
+  color: #666666;
+  font-size: 28px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .single-post-item .social-share .social-share-title {
   font-size: 16px;

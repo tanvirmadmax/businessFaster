@@ -28,26 +28,20 @@
         background-color: $white;
         border: none;
         box-shadow: none;
-        color: $primary-color;
+        color: $orange-color;
         &.collapsed{
           color: $black;
           background-color: #F2F3F6;
+          &:after{
+            color: $black;
+          }
         }
 
-      &:before {
-        // content: "\002B";
-        // font-family: $font-awesome;
-        // color: $white;
-        // font-weight: 700;
-        // color: #666666;
-      }
-
-      .accordion-title {
-        // font-size: 21px;
-        // line-height: 32px;
-        // color: $white;
-        // font-weight: 700;
-        // margin-bottom: 0;
+      &:after {
+        content: "\F22C";
+        font-family: $font-bootstrap;
+        background-image: none;
+        color: $orange-color;
       }
     }
     .accordion-body {

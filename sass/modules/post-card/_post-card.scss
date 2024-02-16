@@ -342,7 +342,7 @@
   .post-title {
     font-size: 50px;
     font-weight: 600;
-    line-height: normal;
+    line-height: 55px;
     margin-bottom: 0;
     margin-top: 15px;
 
@@ -426,18 +426,23 @@
       width: 30px;
       height: 30px;
       border-radius: 50px;
-      background-color: $text-color;
-      color: $white;
+      // background-color: $text-color;
+      // color: $white;
       display: flex;
       align-items: center;
       justify-content: center;
-
       &:hover {
-        background-color: $primary-color;
+        // background-color: $primary-color;
+        i{
+          color: $primary-color;
+          @include transition;
+        }
       }
 
       i {
-        color: $white;
+        color: $text-color;
+        font-size: 28px;
+        @include transition;
       }
     }
 
