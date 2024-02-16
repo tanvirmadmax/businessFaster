@@ -30,7 +30,7 @@
 21. Breadcrumb
 22. Paginations
 23. Timeline Card
-24. Project Details Page
+24. Project Details
 25. Sidebar
 26. Comment List
 27. Comment Form
@@ -4519,7 +4519,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 600;
   font-size: 100px;
   color: #ffffff;
-  line-height: 110px;
+  line-height: 100px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -8832,9 +8832,10 @@ button.testimonial-arrow-btn:hover i {
   color: #666666;
 }
 .skill-progressbar .progress-content-outter {
-  height: 6px;
+  height: 12px;
   background-color: #e7eaec;
   border-radius: 50px;
+  padding: 3px;
 }
 .skill-progressbar .progress-content {
   height: 6px;
@@ -16818,6 +16819,9 @@ ul.children {
     justify-content: start;
   }
 }
+.community-section-area .community-title .community-section-btn .theme-btn {
+  margin-bottom: 18px;
+}
 .community-section-area .community-overlay {
   position: absolute;
   left: 0;
@@ -17125,6 +17129,7 @@ ul.children {
 
 .community-item.style-two {
   display: flex;
+  gap: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .community-item.style-two {
@@ -17562,7 +17567,7 @@ ul.children {
 }
 .mix .project-link h6 {
   color: #ED3B3B;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 17px;
   margin-bottom: 0;
