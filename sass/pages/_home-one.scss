@@ -11,9 +11,9 @@
 }
 .testimonial-area{
     position: relative;
-    padding-bottom: 72px;
+    padding-bottom: 96px;
     @include lg{
-        padding-bottom: 50px;
+        padding-bottom: 80px;
     }
     @include md{
         padding-bottom: 30px;
@@ -305,7 +305,9 @@
     }
     .icon-card{
         &.style-2{
-            margin-top: 12px;
+            @include rmaxwd(1399){
+                margin-top: 12px;
+            }
         }
     }
     .content-wrapper {

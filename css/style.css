@@ -12203,11 +12203,11 @@ ul.children {
 
 .testimonial-area {
   position: relative;
-  padding-bottom: 72px;
+  padding-bottom: 96px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-area {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12535,8 +12535,10 @@ ul.children {
   top: 0;
   transform: skewX(45deg);
 }
-.agency-area .icon-card.style-2 {
-  margin-top: 12px;
+@media (max-width: 1399px) {
+  .agency-area .icon-card.style-2 {
+    margin-top: 12px;
+  }
 }
 .agency-area .content-wrapper {
   position: relative;
@@ -16273,6 +16275,11 @@ ul.children {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .business-growth-area .content-wrapper .desc-title {
+    margin: 16px 0;
+  }
+}
 .business-growth-area .content-wrapper .desc {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -16285,8 +16292,16 @@ ul.children {
   display: flex;
   flex-direction: column;
 }
+.business-growth-area .content-wrapper .icon-card-wrapper .icon-card {
+  margin-top: 16px;
+}
 .business-growth-area .content-wrapper .theme-btn {
   margin-top: 56px;
+}
+@media (max-width: 1399px) {
+  .business-growth-area .content-wrapper .theme-btn {
+    margin-top: 16px;
+  }
 }
 .business-growth-area .image-wrapper {
   position: relative;
@@ -16590,6 +16605,11 @@ ul.children {
   -o-transition: all 0.5s ease-out;
   cursor: pointer;
 }
+@media (max-width: 1399px) {
+  .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one {
+    padding: 0;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one {
     padding: 20px 0px;
@@ -16609,7 +16629,7 @@ ul.children {
 }
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one .logo-slide h3 {
   font-size: 100px;
-  line-height: normal;
+  line-height: 100px;
   color: #151515;
   text-transform: uppercase;
   display: inline-block;

@@ -8,6 +8,9 @@
       color: $primary-color;
       margin-top: 20px;
       margin-bottom: 20px;
+      @include xl{
+        margin: 16px 0;
+      }
     }
 
     .desc {
@@ -22,10 +25,16 @@
     .icon-card-wrapper {
       display: flex;
       flex-direction: column;
+      .icon-card{
+        margin-top: 16px;
+      }
     }
 
     .theme-btn {
       margin-top: 56px;
+      @include rmaxwd(1399){
+        margin-top: 16px;
+      }
     }
   }
 

@@ -9,7 +9,9 @@
             -webkit-animation: 20s slide infinite linear;
             width: 100%;
             @include transition;
-
+            @include rmaxwd(1399){
+                padding: 0;
+            }
             @include md {
                 padding: 20px 0px;
                 margin-bottom: 0px;
@@ -27,7 +29,7 @@
 
                 h3 {
                     font-size: 100px;
-                    line-height: normal;
+                    line-height: 100px;
                     color: $black;
                     text-transform: uppercase;
                     display: inline-block;
