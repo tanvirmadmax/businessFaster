@@ -3618,6 +3618,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 24px 20px;
   }
 }
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .main-menu ul li a {
+    padding: 28px 12px;
+  }
+}
 .main-menu ul li:hover > ul {
   visibility: visible;
   transition: all 300ms ease;
