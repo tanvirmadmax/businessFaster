@@ -12203,6 +12203,22 @@ ul.children {
 
 .testimonial-area {
   position: relative;
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-area {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area {
+    padding-bottom: 15px;
+  }
 }
 .testimonial-area .left-image img {
   width: 100%;
@@ -12212,6 +12228,11 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area .left-image img {
     height: auto;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .testimonial-area .left-image img {
+    height: 465px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -12329,7 +12350,7 @@ ul.children {
   margin-bottom: 0;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .right-quote span {
-  font-size: 118px;
+  font-size: 103px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .right-quote span {
@@ -12499,6 +12520,11 @@ ul.children {
     left: 50%;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .agency-area .image-wrapper:before {
+    left: 32%;
+  }
+}
 .agency-area .image-wrapper:after {
   content: "";
   width: 150px;
@@ -12509,9 +12535,17 @@ ul.children {
   top: 0;
   transform: skewX(45deg);
 }
+.agency-area .icon-card.style-2 {
+  margin-top: 12px;
+}
 .agency-area .content-wrapper {
   position: relative;
   z-index: 3;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .agency-area .content-wrapper {
+    padding-bottom: 26px;
+  }
 }
 
 .contact-area {
@@ -16489,7 +16523,7 @@ ul.children {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .image-card .image-wrapper .info-card {
     margin: 0;
-    bottom: -58%;
+    bottom: -68%;
     padding: 24px;
   }
 }
