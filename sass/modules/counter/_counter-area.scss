@@ -6,7 +6,8 @@
     background-position: bottom;
     background-repeat: no-repeat;
     @include sm{
-        padding-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .counter-item{
         display: flex;

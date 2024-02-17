@@ -10,6 +10,11 @@
   align-items: end;
   gap: 43px;
   z-index: 3;
+  @include sm{
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+  }
   .video-popup-btn {
     border: 2px dashed $white;
     padding: 10px;

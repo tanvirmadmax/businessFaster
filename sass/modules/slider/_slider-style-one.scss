@@ -267,7 +267,7 @@
     }
     @include sm {
       height: 670px;
-      padding-top: 300px;
+      padding-top: 255px;
     }
     .bg-shape{
       position: absolute;
@@ -330,6 +330,7 @@
         @include sm{
           right: 0;
           top: -112px;
+          display: none;
         }
       }
 
@@ -350,6 +351,7 @@
         }
         @include sm {
           font-size: 16px;
+          letter-spacing: 4px;
         }
       }
       .slider-title {

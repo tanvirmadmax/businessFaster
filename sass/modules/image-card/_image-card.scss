@@ -26,6 +26,10 @@
                 bottom: -68%;
                 padding: 24px;
             }
+            @include sm{
+                padding-top: 44px;
+                bottom: -75%;
+            }
             @include rmaxwd(1399){
                 justify-content: start;
             }

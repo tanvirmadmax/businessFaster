@@ -16,10 +16,10 @@
         padding-bottom: 80px;
     }
     @include md{
-        padding-bottom: 30px;
+        padding-bottom: 60px;
     }
     @include sm{
-        padding-bottom: 15px;
+        padding-bottom: 40px;
     }
     .left-image{
         img{
@@ -44,6 +44,9 @@
                 .rating-box{
                     display: flex;
                    margin-bottom: 36px;
+                   @include sm{
+                    display: none;
+                   }
                     .rating-icon{
                         margin-right: 15px;
                         display: flex;

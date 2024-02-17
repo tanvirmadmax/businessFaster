@@ -4,6 +4,15 @@
   background-size: cover;
 
   .content-wrapper {
+    .section-title{
+      .title{
+        br{
+          @include sm{
+            display: block;
+          }
+        }
+      }
+    }
     .desc-title {
       color: $primary-color;
       margin-top: 20px;
@@ -60,7 +69,7 @@
         left: 10px;
       }
       @include sm{
-        top: 140px;
+        top: 168px;
         left: 102px;
       }
       // @include lg{
@@ -126,6 +135,7 @@
       }
       @include sm{
         margin-top: 0;
+        display: none;
       }
       img{
         width: 526px;

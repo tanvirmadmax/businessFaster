@@ -4409,7 +4409,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider {
     height: 670px;
-    padding-top: 300px;
+    padding-top: 255px;
   }
 }
 .slider-area .single-slider .bg-shape {
@@ -4490,6 +4490,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   .slider-area .single-slider .slider-content .shape-1 {
     right: 0;
     top: -112px;
+    display: none;
   }
 }
 .slider-area .single-slider .slider-content .slider-short-title {
@@ -4512,6 +4513,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content .slider-short-title {
     font-size: 16px;
+    letter-spacing: 4px;
   }
 }
 .slider-area .single-slider .slider-content .slider-title {
@@ -6225,6 +6227,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   align-items: end;
   gap: 43px;
   z-index: 3;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .video-popup-card {
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+  }
 }
 .video-popup-card .video-popup-btn {
   border: 2px dashed #ffffff;
@@ -12212,12 +12221,12 @@ ul.children {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-area {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .testimonial-area {
-    padding-bottom: 15px;
+    padding-bottom: 40px;
   }
 }
 .testimonial-area .left-image img {
@@ -12243,6 +12252,11 @@ ul.children {
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box {
   display: flex;
   margin-bottom: 36px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box {
+    display: none;
+  }
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon {
   margin-right: 15px;
@@ -16224,7 +16238,8 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .counter-area {
-    padding-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .counter-area .counter-item {
@@ -16269,6 +16284,11 @@ ul.children {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .business-growth-area .content-wrapper .section-title .title br {
+    display: block;
+  }
 }
 .business-growth-area .content-wrapper .desc-title {
   color: #ED3B3B;
@@ -16331,7 +16351,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .business-growth-area .image-wrapper .certified {
-    top: 140px;
+    top: 168px;
     left: 102px;
   }
 }
@@ -16385,6 +16405,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .business-growth-area .image-wrapper .image-2 {
     margin-top: 0;
+    display: none;
   }
 }
 .business-growth-area .image-wrapper .image-2 img {
@@ -16407,6 +16428,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .project-area .image-card-wrapper {
     padding: 0 12px;
+    margin-top: 30px;
   }
 }
 .project-area .image-card-wrapper.project-area-slider .slick-dots {
@@ -16542,6 +16564,12 @@ ul.children {
     padding: 24px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .image-card .image-wrapper .info-card {
+    padding-top: 44px;
+    bottom: -75%;
+  }
+}
 @media (max-width: 1399px) {
   .image-card .image-wrapper .info-card {
     justify-content: start;
@@ -16612,7 +16640,7 @@ ul.children {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one {
-    padding: 20px 0px;
+    padding: 0px;
     margin-bottom: 0px;
   }
 }
@@ -16643,10 +16671,11 @@ ul.children {
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one .logo-slide h3 span {
   font-size: 16px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one .logo-slide h3 {
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 40px;
+    line-height: 66px;
   }
 }
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two .logo-slide h3 {
