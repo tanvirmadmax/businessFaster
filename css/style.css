@@ -16206,6 +16206,9 @@ ul.children {
     line-height: 66px;
   }
 }
+.brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two {
+  padding: 0;
+}
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two .logo-slide h3 {
   font-weight: 400;
 }
@@ -17132,17 +17135,27 @@ ul.children {
   color: #151515;
   padding-bottom: 18px;
 }
+.about-img-two.style-2 .counter-item {
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.about-img-two.style-2 .counter-item:last-child {
+  margin-bottom: 0;
+}
 .about-img-two.style-2 .counter-item .icon span {
   background-image: linear-gradient(to top, #ffffff, #ffffff);
-  color: #ED3B3B;
-  height: 60px;
   width: auto;
+}
+.about-img-two.style-2 .counter-item .icon i {
+  color: #ED3B3B;
+  font-size: 60px;
+  line-height: 60px;
 }
 .about-img-two.style-2 .counter-item .content h2 {
   color: #222222;
   font-size: 30px;
   line-height: 40px;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   font-weight: 500;
 }
 .about-img-two.style-2 .counter-item .content p {
