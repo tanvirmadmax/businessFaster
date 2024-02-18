@@ -74,4 +74,23 @@
             }
         }
     }
+    &.style-2 {
+        position: relative;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .info-card{
+            &.style-2 {
+                position: absolute;       
+            }
+        }
+    
+        &:hover {
+            .info-card {
+                transform: scale(1);
+            }
+        }
+    }
 }

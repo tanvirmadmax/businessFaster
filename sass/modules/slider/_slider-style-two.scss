@@ -5,6 +5,9 @@
     .single-slider {
       background-size: unset;
       background-position: bottom right;
+      padding-top: 350px;
+      padding-bottom: 215px;
+  
       @include lg{
         background-position: top left;
       }
