@@ -9,6 +9,25 @@
   &.style-2 {
     .header-menu-area {
       background-color: $white;
+      &.sticky_menu{
+        .main-menu{
+          >ul{
+            >li{
+              >a{
+                padding: 32px;
+                @include rmaxwd(1399){
+                  padding: 32px 24px;
+                }
+                &:after{
+                  @include rmaxwd(1399){
+                    right: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .logo {
@@ -23,6 +42,14 @@
         >li{
           >a{
             padding: 55px 32px;
+            @include xl{
+              padding: 55px 24px;
+            }
+            &:after{
+              @include xl{
+                right: 10px;
+              }
+            }
           }
         }
       }

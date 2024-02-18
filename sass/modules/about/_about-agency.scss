@@ -24,8 +24,8 @@
             height: 304px;
             border-radius: 15px;
             @include xl{
-                right: -42px;
-                bottom: -36px;
+                right: -28px;
+                bottom: -28px;
             }
             @include lg{
                 right: 0;
@@ -68,10 +68,16 @@
         .agency-work-wrapper {
             margin-top: 60px;
             margin-bottom: 40px;
+            @include xl{
+                margin: 18px 0;
+            }
         }
 
         .agency-progress-wrapper {
             margin-bottom: 55px;
+            @include xl{
+                margin-bottom: 24px;
+            }
             .skill-progressbar {
                 .progress-inner {
                     .progress-inner-item {

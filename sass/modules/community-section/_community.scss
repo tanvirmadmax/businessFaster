@@ -14,12 +14,26 @@
         padding-bottom: 70px;
         margin-bottom: 80px;
         border-bottom: 1px solid $white;
+        .section-title{
+            .title{
+                br{
+                    @include lg{
+                        display: none;
+                    }
+                }
+            }
+        }
         .community-section-btn{
             display: flex;
             justify-content: end;
             align-items: end;
             height: 100%;
             margin-bottom: 0px;
+            @include rmaxwd(991){
+                align-items: center;
+                justify-content: start;
+                margin-top: 20px;
+            }
             @include sm{
                 // align-items: start;
                 justify-content: start;

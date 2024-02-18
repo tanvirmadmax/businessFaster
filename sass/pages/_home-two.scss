@@ -81,6 +81,12 @@
 
 // recent-project-area
 .recent-project-area{
+  .section-title{
+    margin-bottom: 55px;
+    @include xl{
+      margin-bottom: 30px;
+    }
+  }
   .recent-project-area-gallery{
     margin: 0 30px;
   }
@@ -477,16 +483,10 @@
 
 // Team Member Area
 .team-slider-area {
-  &.style-1 {
-    padding-top: 138px;
-    padding-bottom: 144px;
-
-    @include md() {
-      padding: 100px 0;
-    }
-
-    @include sm() {
-      padding: 70px 0;
+  .section-title{
+    margin-bottom: 50px;
+    @include xl{
+      margin-bottom: 30px;
     }
   }
 }

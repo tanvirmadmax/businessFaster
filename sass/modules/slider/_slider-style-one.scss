@@ -286,7 +286,7 @@
       left: 0;
       bottom: 0;
       z-index: 0;
-      @include sm{
+      @include rmaxwd(991){
         display: none;
       }
     }
@@ -326,6 +326,7 @@
         @include md{
           right: 120px;
           top: -92px;
+          display: none;
         }
         @include sm{
           right: 0;
@@ -368,7 +369,6 @@
         }
         @include xl{
           font-size: 80px;
-          line-height: normal;
         }
 
         @include lg {
