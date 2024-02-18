@@ -86,6 +86,9 @@
     @include xl{
       margin-bottom: 30px;
     }
+    @include rmaxwd(991){
+      margin-bottom: 30px;
+    }
   }
   .recent-project-area-gallery{
     margin: 0 30px;
@@ -485,8 +488,15 @@
 .team-slider-area {
   .section-title{
     margin-bottom: 50px;
-    @include xl{
+    @include rmaxwd(1399){
       margin-bottom: 30px;
+    }
+    .title{
+      br{
+        @include sm{
+          display: block;
+        }
+      }
     }
   }
 }

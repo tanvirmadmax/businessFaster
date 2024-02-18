@@ -3,24 +3,15 @@
     .blog-inner-wrapper {
       margin-top: 33px;
       .single-post {
-        figure {
+        .image {
           margin-bottom: 0px;
           overflow: hidden;
-
           img {
             width: 100%;
-            transition: all .5s;
-            -webkit-transition: all .5s;
-            -moz-transition: all .5s;
-            -ms-transition: all .5s;
-            -o-transition: all .5s;
+            @include transition;
 
             &:hover {
               transform: scale(1.2);
-              -webkit-transform: scale(1.2);
-              -moz-transform: scale(1.2);
-              -ms-transform: scale(1.2);
-              -o-transform: scale(1.2);
             }
           }
 
@@ -39,69 +30,58 @@
             width: 100%;
             display: flex;
 
-            .left {
+            .date {
               width: 30%;
+              text-align: center;
+              margin-top: -48px;
+              transform: scale(1);
 
-              .date {
-                text-align: center;
-                margin-top: -48px;
-                transform: scale(1);
-                -webkit-transform: scale(1);
-                -moz-transform: scale(1);
-                -ms-transform: scale(1);
-                -o-transform: scale(1);
-
-                h6 {
-                  color: $white;
-                  background-color: $primary-color;
-                  font-size: 30px;
-                  font-weight: 500;
-                  font-family: $heading-font;
-                  line-height: auto;
-                  padding: 10px;
-                  margin: 0;
-                }
-
-                p {
-                  font-size: 12px;
-                  padding: 2px;
-                  color: $white;
-                  background-color: $black;
-                  margin-bottom: 0;
-                }
+              h6 {
+                color: $white;
+                background-color: $primary-color;
+                font-size: 30px;
+                font-weight: 500;
+                font-family: $heading-font;
+                line-height: auto;
+                padding: 10px;
+                margin: 0;
               }
 
-            }
-
-            .right {
-              width: 70%;
-
-              ul {
-                display: flex;
-                justify-content: space-between;
-                margin-left: 16px;
-                margin-top: 10px;
-                padding-left: 0;
+              p {
+                font-size: 12px;
+                padding: 2px;
+                color: $white;
+                background-color: $black;
                 margin-bottom: 0;
-                @include rmaxwd(991){
-                  gap: 4px;
-                }
+              }
+            }
+            .meta-tag {
+              width: 70%;
+              display: flex;
+              justify-content: space-between;
+              margin-left: 16px;
+              margin-top: 10px;
+              padding-left: 0;
+              margin-bottom: 0;
+              @include rmaxwd(991){
+                gap: 4px;
+              }
 
-                li {
-                  display: flex;
-                  align-items: center;
-                  font-size: 14px;
-                  font-weight: 600;
-                  font-family: $body-font;
-                  color: $text-color;
+              li {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: $body-font;
+                color: $text-color;
+                text-transform: capitalize;
 
-                  span {
-                    font-size: 15px;
-                    color: $primary-color;
-                    margin-right: 10px;
-                    @include rmaxwd(991){
-                      margin-right: 4px;
-                    }
+                span {
+                  font-size: 15px;
+                  color: $primary-color;
+                  margin-right: 10px;
+                  @include rmaxwd(991){
+                    margin-right: 4px;
                   }
                 }
               }
@@ -135,11 +115,16 @@
 
               span {
                 font-size: 18px;
+                line-height: 24px;
               }
 
               i {
                 color: $primary-color;
                 font-size: 23px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
               }
             }
           }

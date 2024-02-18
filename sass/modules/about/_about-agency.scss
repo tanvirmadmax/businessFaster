@@ -60,16 +60,20 @@
         @include xl{
             padding-left: 30px;
         }
-        .primary-title{
-            &.style-2{
+        .section-title{
                 margin-bottom: 40px;
-            }
+                @include sm{
+                    margin-bottom: 30px;
+                }
         }
         .agency-work-wrapper {
             margin-top: 60px;
             margin-bottom: 40px;
             @include xl{
                 margin: 18px 0;
+            }
+            @include sm{
+                margin: 40px 0;
             }
         }
 

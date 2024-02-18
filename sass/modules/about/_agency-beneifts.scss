@@ -8,6 +8,9 @@
         @include rmaxwd(991){
             margin-right: 0;
         }
+        @include sm{
+            margin-bottom: 30px;
+        }
         br{
             @include rmaxwd(991){
                 display: none;

@@ -32,6 +32,9 @@
 
     .logo {
       height: 132px;
+      @include sm{
+        height: 100px;
+      }
     }
 
     .menu-wrapper {

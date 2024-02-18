@@ -14,6 +14,9 @@
       @include md{
         padding-top: 290px;
       }
+      @include sm{
+        padding-top: 270px;
+      }
       .slider-content{
         .slider-short-title{
           letter-spacing: 4px;
@@ -73,6 +76,10 @@
       @include rmaxwd(991){
         height: 100%;
         width: 110%;
+      }
+      @include sm{
+        top: 0;
+        width: 200%;
       }
       img{
         width: 100%;
