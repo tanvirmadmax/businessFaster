@@ -12207,6 +12207,17 @@ ul.children {
   text-align: start;
   align-items: start;
 }
+.contact-area.style-2 .meta-user .image-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-area.style-2 .meta-user .image-wrapper {
+    flex-direction: row;
+  }
+}
 
 .our-services-area {
   background-repeat: no-repeat;
@@ -12293,11 +12304,6 @@ ul.children {
 .recent-project-area .section-title {
   margin-bottom: 55px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .recent-project-area .section-title {
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 991px) {
   .recent-project-area .section-title {
     margin-bottom: 30px;
@@ -12305,6 +12311,10 @@ ul.children {
 }
 .recent-project-area .recent-project-area-gallery {
   margin: 0 30px;
+}
+.recent-project-area .recent-project-area-gallery .image-card {
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .process-step-area.style-2 {

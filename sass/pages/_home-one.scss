@@ -443,6 +443,15 @@
         .meta-user{
             text-align: start;
             align-items: start;
+            .image-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                flex-shrink: 0;
+                @include sm{
+                    flex-direction: row;
+                }
+            }
         }
     }
 }

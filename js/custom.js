@@ -236,6 +236,43 @@
                 },
             ],
         });
+        $(".recent-project-gallery-slider").slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: false,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 1500,
+            responsive: [
+                {
+                    breakpoint: 1399,
+                    settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
 
 
         /*

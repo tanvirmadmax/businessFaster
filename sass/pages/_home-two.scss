@@ -83,15 +83,16 @@
 .recent-project-area{
   .section-title{
     margin-bottom: 55px;
-    @include xl{
-      margin-bottom: 30px;
-    }
     @include rmaxwd(991){
       margin-bottom: 30px;
     }
   }
   .recent-project-area-gallery{
     margin: 0 30px;
+    .image-card{
+      margin-right: 12px;
+      margin-left: 12px;
+    }
   }
 }
 
