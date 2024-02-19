@@ -255,7 +255,7 @@
       padding-bottom: 154px;
     }
     @include lg{
-      padding-top: 270px;
+      padding-top: 192px;
     }
     @media only screen and (min-width: 768px) and (max-width: 1199px) {
       height: 620px;
@@ -372,17 +372,22 @@
         }
 
         @include lg {
-          font-size: 48px;
-          line-height: 56px;
+          font-size: 70px;
+          line-height: 78px;
         }
         @include md {
-          font-size: 42px;
-          line-height: 52px;
+          font-size: 68px;
+          line-height: 76px;
         }
         @include sm {
-          font-size: 38px;
-          line-height: 44px;
+          font-size: 50px;
+          line-height: 60px;
           margin-bottom: 20px;
+        }
+        br{
+          @include rmaxwd(991){
+            display: none;
+          }
         }
         span{
           display: inline-block;

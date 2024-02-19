@@ -14,7 +14,7 @@
           >ul{
             >li{
               >a{
-                padding: 32px;
+                padding: 32px 12px;
                 @include rmaxwd(1399){
                   padding: 32px 24px;
                 }
@@ -81,7 +81,9 @@
   display: flex;
   align-items: center;
   @include transition;
-
+  @include lg{
+    height: 84px;
+  }
   @include md {
     height: 100px;
   }
@@ -291,6 +293,12 @@
     .main-menu {
       ul {
         li {
+          a{
+            padding: 32px 18px;
+            &:after{
+              right: 0;
+            }
+          }
           &.active {
             >a {
               &:after {
@@ -308,6 +316,9 @@
           }
         }
       }
+    }
+    .menu-wrapper{
+      background-color: transparent;
     }
   }
 
@@ -353,20 +364,22 @@
       &:last-child{
         a{
           padding-right: 0;
+          @include lg{
+            padding-right: 16px;
+          }
         }
       }
       &.dropdown {
         >a {
-          padding-right: 43px;
-          @include xl{
-            padding-right: 36px;
-          }
           &:after {
             position: absolute;
             content: "\2b";
             top: 50%;
-            right: 20px;
+            right: 16px;
             transform: translate(0, -50%);
+            @include lg{
+              right: 0;
+            }
           }
         }
       }
@@ -414,7 +427,7 @@
           padding: 46px 20px;
         }
         @include lg{
-          padding: 24px 20px;
+          padding: 32px 18px;
         }
         @media only screen and (min-width: 1400px) and (max-width: 1600px){
           padding: 28px 12px;

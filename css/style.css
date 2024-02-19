@@ -120,20 +120,20 @@ h3 {
 
 h4 {
   font-size: 30px;
-  line-height: 42px;
-  font-weight: 700;
+  line-height: 40px;
+  font-weight: 500;
 }
 
 h5 {
   font-size: 24px;
-  line-height: 36px;
-  font-weight: 700;
+  line-height: 35px;
+  font-weight: 400;
 }
 
 h6 {
   font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 label {
@@ -3277,7 +3277,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #ffffff;
 }
 .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a {
-  padding: 32px;
+  padding: 32px 12px;
 }
 @media (max-width: 1399px) {
   .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a {
@@ -3336,6 +3336,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    height: 84px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .logo {
@@ -3548,8 +3553,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+.header-menu-area.sticky_menu .main-menu ul li a {
+  padding: 32px 18px;
+}
+.header-menu-area.sticky_menu .main-menu ul li a:after {
+  right: 0;
+}
 .header-menu-area.sticky_menu .main-menu ul li ul li a {
   padding: 10px 20px;
+}
+.header-menu-area.sticky_menu .menu-wrapper {
+  background-color: transparent;
 }
 
 .menu-wrapper {
@@ -3590,20 +3604,22 @@ body.admin-bar .header-menu-area.sticky_menu {
 .main-menu ul li:last-child a {
   padding-right: 0;
 }
-.main-menu ul li.dropdown > a {
-  padding-right: 43px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .main-menu ul li.dropdown > a {
-    padding-right: 36px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-menu ul li:last-child a {
+    padding-right: 16px;
   }
 }
 .main-menu ul li.dropdown > a:after {
   position: absolute;
   content: "+";
   top: 50%;
-  right: 20px;
+  right: 16px;
   transform: translate(0, -50%);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-menu ul li.dropdown > a:after {
+    right: 0;
+  }
 }
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
@@ -3643,7 +3659,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li a {
-    padding: 24px 20px;
+    padding: 32px 18px;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -4424,7 +4440,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .single-slider {
-    padding-top: 270px;
+    padding-top: 192px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -4571,21 +4587,26 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .single-slider .slider-content .slider-title {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 70px;
+    line-height: 78px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .single-slider .slider-content .slider-title {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 68px;
+    line-height: 76px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content .slider-title {
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 50px;
+    line-height: 60px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .slider-area .single-slider .slider-content .slider-title br {
+    display: none;
   }
 }
 .slider-area .single-slider .slider-content .slider-title span {
@@ -12137,6 +12158,17 @@ ul.children {
   right: -5px;
   border-radius: 50%;
 }
+.contact-area .meta-user .image-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-area .meta-user .image-wrapper {
+    flex-direction: row;
+  }
+}
 .contact-area .meta-user .signature .name {
   display: flex;
 }
@@ -12206,17 +12238,6 @@ ul.children {
 .contact-area.style-2 .meta-user {
   text-align: start;
   align-items: start;
-}
-.contact-area.style-2 .meta-user .image-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-shrink: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contact-area.style-2 .meta-user .image-wrapper {
-    flex-direction: row;
-  }
 }
 
 .our-services-area {
