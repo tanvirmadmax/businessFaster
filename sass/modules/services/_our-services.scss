@@ -54,8 +54,8 @@
         margin-bottom: 30px;
     }
 
-    .title {
-        h3 {
+    .title-wrapper {
+        .title {
             font-size: 30px;
             line-height: 35px;
             font-family: $heading-font;
@@ -64,7 +64,7 @@
             margin-bottom: 30px;
         }
 
-        a {
+        .icon {
             font-size: 34px;
             color: $black;
         }
@@ -86,12 +86,12 @@
             }
         }
 
-        .title {
-            h3 {
+        .title-wrapper {
+            .title {
                 color: $white;
             }
 
-            a {
+            .icon {
                 color: $white;
             }
         }

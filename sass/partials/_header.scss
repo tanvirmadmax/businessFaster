@@ -14,11 +14,12 @@
           >ul{
             >li{
               >a{
-                padding: 32px 12px;
+                padding: 32px;
                 @include rmaxwd(1399){
                   padding: 32px 24px;
                 }
                 &:after{
+                  right: 16px;
                   @include rmaxwd(1399){
                     right: 10px;
                   }

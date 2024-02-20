@@ -58,12 +58,12 @@
       font-size: 47px;
     }
     @include md {
-      font-size: 38px;
-      line-height: 48px;
+      font-size: 48px;
+      line-height: 58px;
     }
     @include sm {
-      font-size: 32px;
-      line-height: 42px;
+      font-size: 40px;
+      line-height: 48px;
     }
     @media only screen and (min-width: 0px) and (max-width: 439px){
       br {
@@ -102,29 +102,6 @@
       &:after{
         margin-left: 28px;
       }
-    }
-  }
-}
-
-
-
-.primary-button {
-  button {
-    text-transform: uppercase;
-    padding: 15px 25px;
-    background-color: $primary-color;
-    color: $white;
-    font-size: 18px;
-    font-family: $heading-font;
-    font-weight: 500;
-    letter-spacing: 2px;
-
-    span {
-      display: inline-block;
-      margin-left: 10px;
-      transform: rotate(40deg);
-      position: relative;
-      top: 2px;
     }
   }
 }

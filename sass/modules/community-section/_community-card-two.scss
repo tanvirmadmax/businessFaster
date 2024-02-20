@@ -21,34 +21,31 @@
         }
         .icon{
             // margin-right: 20px;
-            span{
+            background-color: $black;
+            width: 71px;
+            height: 71px;
+            border-radius: 5px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
                 font-size: 40px;
                 color: $white;
-                background-color: $black;
-                width: 71px;
-                height: 71px;
-                text-align: center;
                 line-height: 71px;
-                display: inline-block;
-                border-radius: 5px;
-                i{
-                    @include transition;
-                }
+                @include transition;
             }
-        
         }
-        .content{
-            h5{
-                color: $black;
-                font-size: 30px;
-                line-height: 35px;
-                font-family: $heading-font;
-                font-weight: 400;
-                margin-bottom: 0;
-                @include sm{
-                    font-size: 27px;
-                    line-height: 30px;
-                }
+        .title{
+            color: $black;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: $heading-font;
+            font-weight: 400;
+            margin-bottom: 0;
+            @include sm{
+                font-size: 27px;
+                line-height: 30px;
             }
         }
     }
