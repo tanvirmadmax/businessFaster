@@ -28,16 +28,18 @@
             }
             @include sm{
                 padding-top: 44px;
-                bottom: -75%;
+                bottom: -60%;
+                margin: 0;
             }
             @include rmaxwd(1399){
                 justify-content: start;
             }
             .title,
             .desc {
+                text-align: center;
                 @include transition;
-                @include xl{
-                    // text-align: center;
+                br{
+                    display: block;
                 }
             }
             .desc{
@@ -57,12 +59,15 @@
                 text-align: start;
                 border-radius: 0;
                 background-color: transparent;
+                @include transition;
                 @include sm{
                     padding: 30px;
                 }
                 .title,
                 .desc {
+                    text-align: start;
                     @include transition;
+                    // @include transition;
                     br{
                         display: none;
                     }

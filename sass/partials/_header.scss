@@ -33,6 +33,7 @@
 
     .logo {
       height: 132px;
+      @include transition;
       @include sm{
         height: 100px;
       }
@@ -272,6 +273,7 @@
 
     .logo {
       height: 84px;
+      @include transition;
 
       &:before {
         display: none;
@@ -378,6 +380,9 @@
             top: 50%;
             right: 16px;
             transform: translate(0, -50%);
+            @include xl{
+              right: 0;
+            }
             @include lg{
               right: 0;
             }

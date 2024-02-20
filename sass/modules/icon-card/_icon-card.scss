@@ -113,7 +113,7 @@
             background-color: $primary-color;
             padding: 10px 22px;
             margin-right: 52px;
-            margin-top: -54px;
+            // margin-top: -54px;
             z-index: 1;
             position: relative;
             visibility: hidden;
@@ -160,7 +160,7 @@
             @include transition;
             
             .image-text {
-                transform: translateX(0);
+                transform: translateY(-100%);
                 visibility: visible;
                 opacity: 1;
                 @include transition;

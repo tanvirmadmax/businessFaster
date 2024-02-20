@@ -8,6 +8,9 @@
             padding: 0 12px;
             margin-top: 30px;
         }
+        .image-card{
+            margin: 0 12px;
+        }
         &.project-area-slider{
             .slick-dots{
                 display: flex !important;
@@ -55,7 +58,6 @@
     }
 
     &.style-2 {
-
         .project-btn-wrapper {
             display: flex;
             justify-content: center;
