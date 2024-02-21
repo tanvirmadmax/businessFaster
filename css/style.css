@@ -7092,8 +7092,8 @@ button.testimonial-arrow-btn:hover i {
   font-size: 50px;
   font-weight: 600;
   line-height: 55px;
-  margin-bottom: 0;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .single-post-item .post-title {
@@ -8778,7 +8778,7 @@ button.testimonial-arrow-btn:hover i {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 .basic-pagination ul,
 .page-links ul,
@@ -9612,7 +9612,7 @@ button.testimonial-arrow-btn:hover i {
 .widget .wp-block-tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 10px;
   align-items: center;
 }
 .widget .tagcloud a,
@@ -9624,6 +9624,7 @@ button.testimonial-arrow-btn:hover i {
   align-items: center;
   gap: 10px;
   border-radius: 50px;
+  border: 1px solid #ED3B3B;
   transition: all 0.5s ease-out;
 }
 .widget .tagcloud a:hover,
@@ -9714,9 +9715,6 @@ button.testimonial-arrow-btn:hover i {
   width: 100%;
   color: #151515;
 }
-.widget.widget_categories ul li:first-child, .widget.widget_archive ul li:first-child {
-  margin-top: -4px;
-}
 .widget.widget_categories ul li.cat-item, .widget.widget_archive ul li.cat-item {
   text-align: right;
   display: inline-block;
@@ -9729,6 +9727,9 @@ button.testimonial-arrow-btn:hover i {
   font-weight: 400;
   line-height: 32px;
   color: #151515;
+}
+.widget.widget_categories ul {
+  margin-top: -6px;
 }
 .widget.widget_contact_us {
   text-align: center;
@@ -11663,9 +11664,6 @@ ul.children {
 .contact-area .comment-respond .theme-btn {
   margin-top: 10px;
 }
-.contact-area.style-2 .comment-respond {
-  margin-bottom: 0;
-}
 .contact-area.style-2 .meta-user {
   text-align: start;
   align-items: start;
@@ -13144,18 +13142,7 @@ ul.children {
 }
 
 .service-details-wrapper {
-  padding-top: 144px;
-  padding-bottom: 130px;
-}
-@media (max-width: 991px) {
-  .service-details-wrapper {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .service-details-wrapper {
-    padding: 70px 0;
-  }
+  padding-left: 20px;
 }
 .service-details-wrapper .details-main {
   padding-left: 25px;
@@ -14735,10 +14722,6 @@ ul.children {
   opacity: 1;
 }
 
-.service-details {
-  padding-top: 140px;
-  padding-bottom: 140px;
-}
 .service-details .all-services {
   margin-bottom: 35px;
 }
@@ -15212,7 +15195,7 @@ ul.children {
   margin-top: 16px;
 }
 .business-growth-area .content-wrapper .theme-btn {
-  margin-top: 56px;
+  margin-top: 55px;
 }
 @media (max-width: 1399px) {
   .business-growth-area .content-wrapper .theme-btn {
@@ -15291,7 +15274,7 @@ ul.children {
   height: 488px;
 }
 .business-growth-area .image-wrapper .image-2 {
-  margin-top: -206px;
+  margin-top: -162px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .business-growth-area .image-wrapper .image-2 {

@@ -366,7 +366,7 @@
   .wp-block-tag-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 10px;
     align-items: center;
 
     a {
@@ -377,6 +377,7 @@
       align-items: center;
       gap: 10px;
       border-radius: 50px;
+      border: 1px solid $primary-color;
       @include transition;
 
       &:hover {
@@ -489,9 +490,6 @@
         display: inline-block;
         width: 100%;
         color: $black;
-        &:first-child{
-          margin-top: -4px;
-        }
         &.cat-item {
           text-align: right;
           display: inline-block;
@@ -507,6 +505,11 @@
           color: $black;
         }
       }
+    }
+  }
+  &.widget_categories{
+    ul{
+      margin-top: -6px;
     }
   }
 
