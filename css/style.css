@@ -386,6 +386,12 @@ input.theme-btn.simple-btn {
   background-color: transparent;
   border: 1px solid #ED3B3B;
 }
+.theme-btn-secondary:hover i {
+  transform: rotate(-35deg);
+  margin-left: 10px;
+  margin-right: -10px;
+  transition: all 0.5s ease-out;
+}
 .theme-btn-secondary:focus {
   color: #ffffff;
 }
@@ -9109,21 +9115,27 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 0;
 }
 .project-sidebar .social-share li a {
-  width: 35px;
-  height: 35px;
   border-radius: 50%;
-  border: 1px solid #E4E4E4;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.project-sidebar .social-share li a:hover {
-  background-color: #ED3B3B;
-  color: #ffffff;
+.project-sidebar .social-share li a i {
+  font-size: 24px;
+  transition: all 0.5s ease-out;
+}
+.project-sidebar .social-share li a:hover i {
+  color: #ED3B3B;
+  transition: all 0.5s ease-out;
 }
 
 .details-content {
   margin-top: 60px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .details-content {
+    margin-top: 10px;
+  }
 }
 .details-content .list-item-wrapper ul {
   padding-left: 0;
@@ -12990,11 +13002,6 @@ ul.children {
 .footer-widget {
   margin-bottom: 30px;
 }
-@media (max-width: 991px) {
-  .footer-widget {
-    margin-bottom: 50px;
-  }
-}
 .footer-widget ul {
   padding-left: 0;
 }
@@ -13147,12 +13154,12 @@ ul.children {
   font-weight: 700;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title a {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 21px;
+  line-height: 24px;
   color: #ffffff;
   position: relative;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 500;
   transition: all 0.5s ease-out;
 }
 .footer-widget .widget_latest_post ul li .latest-post-desc .latest-post-title a:hover {
@@ -14639,7 +14646,12 @@ ul.children {
 }
 
 .error {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .error {
+    padding-bottom: 60px;
+  }
 }
 .error h1 {
   font-family: "Teko";
@@ -15294,19 +15306,18 @@ ul.children {
 .project-area .image-card-wrapper.style-2 {
   margin-top: 30px;
 }
-.project-area.style-2 .project-btn-wrapper {
+.project-area .project-btn-wrapper {
   display: flex;
   justify-content: center;
   gap: 16px;
   margin-bottom: 60px;
 }
 @media (max-width: 1199px) {
-  .project-area.style-2 .project-btn-wrapper {
+  .project-area .project-btn-wrapper {
     flex-wrap: wrap;
-    justify-content: start;
   }
 }
-.project-area.style-2 .project-btn-wrapper button {
+.project-area .project-btn-wrapper button {
   padding: 8px 32px;
   border: 1px solid #E7E7E7;
   border-radius: 8px;
@@ -15317,30 +15328,38 @@ ul.children {
   line-height: 32px;
   background-color: #ffffff;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .project-area.style-2 .project-btn-wrapper button {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-area .project-btn-wrapper button {
     padding: 8px 24px;
   }
 }
-.project-area.style-2 .project-btn-wrapper button:hover {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .project-area .project-btn-wrapper button {
+    padding: 8px 24px;
+  }
+}
+.project-area .project-btn-wrapper button:hover {
   color: #ED3B3B;
   border-color: #ED3B3B;
 }
-.project-area.style-2 .project-btn-wrapper button.active {
+.project-area .project-btn-wrapper button.active {
   color: #ED3B3B;
   border-color: #ED3B3B;
 }
-.project-area.style-2 .btn-wrapper {
+.project-area .btn-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.project-area.style-2 .image-card {
+  margin: 0;
+}
 @media (max-width: 1199px) {
-  .project-area.style-2 .project-card {
+  .project-area.style-3 .project-card {
     margin-top: 24px;
   }
 }
-.project-area.style-2 .post-card {
+.project-area.style-3 .post-card {
   margin-top: 0;
 }
 
@@ -16489,128 +16508,9 @@ ul.children {
   color: #151515;
 }
 
-.project-details-area .project-details-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 35px;
-}
-.project-details-area .project-details-title h3 {
-  font-family: "Teko", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 60px;
-  color: #151515;
-}
-.project-details-area .project-details-information .image {
-  margin-bottom: 60px;
-}
-.project-details-area .project-details-information .image img {
+.project-details .image-wrapper img {
   width: 100%;
-  height: 690px;
   object-fit: cover;
-}
-.project-details-area .project-details-information .content-wrapper .content p {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-}
-.project-details-area .project-details-information .content-wrapper .content h3 {
-  font-family: "Teko", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 43px;
-  margin: 20px 0px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges {
-  margin-top: 32px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges h3 {
-  font-family: "Teko", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #151515;
-  margin-bottom: 10px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges ul {
-  margin-bottom: 40px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges ul li {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-  list-style: none;
-  position: relative;
-  margin-bottom: 16px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges ul li::before {
-  position: absolute;
-  content: "\f00c";
-  font-family: "Font Awesome 6";
-  color: #ED3B3B;
-  left: -20px;
-}
-.project-details-area .project-details-information .content-wrapper .content .project-challenges p {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-}
-.project-details-area .project-details-information .content-wrapper .information-content {
-  padding: 50px;
-  border-top: 5px solid #ED3B3B;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  box-shadow: 0px 4px 60px 0px rgba(178, 178, 178, 0.1019607843);
-}
-.project-details-area .project-details-information .content-wrapper .information-content .info {
-  margin-bottom: 25px;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .info h6 {
-  font-family: "Teko", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: #151515;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .info p {
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .social-icon ul {
-  padding-left: 0;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .social-icon ul li {
-  list-style: none;
-  display: inline-block;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .social-icon ul li a {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #E4E4E4;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  background-color: transparent;
-  color: #666666;
-  transition: all 0.5s ease-out;
-}
-.project-details-area .project-details-information .content-wrapper .information-content .social-icon ul li a:hover {
-  background-color: #ED3B3B;
-  color: #ffffff;
 }
 
 footer .footer-area {

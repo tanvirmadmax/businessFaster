@@ -45,7 +45,7 @@
   margin-bottom: 30px;
 
   @include rmaxwd(991) {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 
   ul {
@@ -250,12 +250,12 @@
             font-weight: 700;
 
             a {
-              font-size: 16px;
-              line-height: 22px;
+              font-size: 21px;
+              line-height: 24px;
               color: $white;
               position: relative;
               text-transform: capitalize;
-              font-weight: 700;
+              font-weight: 500;
               @include transition;
 
               &:hover {

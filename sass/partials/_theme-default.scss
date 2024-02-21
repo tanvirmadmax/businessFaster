@@ -298,7 +298,6 @@ input.theme-btn {
 }
 
 .theme-btn-secondary{
-  
   display: inline-flex;
   background-color: $primary-color;
   color: #fff;
@@ -327,6 +326,12 @@ input.theme-btn {
     color: #000;
     background-color: transparent;
     border: 1px solid $primary-color;
+    i{
+      transform: rotate(-35deg);
+      margin-left: 10px;
+      margin-right: -10px;
+      @include transition;
+    }
   }
 
   &:focus {

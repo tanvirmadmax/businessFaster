@@ -33,16 +33,22 @@
         margin-bottom: 0;
         li{
             a{
-                width: 35px;
-                height: 35px;
+                // width: 35px;
+                // height: 35px;
                 border-radius: 50%;
-                border: 1px solid #E4E4E4;
+                // border: 1px solid #E4E4E4;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                i{
+                    font-size: 24px;
+                    @include transition;
+                }
                 &:hover{
-                    background-color: $primary-color;
-                    color: $white;
+                    i{
+                        color: $primary-color;
+                        @include transition;
+                    }
                 }
             }
         }
@@ -50,6 +56,9 @@
 }
 .details-content{
     margin-top: 60px;
+    @include sm{
+        margin-top: 10px;
+    }
     p{
         // margin-top: 25px;
     }

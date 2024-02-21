@@ -1,5 +1,8 @@
 .error{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    @include sm{
+        padding-bottom: 60px;
+    }
 h1{
     font-family: 'Teko';
     font-size: 400px;
