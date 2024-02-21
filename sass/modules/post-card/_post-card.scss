@@ -51,10 +51,22 @@
 
   .comment-respond {
     margin-top: 120px;
+    @include lg{
+      margin-top: 100px;
+    }
+    @include md{
+      margin-top: 80px;
+    }
+    @include sm{
+      margin-top: 60px;
+    }
   }
 
   .post-comments {
     margin-top: 90px;
+    @include sm{
+      margin-top: 60px;
+    }
   }
 
   .wp-block-group.has-background {
@@ -175,7 +187,7 @@
         padding-right: 0;
 
         @include sm {
-          margin-bottom: 0;
+          // margin-bottom: 0;
         }
 
         img {
@@ -200,7 +212,7 @@
     }
 
     .content-header {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
 
     .blog-post-tag .post-tag-list a {
@@ -231,7 +243,7 @@
 .blog-post {
   padding-right: 38px;
 
-  @include rmaxwd(991) {
+  @include rmaxwd(1199) {
     padding-right: 22px;
   }
 }
@@ -241,6 +253,9 @@
   background-color: $white;
   overflow: hidden;
   margin-bottom: 80px;
+  @include sm{
+    margin-bottom: 60px;
+  }
 
   &:hover {
 
@@ -266,11 +281,6 @@
   }
 
   .post-content-wrapper {
-
-    @include sm {
-      padding: 28px;
-    }
-
     .read-more {
       margin-top: 30px;
       margin-bottom: 6px;
@@ -348,6 +358,7 @@
 
     @include sm {
       font-size: 28px;
+      line-height: 36px;
       margin-top: 16px;
     }
 
@@ -413,6 +424,9 @@
     padding-top: 32px;
     // border-top: 1px solid $black-3;
     flex-wrap: wrap;
+    @include sm{
+      padding-top: 0;
+    }
   }
 
   // Social Share
@@ -478,16 +492,19 @@
     .post-cat-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 16px;
       align-items: center;
-
+      @include sm{
+        gap: 8px;
+      }
       a {
         color: $black;
         font-family: $heading-font;
         font-size: 20px;
         font-weight: 500;
         line-height: 28px;
-
+        padding: 4px 10px;
+        border-radius: 4px;
         &.secondary {
           background-color: $secondary-color;
         }
@@ -610,8 +627,7 @@
     flex-wrap: wrap;
 
     @include sm {
-      gap: 20px;
-      flex-direction: column;
+      gap: 10px;
       width: 100%;
       align-items: flex-start;
     }
