@@ -3231,6 +3231,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a {
   padding: 32px;
 }
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a {
+    padding: 28px 20px;
+  }
+}
 @media (max-width: 1399px) {
   .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a {
     padding: 32px 24px;
@@ -3238,6 +3243,11 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a:after {
   right: 16px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a:after {
+    right: 4px;
+  }
 }
 @media (max-width: 1399px) {
   .header-area.style-2 .header-menu-area.sticky_menu .main-menu > ul > li > a:after {
@@ -3259,9 +3269,19 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-area.style-2 .main-menu > ul > li > a {
   padding: 55px 32px;
 }
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .header-area.style-2 .main-menu > ul > li > a {
+    padding: 28px 20px;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header-area.style-2 .main-menu > ul > li > a {
     padding: 55px 24px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .header-area.style-2 .main-menu > ul > li > a:after {
+    right: 4px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -3602,7 +3622,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .main-menu ul li a {
-    padding: 28px 12px;
+    padding: 28px 30px;
   }
 }
 .main-menu ul li:hover > ul {

@@ -15,11 +15,17 @@
             >li{
               >a{
                 padding: 32px;
+                @media only screen and (min-width: 1400px) and (max-width: 1600px){
+                  padding: 28px 20px;
+                }
                 @include rmaxwd(1399){
                   padding: 32px 24px;
                 }
                 &:after{
                   right: 16px;
+                  @media only screen and (min-width: 1400px) and (max-width: 1600px){
+                    right: 4px;
+                  }
                   @include rmaxwd(1399){
                     right: 10px;
                   }
@@ -47,10 +53,16 @@
         >li{
           >a{
             padding: 55px 32px;
+            @media only screen and (min-width: 1400px) and (max-width: 1600px){
+              padding: 28px 20px;
+            }
             @include xl{
               padding: 55px 24px;
             }
             &:after{
+              @media only screen and (min-width: 1400px) and (max-width: 1600px){
+                right: 4px;
+              }
               @include xl{
                 right: 10px;
               }
@@ -436,7 +448,7 @@
           padding: 32px 18px;
         }
         @media only screen and (min-width: 1400px) and (max-width: 1600px){
-          padding: 28px 12px;
+          padding: 28px 30px;
         }
         &:hover {
           // color: $orange-color;
