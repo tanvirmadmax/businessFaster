@@ -864,5 +864,25 @@
           color: $black;
         }
       }
+      // Contact info widget
+      .widget-contact-info{
+        ul{
+          li{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            i{
+              font-size: 24px;
+              color: $primary-color;
+            }
+            p{
+              margin-bottom: 0;
+              font-size: 16px;
+              line-height: 29px;
+              color: $text-color;
+            }
+          }
+        }
+      }
     }
   }
