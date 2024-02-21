@@ -2099,6 +2099,12 @@ input.theme-btn {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .pt-sm-34 {
+    padding-top: 34px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .pt-sm-40 {
     padding-top: 40px;
   }
@@ -2119,6 +2125,12 @@ input.theme-btn {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pt-lg-100 {
     padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .pb-sm-20 {
+    padding-bottom: 20px;
   }
 }
 
@@ -3232,10 +3244,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-decoration: none;
   width: 50px;
   height: 50px;
-  background-color: #1eae98;
+  background-color: #ED3B3B;
   border-radius: 50px;
   border: 2px solid;
-  outline: 2px dashed #1eae98;
+  outline: 2px dashed #ED3B3B;
   align-items: center;
   cursor: pointer;
 }
@@ -3990,7 +4002,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
 }
 .mobile-menu-bar a i {
-  color: #393d48;
+  color: #151515;
   font-size: 36px;
 }
 
@@ -4033,7 +4045,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 16px;
   height: 45px;
   width: 45px;
-  background-color: #1eae98;
+  background-color: #ED3B3B;
   color: #ffffff;
   border-radius: 50%;
 }
@@ -4527,8 +4539,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content .slider-title {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 52px;
     margin-bottom: 20px;
   }
 }
@@ -6992,6 +7004,7 @@ button.testimonial-arrow-btn:hover i {
   font-weight: 500;
   line-height: 29px;
   color: #666666;
+  border: 1px solid #ED3B3B;
 }
 .blog-details-wrapper .wp-block-calendar {
   margin-bottom: 30px;
@@ -7010,6 +7023,11 @@ button.testimonial-arrow-btn:hover i {
 @media (max-width: 1199px) {
   .blog-post {
     padding-right: 22px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-post {
+    padding-right: 12px;
   }
 }
 
@@ -8617,7 +8635,7 @@ button.testimonial-arrow-btn:hover i {
   font-family: "Teko", sans-serif;
   font-size: 50px;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-top: 20px;
   text-transform: capitalize;
   line-height: normal;
   font-weight: 600;
@@ -8633,7 +8651,7 @@ button.testimonial-arrow-btn:hover i {
   .page-heading h3,
   .page-heading .page-title {
     font-size: 42px;
-    line-height: 52px;
+    line-height: 46px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -9300,10 +9318,9 @@ button.testimonial-arrow-btn:hover i {
 @media (max-width: 991px) {
   .sidebar {
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 60px;
   }
 }
-
 .page-sidebar {
   margin-bottom: 50px;
   padding-left: 18px;
@@ -11566,7 +11583,8 @@ ul.children {
   .contact-area .meta-user {
     flex-direction: column;
     margin-top: 30px;
-    text-align: center;
+    text-align: start;
+    align-items: start;
   }
 }
 .contact-area .meta-user .meta-img {
@@ -13144,6 +13162,11 @@ ul.children {
 .service-details-wrapper {
   padding-left: 20px;
 }
+@media (max-width: 991px) {
+  .service-details-wrapper {
+    padding-left: 0;
+  }
+}
 .service-details-wrapper .details-main {
   padding-left: 25px;
 }
@@ -13474,6 +13497,7 @@ ul.children {
 @media (max-width: 991px) {
   .footer-bottom-menu ul {
     justify-content: flex-start;
+    gap: 20px;
   }
 }
 .footer-bottom-menu ul li a {
@@ -13725,9 +13749,19 @@ ul.children {
 .footer.style-2 .footer-sec {
   padding-bottom: 85px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-2 .footer-sec {
+    padding-bottom: 50px;
+  }
+}
 .footer.style-2 .footer-logo {
   margin-top: 50px;
   margin-bottom: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer.style-2 .footer-logo {
+    margin-top: 30px;
+  }
 }
 .footer.style-2 .footer-widget-title {
   font-size: 30px;
@@ -14836,7 +14870,7 @@ ul.children {
   text-align: center;
 }
 .service-details .right-content .content-title {
-  font-family: "Teko";
+  font-family: "Teko", sans-serif;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -14844,6 +14878,12 @@ ul.children {
   text-align: left;
   margin-top: 30px;
   color: #151515;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .service-details .right-content .content-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 .service-details .right-content p {
   font-family: "Manrope";
@@ -14972,6 +15012,7 @@ ul.children {
   letter-spacing: 0em;
   text-align: center;
   color: #5D666F;
+  margin-bottom: 0;
 }
 .error .search .form-control {
   padding: 30px;
@@ -15556,6 +15597,11 @@ ul.children {
     line-height: 66px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one .logo-slide h3 {
+    line-height: 50px;
+  }
+}
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two {
   padding: 0;
 }
@@ -15762,6 +15808,11 @@ ul.children {
   background-repeat: no-repeat;
   z-index: -1;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .community-section-area {
+    padding: 60px 0;
+  }
+}
 .community-section-area .community-title {
   padding-bottom: 70px;
   margin-bottom: 80px;
@@ -15770,6 +15821,12 @@ ul.children {
 .community-section-area .community-title h3 {
   color: #ffffff;
   margin-bottom: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .community-section-area .community-title {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .community-section-area .community-title .section-title .title br {
@@ -15780,7 +15837,6 @@ ul.children {
   display: flex;
   justify-content: end;
   align-items: end;
-  height: 100%;
   margin-bottom: 0px;
 }
 @media (max-width: 991px) {

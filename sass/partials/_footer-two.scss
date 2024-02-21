@@ -2,11 +2,17 @@
   &.style-2 {
     .footer-sec {
       padding-bottom: 85px;
+      @include sm{
+        padding-bottom: 50px;
+      }
     }
 
     .footer-logo {
       margin-top: 50px;
       margin-bottom: 0;
+      @include sm{
+        margin-top: 30px;
+      }
     }
 
     .footer-widget-title {

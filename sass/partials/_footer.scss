@@ -293,6 +293,7 @@
 
     @include rmaxwd(991) {
       justify-content: flex-start;
+      gap: 20px;
     }
 
     li {

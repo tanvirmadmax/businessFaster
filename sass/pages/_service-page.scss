@@ -105,6 +105,9 @@
 // Service Details
 .service-details-wrapper {
     padding-left: 20px;
+    @include rmaxwd(991){
+        padding-left: 0;
+    }
 
     .details-main {
         padding-left: 25px;

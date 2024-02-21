@@ -232,7 +232,7 @@
                     breakpoint: 576,
                     settings: {
                         slidesToShow: 1,
-                        dots: true,
+                        // dots: true,
                     },
                 },
             ],
@@ -551,7 +551,7 @@
             // dots: true,
             infinite: true,
             speed: 500,
-            autoplay: false,
+            autoplay: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             prevArrow:
@@ -575,7 +575,7 @@
         $(".team-slider-wrapper").slick({
             slidesToShow: 3,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             draggable: true,
             arrows: false,
             slidesToScroll: 1,

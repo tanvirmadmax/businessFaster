@@ -51,6 +51,9 @@
                         margin-left: 40px;
                         line-height: 66px;
                     }
+                    @include sm{
+                        line-height: 50px;
+                    }
                 }
 
             }
