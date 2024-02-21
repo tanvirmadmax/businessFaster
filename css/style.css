@@ -4619,7 +4619,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area.style-2 .slider-bg {
   position: absolute;
-  bottom: 0;
+  top: 100px;
   right: 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -4628,8 +4628,6 @@ body.admin-bar .header-menu-area.sticky_menu {
     height: 100%;
     left: 250px;
     right: unset;
-    bottom: unset;
-    top: 100px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -9715,6 +9713,9 @@ button.testimonial-arrow-btn:hover i {
   display: inline-block;
   width: 100%;
   color: #151515;
+}
+.widget.widget_categories ul li:first-child, .widget.widget_archive ul li:first-child {
+  margin-top: -4px;
 }
 .widget.widget_categories ul li.cat-item, .widget.widget_archive ul li.cat-item {
   text-align: right;
@@ -15186,12 +15187,13 @@ ul.children {
 }
 .business-growth-area .content-wrapper .desc-title {
   color: #ED3B3B;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .business-growth-area .content-wrapper .desc-title {
     margin: 16px 0;
+    margin-top: 8px;
   }
 }
 .business-growth-area .content-wrapper .desc {
@@ -15200,7 +15202,7 @@ ul.children {
   font-weight: 400;
   line-height: 29px;
   color: #666666;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 .business-growth-area .content-wrapper .icon-card-wrapper {
   display: flex;

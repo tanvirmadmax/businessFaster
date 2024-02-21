@@ -489,7 +489,9 @@
         display: inline-block;
         width: 100%;
         color: $black;
-
+        &:first-child{
+          margin-top: -4px;
+        }
         &.cat-item {
           text-align: right;
           display: inline-block;

@@ -15,10 +15,11 @@
     }
     .desc-title {
       color: $primary-color;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-bottom: 20px;
       @include xl{
         margin: 16px 0;
+        margin-top: 8px;
       }
     }
 
@@ -28,7 +29,7 @@
       font-weight: 400;
       line-height: 29px;
       color: $text-color;
-      margin-bottom: 0;
+      margin-bottom: 8px;
     }
 
     .icon-card-wrapper {
